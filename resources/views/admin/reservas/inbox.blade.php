@@ -48,7 +48,13 @@
                         <h5>{{$reserva->nombreProducto}}</h5>
                     </td>
                     <td class="text-center">
-                        <h5>${{$reserva->precio}}</h5>
+                        <h5>
+                            @if($reserva->idRam!=1 || $reserva->idDisco!=1)
+                            ${{$reserva->precio + 50}}
+                                @else
+                            ${{$reserva->precio}}
+                                @endif
+                        </h5>
                     </td>
                     <td class="text-center">
                         <a href="{{ route('reserva.show', $reserva->id) }}" class="mdl-button

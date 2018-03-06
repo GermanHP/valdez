@@ -85,8 +85,23 @@
                             <p><strong>Producto Reservado</strong></p>
                             <h3>{{$reserva->nombreProducto}}</h3>
                             <br><br>
+                            <p><strong>¿Optimización?</strong></p>
+                            <h3>
+                                @if($reserva->idRam!=1 || $reserva->idDisco!=1)
+                                    Si
+                                @else
+                                    No
+                                @endif
+                            </h3>
+                            <br><br>
                             <p><strong>Precio del Final del Producto</strong></p>
-                            <h3>${{$reserva->precio}}</h3>
+                            <h3>
+                                @if($reserva->idRam!=1 || $reserva->idDisco!=1)
+                                    ${{$reserva->precio + 50}}
+                                @else
+                                    ${{$reserva->precio}}
+                                @endif
+                            </h3>
                             <br><br>
                             <p><strong>Reservado el día:</strong></p>
                             <h3>{{$reserva->fechaDeVigencia}}</h3>

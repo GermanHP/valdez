@@ -35,7 +35,17 @@
                         <h3>{{$candidato->edadCandidato}}</h3>
                     </td>
                     <td class="text-center">
-                        <h3>{{$candidato->idPuesto}}</h3>
+                        <h3>
+                            @if($candidato->id_puesto==1)
+                                Ejecutivo de Ventas
+                                @elseif($candidato->id_puesto==2)
+                            Supervisor de Ventas
+                                @elseif($candidato->id_puesto==3)
+                            Técnico en Hardware
+                                @else
+                            Técnico en Software
+                                @endif
+                        </h3>
                     </td>
                     <td class="text-center">
                         <a href="{{ route('candidato.show', $candidato->id) }}" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-color--green-400"><i class="material-icons">visibility</i></a>

@@ -6,6 +6,8 @@ use App\Http\Requests\MakeReservaRequest;
 use App\Models\Bitacora;
 use App\Models\Category;
 use App\Models\Centros;
+use App\Models\Disco;
+use App\Models\RAM;
 use App\Models\ReservaCentro;
 use App\Models\Reservaproductos;
 use App\Models\Reservas;
@@ -38,10 +40,12 @@ class GestionReservasController extends Controller
      */
     public function create($url)
     {
+        $ram = RAM::pluck('nombre', 'id');
+        $disco = Disco::pluck('nombre', 'id');
         $producto = Producto::where('url', '=', $url)->first();
         $centros = Centros::pluck('nombre', 'id');
 
-        return view('productos.reservas.makeReserva', compact('producto', 'centros'));
+        return view('productos.reservas.makeReserva', compact('producto', 'centros', 'ram', 'disco'));
     }
 
     /**
@@ -93,7 +97,9 @@ class GestionReservasController extends Controller
             'spec4'=>$request['caract4'],
             'idSucursal'=>$request['centroLiqui'],
             'image'=>$request['imageProducto'],
-            'fechaDeVigencia'=>$request['creadoEn']
+            'fechaDeVigencia'=>$request['creadoEn'],
+            'idRam'=>$request['optimizaRam'],
+            'idDisco'=>$request['optimizaDisco']
         ]);
         $reserva->save();
 

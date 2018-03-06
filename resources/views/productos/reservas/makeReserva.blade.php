@@ -95,21 +95,19 @@
                                 <div class="container">
                                     <div class="input-field col s12 m12 l12 xl12">
                                         <div class="input-field col s12">
-                                            <select>
-                                                <option value="{{$producto->precioPromoEs + 0}}" disabled selected>Selecciona Capacidad</option>
-                                                <option value="{{$producto->precioPromoEs + 50}}">8GB</option>
-                                                <option value="{{$producto->precioPromoEs + 55}}">16GB</option>
-                                            </select>
-                                            <label>RAM</label>
+                                            <div class="input-field col s6 m6 l6 xl6">
+                                                {{ Form::label('optimizaRam', 'RAM', ['class'=>'input-group-addon']) }}
+                                                <br>
+                                                {!! Form::select('optimizaRam',$ram,null,['class'=>'js-example-basic-single form-control ',"describedby"=>"basic-addon1",'required', 'id'=>'department', 'onchange'=>'GetMunicipios(this)', 'style'=>'width: 100%']) !!}
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="input-field col s12 m12 l12 xl12">
-                                        <select>
-                                            <option value="{{$producto->precioPromoEs + 0}}" disabled selected>Selecciona Capacidad</option>
-                                            <option value="{{$producto->precioPromoEs + 50}}">500GB</option>
-                                            <option value="{{$producto->precioPromoEs + 50}}">1TB</option>
-                                        </select>
-                                        <label>Disco Duro</label>
+                                        <div class="input-field col s6 m6 l6 xl6">
+                                            {{ Form::label('optimizaDisco', 'Almacenamiento', ['class'=>'input-group-addon']) }}
+                                            <br>
+                                            {!! Form::select('optimizaDisco',$disco,null,['class'=>'js-example-basic-single form-control ',"describedby"=>"basic-addon1",'required', 'id'=>'department', 'onchange'=>'GetMunicipios(this)', 'style'=>'width: 100%']) !!}
+                                        </div>
                                     </div>
                                     <div class="input-field col s12 m12 l12 xl12">
                                         <p>ACTUALIZAR A WINDOWS 10</p><p class="montserrat-extra-light">Licencia Original</p><p class="montserrat-extra-light">$50</p>

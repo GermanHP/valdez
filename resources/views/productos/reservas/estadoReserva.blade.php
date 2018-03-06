@@ -38,6 +38,15 @@
                     <li><h4 class="text-center">{{$reserva->spec3}}</h4></li>
                     <br>
                     <li><h4 class="text-center">{{$reserva->spec4}}</h4></li>
+                    <br>
+                    <li><h4 class="text-center">Precio Final:
+                            @if($reserva->idRam!=1 || $reserva->idDisco!=1)
+                                ${{$reserva->precio + 50}}
+                                @else
+                            ${{$reserva->precio}}
+                                @endif
+                        </h4>
+                    </li>
                 </ul>
             </div>
         </div>

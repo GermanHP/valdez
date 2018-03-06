@@ -82,8 +82,23 @@
                         <h4><strong>Empresa: </strong>{{$candidatos->empresa2}}</h4>
                         <br>
                         <h4><strong>Descripción de la experiencia: </strong>{{$candidatos->experiencia2}}</h4>
+                        <br>
+                        <h3><strong>PUESTO AL QUE APLICA</strong></h3>
+                        <hr class="divider">
+                        <h4><strong>
+                                @if($candidatos->id_puesto==1)
+                                    Ejecutivo de Ventas
+                                    @elseif($candidatos->id_puesto==2)
+                                Supervisor de Ventas
+                                    @elseif($candidatos->id_puesto==3)
+                                Técnico en Hardware
+                                    @else
+                                Técnico en Software
+                                    @endif
+                            </strong>
+                        </h4>
                     </div>
-                    <a class="btn" href="{{ route('vistaHTMLPDF',['descargar'=>'pdf']) }}">Descargar PDF</a>
+                    <a class="btn" href="{{ url('/pdf') }}">Descargar PDF</a>
                 </div>
             </div>
         </main>

@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Reservas extends Model
 {
     protected $fillable = ['estado', 'nombreCliente', 'apellidoCliente', 'DUICliente', 'emailCliente', 'telefonoCliente',
-        'nombreProducto', 'precio', 'fabricante', 'idSucursal', 'image', 'mensajeOpcional', 'spec1', 'spec2', 'spec3', 'spec4', 'fechaDeVigencia'];
+        'nombreProducto', 'precio', 'fabricante', 'idSucursal', 'image', 'mensajeOpcional', 'spec1', 'spec2', 'spec3', 'spec4', 'fechaDeVigencia',
+        'idRam', 'idDisco'];
     protected $dates = ['deleted_at'];
 
     public function reservaUsuarios(){

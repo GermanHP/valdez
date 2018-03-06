@@ -68,6 +68,8 @@ Route::group(['middleware' => ['auth']], function (){
     Route::get('CambiarContraseña','UsuariosController@cambiarPassword')->name('Password.cambiar');
     Route::post('CambiarPassword','UsuariosController@guardarPassword')->name('Password.guardar.nuevo');
 
+
+    Route::get('pdf', 'PdfController@crearPdf');
     Route::get('vista-html-pdf', array(
         'as' => 'vistaHTMLPDF',
         'uses' => 'EmpleosController@vistaHTMLPDF'

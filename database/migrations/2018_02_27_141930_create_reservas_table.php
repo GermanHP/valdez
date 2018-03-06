@@ -22,10 +22,12 @@ class CreateReservasTable extends Migration
             $table->string('emailCliente');
             $table->string('telefonoCliente');
             $table->string('nombreProducto');
-            $table->string('mensajeOpcional')->nullable();
+            $table->string('mensajeOpcional');
             $table->string('precio');
             $table->string('fabricante');
             $table->integer('idSucursal');
+            $table->integer('idRam');
+            $table->integer('idDisco');
             $table->string('spec1');
             $table->string('spec2');
             $table->string('spec3');
