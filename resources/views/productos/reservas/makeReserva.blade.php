@@ -22,6 +22,7 @@
                     @endif
                 </div>
                 @if($producto->category_id==1)
+                    <!-- Modal Trigger -->
                 <div class="col s12 m12 l12 xl12 center-align">
                     <a href="#modalOptimizar" class="waves-effect waves-light btn nav-color pulse modal-trigger">ESTE PRODUCTO SE PUEDE OPTIMIZAR</a>
                 </div>
@@ -85,7 +86,6 @@
                        Al dar click en RESERVAR estás aceptando ésta condición.</blockquote>
                     </div>
 
-                    <!-- Modal Trigger -->
                     <!-- Modal Structure -->
                     <div id="modalOptimizar" class="modal">
                         <div class="modal-content">
