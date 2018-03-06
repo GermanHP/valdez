@@ -1,0 +1,306 @@
+/* Custom Stylesheet */
+@font-face {
+    font-family: Montserrat;
+    font-style: all;
+    font-weight: normal;
+    src: url("../fonts/montserrat/Montserrat-Light.otf");
+}
+
+@font-face {
+    font-family: Montserrat Extra Light;
+    font-style: all;
+    font-weight: normal;
+    src: url("../fonts/montserrat/Montserrat-SemiBold.otf");
+}
+
+@font-face {
+  font-family: Evogria;
+  font-style: all;
+  font-weight: normal;
+  src: url("../fonts/montserrat/Evogria-Italic.otf");
+}
+
+.evogria{
+  font-family: Evogria;
+}
+
+a#logo-container2{
+    margin-top: -25px;
+}
+
+.montserrat-extra-light{
+  font-family: "Montserrat Extra Light";
+}
+
+h1, h2, h3, h4, h5, h6, p, a{
+  font-family: Montserrat;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 350px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+div#liquidacionButton{
+  margin-top: 50%;
+}
+
+/*clases para efecto hover en las ubicaciones*/
+div#sucursales{
+  background-color: #524d94    ;
+}
+
+.nav-color{
+    background-color: #524d94;
+}
+
+.detalle-producto{
+    width: auto;
+    height: auto;
+}
+
+img#purple{
+  margin-bottom: -130px;
+}
+
+div#consulta{
+  margin-top: -20px;
+}
+
+.div-imagen {
+  display:inline-block;
+  position:relative;
+}
+
+.div-imagen > div {
+  position: fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+  padding:10px;
+  margin:0;
+}
+
+.desvanecer:hover {
+  opacity: 0.09;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.ajustar-texto{
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.desvanecer2:hover {
+  background-color: white;
+  opacity: 0.09;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.card-fix{
+  width: 400px;
+  height: auto;
+}
+
+.card-fix2{
+    width: 300px;
+    height: auto;
+}
+
+.card-fix3{
+    width: 200px;
+    height: auto;
+}
+
+.tachado{
+  text-decoration: line-through;
+}
+
+.icon-img{
+  width: 70px;
+  height: auto;
+}
+
+a#fab-menu{
+  margin-top: -50px;
+}
+
+.apple{
+    width: 100px;
+    height: auto;
+}
+
+.foo-img{
+    width: 350px;
+    height: auto;
+}
+
+.ubicaciones{
+    width: 300px;
+    height: auto;
+}
+
+div#sucursales{
+    text-align: center;
+}
+
+h5#centro-liquidacion{
+    display: inline-block;
+    position: relative;
+}
+
+h5#centro-liquidacion::after, h5#centro-liquidacion::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: currentColor;
+    top: 0.6em;
+}
+
+h5#centro-liquidacion::before{
+    left: -110px;
+}
+
+h5#centro-liquidacion::after{
+    right: -110px;
+}
+
+.image-liquidacion {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-liquidacion2{
+    width: 85%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1d2124;
+    opacity: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.card-image:hover .overlay {
+    height: 100%;
+    opacity: 0.8;
+}
+
+.text {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+div#busqueda{
+    background-color: white;
+    border-radius: 8px;
+}
+
+div#filtrar{
+    margin-top: -70px;
+}
+
+.current-link{
+    border-bottom-style: solid;
+    border-bottom-width: medium;
+    border-color: #00acc1;
+}
+
+a#logo-container{
+    margin-top: 6px;
+}
+
+.ajustar-sugeridos{
+    width: 100px;
+    height: auto;
+}
+
+.ubicar-fix{
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+img#bannerRestablecer{
+    width: 100%;
+    height: auto;
+}
