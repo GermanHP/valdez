@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\MakeReservaRequest;
 use App\Models\Bitacora;
 use App\Models\Reservas;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
@@ -59,7 +60,8 @@ class MakeReservaController extends Controller
             'image'=>$request['imageProducto'],
             'fechaDeVigencia'=>$request['creadoEn'],
             'idRam'=>$request['optimizaRam'],
-            'idDisco'=>$request['optimizaDisco']
+            'idDisco'=>$request['optimizaDisco'],
+            'deleted_at'=>Carbon::now('America/El_Salvador')->addMinute(2)
         ]);
         $reserva->save();
 

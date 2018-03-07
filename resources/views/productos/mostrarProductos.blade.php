@@ -169,6 +169,7 @@
 
                 @endforeach
             </div>
+
             <ul class="pagination">
                 <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
                 <li class="waves-effect"><a href="{{url('productos?page=1')}}">1</a></li>
@@ -179,8 +180,8 @@
                 <li class="waves-effect"><a href="#!">5</a></li>
                 -->
                 <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-
             </ul>
+
         </div>
     </div>
 </div>

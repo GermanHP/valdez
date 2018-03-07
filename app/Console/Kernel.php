@@ -25,7 +25,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('CronJob:Reserva')->cron('0 */8 * * *');
+        $schedule->command('CronJob:Reserva')
+            ->cron('0 */8 * * *');
     }
 
     /**
@@ -33,6 +34,7 @@ class Kernel extends ConsoleKernel
      *
      * @return void
      */
+    //debes agregar y ejecutar crontab en el servidor para dar inicio al cron
     protected function commands()
     {
         $this->load(__DIR__.'/Commands/CronJobReserva.php');
