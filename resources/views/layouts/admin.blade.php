@@ -62,8 +62,7 @@
         <div class="mdl-layout__drawer">
             <span class="mdl-layout-title">
                 <br>
-                <img class="responsive-img" src="img/logos/logo_valdez.png"
-                     alt="" height="50" width="170">
+                {{Form::image('/img/logos/logo_valdez.png','Valdez Store',['class'=>'responsive-img', 'id'=>'Valdez Store', 'height'=>'50', 'width'=>'170'])}}
             </span>
 
             <nav class="mdl-navigation">

@@ -24,12 +24,12 @@ class MakeReservaRequest extends FormRequest
     public function rules()
     {
         return [
-            'nombreCliente'=>'required|string',
-            'apellidoCliente'=>'required|string',
-            'DUICliente'=>'required|string',
-            'emailCliente'=>'required|string',
-            'telefonoCliente'=>'required|string',
-            'mensajeOpcional'=>'required|string'
+            'nombreCliente'=>'string',
+            'apellidoCliente'=>'string',
+            'DUICliente'=>'unique:DUICliente,DUICliente|size:9|regex:/^([0-9])+$/i',
+            'emailCliente'=>'email',
+            'telefonoCliente'=>'numeric|digits:8|min:0|integer',
+            'mensajeOpcional'=>'string'
         ];
     }
 }

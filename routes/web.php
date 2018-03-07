@@ -39,7 +39,7 @@ Route::get('/detalles', 'ProductosController@detalleProducto');
 
 /*mostrar un producto en específico */
 Route::get('/productos/{url}', ['as'=>'productos.detalleProducto', 'uses' => 'ProductosController@detalleProducto'])->where('url', '[\w\d\-\_]+');
-Route::resource('reserva', 'GestionReservasController');
+Route::resource('reservado', 'MakeReservaController');
 Route::get('/reservar/{url}', ['as' => 'reservas.makeReserva', 'uses' => 'GestionReservasController@create'])->where('url', '[\w\d\-\_]+');
 Route::get('/optimizar', 'ReservasController@optimizarProducto');
 Route::get('/liquidaciones', 'FacebookFeedController@feed');
@@ -69,7 +69,7 @@ Route::group(['middleware' => ['auth']], function (){
     Route::post('CambiarPassword','UsuariosController@guardarPassword')->name('Password.guardar.nuevo');
 
 
-    Route::get('pdf', 'PdfController@crearPdf');
+    Route::get('pdf', 'PdfController@crearP');
     Route::get('vista-html-pdf', array(
         'as' => 'vistaHTMLPDF',
         'uses' => 'EmpleosController@vistaHTMLPDF'

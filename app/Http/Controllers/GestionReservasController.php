@@ -56,71 +56,7 @@ class GestionReservasController extends Controller
      */
     public function store(Request $request)
     {
-        /*
-        $user = new User;
-        $user->fill([
-           'nombre'=>$request['nombres'],
-            'apellido'=>$request['apellidos'],
-            'DUI'=>$request['numeroDUI'],
-            'fechaDeNacimiento'=>$request['fechaNacimiento'],
-            'genero'=>$request['genero'],
-            'email'=>$request['correoReserva'],
-            'telefono'=>$request['telefonoCliente'],
-            'password'=>bcrypt('vivelaexperiencia2018'),
-            'resetPassword'=>1
-        ]);
-        $user->save();
 
-        $rolUsuario = new Rolessistemausuario();
-        $rolUsuario->fill([
-            'idRolSistema'=>4,
-            'idUsuario'=>$user->id,
-        ]);
-        $rolUsuario->save();
-        */
-
-        $reserva = new Reservas();
-        $reserva->fill([
-            'estado'=>1,
-            'nombreCliente'=>$request['nombres'],
-            'apellidoCliente'=>$request['apellidos'],
-            'DUICliente'=>$request['numeroDUI'],
-            'emailCliente'=>$request['correoReserva'],
-            'telefonoCliente'=>$request['telefonoCliente'],
-            'nombreProducto'=>$request['nombreProducto'],
-            'precio'=>$request['precioProducto'],
-            'fabricante'=>$request['fabricanteProducto'],
-            'mensajeOpcional'=>$request['mensaje'],
-            'spec1'=>$request['caract1'],
-            'spec2'=>$request['caract2'],
-            'spec3'=>$request['caract3'],
-            'spec4'=>$request['caract4'],
-            'idSucursal'=>$request['centroLiqui'],
-            'image'=>$request['imageProducto'],
-            'fechaDeVigencia'=>$request['creadoEn'],
-            'idRam'=>$request['optimizaRam'],
-            'idDisco'=>$request['optimizaDisco']
-        ]);
-        $reserva->save();
-
-        $bitacora = new Bitacora();
-        $bitacora->fill([
-           'idUusario'=>Reservas::all('nombreCliente'),
-            'accion'=>'Reserva',
-            'otraInformacion'=>'Reserva Correcta'
-        ]);
-        /*
-        foreach ($request['centroLiqui']as $centro){
-            $centroReserva = new ReservaCentro();
-            $centroReserva->fill([
-                "idCentro"=>$centro,
-                "idReserva"=>$reserva->id,
-            ]);
-            $centroReserva->save();
-        }
-*/
-        Session::flash('Reserva Realizada con Éxito', 'success');
-        return view('productos.reservas.estadoReserva', compact('reserva'));
     }
 
     /**

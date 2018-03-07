@@ -27,17 +27,17 @@
                     <a href="#modalOptimizar" class="waves-effect waves-light btn nav-color pulse modal-trigger">ESTE PRODUCTO SE PUEDE OPTIMIZAR</a>
                 </div>
                 @endif
-                {!! Form::open(['route' => ['reserva.store'], 'method'=>'POST', 'data-parsley-validate' => '', 'files' => true]) !!}
+                {!! Form::open(['route' => ['reservado.store'], 'method'=>'POST', 'data-parsley-validate' => '', 'files' => true]) !!}
 
                 <div class="container">
                     <div class="input-field col s12 m12 l12 xl12">
                         {{Form::label('Nombres',null,['class'=>'validate'])}}
-                        {{Form::text('nombres',null, ['class'=>'validate', 'placeholder'=>'Nombres'])}}
+                        {{Form::text('nombres',null, ['class'=>'validate', 'placeholder'=>'Nombres', 'required' => ''])}}
                     </div>
 
                     <div class="input-field col s12 m12 l12 xl12">
                         {{Form::label('Apellidos',null,['class'=>'validate'])}}
-                        {{Form::text('apellidos',null, ['class'=>'validate', 'placeholder'=>'Apellidos'])}}
+                        {{Form::text('apellidos',null, ['class'=>'validate', 'placeholder'=>'Apellidos', 'required' => ''])}}
                     </div>
 
                     <div class="input-field col s12 m12 l12 xl12">
@@ -70,8 +70,8 @@
                     </div>
 
                     <div class="input-field col s12 m12 l12 xl12">
-                        {{Form::label('Mensaje (Opcional)',null,['class'=>'validate'])}}
-                        {{Form::textarea('mensaje',null, ['class'=>'validate materialize-textarea', 'placeholder'=>'Mensaje (Opcional)'])}}
+                        {{Form::label('Describenos tu necesidad',null,['class'=>'validate'])}}
+                        {{Form::textarea('mensaje',null, ['class'=>'validate materialize-textarea', 'placeholder'=>'Descripción'])}}
                     </div>
 
                     <div class="input-field col s6 m6 l6 xl6">

@@ -26,4 +26,6 @@ class ProductosController extends Controller
 
         return view('productos.smartPhones.showSmartPhones', compact('smartPhones'));
     }
+
+
 }
