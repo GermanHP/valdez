@@ -10,19 +10,20 @@
 <br>
 <div class="input-group input-group-lg">
     {{ Form::label('url', 'https://www.valdezstore.com/productos/', ['class'=>'input-group-addon']) }}
-    {{ Form::text('enlace', null, array('class' => 'form-control', 'required' => '', 'minlength' => '5', 'maxlength' => '255', 'placeholder'=>'seguir-el-formato-de-guiónes-entre-palabras') ) }}
+    {{ Form::text('enlace', null, array('class' => 'form-control', 'required' => '', 'minlength' => '5',
+    'maxlength' => '255', 'placeholder'=>'seguir-el-formato-de-guiónes-entre-palabras') ) }}
 </div>
 <br>
 <div class="input-group input-group-lg">
     {{ Form::label('category_id', 'Categoría:', ['class'=>'input-group-addon']) }}
-    {!! Form::select('category_id',$categories,null,['class'=>'form-control ',"describedby"=>"basic-addon1",'required', 'id'=>'department', 'onchange'=>'GetMunicipios(this)', 'style'=>'width: 100%']) !!}
-
+    {!! Form::select('category_id',$categories,null,['class'=>'form-control ',"describedby"=>"basic-addon1",'required',
+    'id'=>'department', 'onchange'=>'GetMunicipios(this)', 'style'=>'width: 100%']) !!}
 </div>
 <br>
 <div class="input-group input-group-lg">
     {{ Form::label('category_client_id', 'Categoría Cliente:', ['class'=>'input-group-addon']) }}
-    {!! Form::select('category_client_id',$clienteCat,null,['class'=>'form-control ',"describedby"=>"basic-addon1",'required', 'id'=>'department', 'onchange'=>'GetMunicipios(this)', 'style'=>'width: 100%']) !!}
-
+    {!! Form::select('category_client_id',$clienteCat,null,['class'=>'form-control ',"describedby"=>"basic-addon1",
+    'required', 'id'=>'department', 'onchange'=>'GetMunicipios(this)', 'style'=>'width: 100%']) !!}
 </div>
 <br>
 <div class="input-group input-group-lg">
@@ -43,7 +44,6 @@
         @foreach($centros as $centro)
             <option value='{{ $centro->id }}'>{{ $centro->nombre }}</option>
         @endforeach
-
     </select>
 </div>
 <br>

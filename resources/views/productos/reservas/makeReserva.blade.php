@@ -41,7 +41,7 @@
                     </div>
 
                     <div class="input-field col s12 m12 l12 xl12">
-                        {{Form::text('numeroDUI',null,['class'=>'validate','pattern'=>'[0-9]{9}','placeholder'=>'Numero de DUI sin guiones.', 'maxlength'=>'9'])}}
+                        {{Form::text('numeroDUI',null,['class'=>'validate','pattern'=>'[0-9]{9}','placeholder'=>'Numero de DUI sin guiones.', 'maxlength'=>'9', 'required' => ''])}}
                         <label for="numeroDUI">DUI</label>
                     </div>
 

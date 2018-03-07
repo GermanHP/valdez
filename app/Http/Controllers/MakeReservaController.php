@@ -39,7 +39,6 @@ class MakeReservaController extends Controller
      */
     public function store(MakeReservaRequest $request)
     {
-
         $reserva = new Reservas();
         $reserva->fill([
             'estado'=>1,

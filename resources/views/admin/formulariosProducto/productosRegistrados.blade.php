@@ -44,7 +44,23 @@
                 </td>
             </tr>
                 @endforeach
-            {{$productos->links()}}
+            @if ($productos->hasPages())
+                <ul class="pagination">
+                    {{-- Previous Page Link --}}
+                    @if ($productos->onFirstPage())
+                        <li class="page-item disabled"><span class="page-link">@lang('pagination.previous')</span></li>
+                    @else
+                        <li class="page-item"><a class="page-link" href="{{ $productos->previousPageUrl() }}" rel="prev">@lang('pagination.previous')</a></li>
+                    @endif
+
+                    {{-- Next Page Link --}}
+                    @if ($productos->hasMorePages())
+                        <li class="page-item"><a class="page-link" href="{{ $productos->nextPageUrl() }}" rel="next">@lang('pagination.next')</a></li>
+                    @else
+                        <li class="page-item disabled"><span class="page-link">@lang('pagination.next')</span></li>
+                    @endif
+                </ul>
+            @endif
             </tbody>
         </table>
     </div>

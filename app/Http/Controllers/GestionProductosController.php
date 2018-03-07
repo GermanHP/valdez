@@ -95,6 +95,7 @@ class GestionProductosController extends Controller
 
         Session::flash('succes', 'Producto Registrado Exitosamente');
 
+
         return redirect()->back();
     }
 
