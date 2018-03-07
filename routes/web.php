@@ -38,9 +38,13 @@ Route::get('/smartphones', 'ProductosController@showSmartphones');
 Route::get('/detalles', 'ProductosController@detalleProducto');
 
 /*mostrar un producto en específico */
-Route::get('/productos/{url}', ['as'=>'productos.detalleProducto', 'uses' => 'ProductosController@detalleProducto'])->where('url', '[\w\d\-\_]+');
+Route::get('/productos/{url}', ['as'=>'productos.detalleProducto', 'uses'
+=> 'ProductosController@detalleProducto'])->where('url', '[\w\d\-\_]+');
+
 Route::resource('reservado', 'MakeReservaController');
-Route::get('/reservar/{url}', ['as' => 'reservas.makeReserva', 'uses' => 'GestionReservasController@create'])->where('url', '[\w\d\-\_]+');
+
+Route::get('/reservar/{url}', ['as' => 'reservas.makeReserva', 'uses'
+=> 'GestionReservasController@create'])->where('url', '[\w\d\-\_]+');
 Route::get('/optimizar', 'ReservasController@optimizarProducto');
 Route::get('/liquidaciones', 'FacebookFeedController@feed');
 Route::get('/quienes-somos', 'HomeController@esencia');

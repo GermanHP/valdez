@@ -26,6 +26,7 @@ class GestionReservasController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    //se obtienen todas las reservas realizadas y se paginaa a 5 por vista
     public function index()
     {
         $reservas = Reservas::orderBy('id', 'DESC')->simplePaginate(5);
@@ -38,6 +39,7 @@ class GestionReservasController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    //se lista las opciones de optimización, los centros de reserva, las características del producto y se devuelve la vista para realizar la reserva
     public function create($url)
     {
         $ram = RAM::pluck('nombre', 'id');
@@ -65,6 +67,7 @@ class GestionReservasController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    //se muestra los detalles de la reserva
     public function show($id)
     {
         $reserva = Reservas::find($id);
@@ -78,6 +81,7 @@ class GestionReservasController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    //se llama lo almacenado del producto y se devuelve la vista con los datos a ser actualizados
     public function edit($id)
     {
         $productos = Producto::find($id);

@@ -29,7 +29,8 @@
             <div class="col s6 m6 l6 xl6">
                 <br><br>
                 @if(!empty($productos->image))
-                <img class="responsive-img" src="{{asset('img/enStock/img' . $productos->image)}}" alt="{{$productos->nombre}}">
+                <img class="responsive-img" src="{{asset('img/enStock/img' . $productos->image)}}"
+                     alt="{{$productos->nombre}}">
                 @endif
             </div>
             <div class="col s6 m6 l6 xl6">
@@ -82,12 +83,10 @@
                     </div>
                 </div>
                 <div class="col s12 m12 l12 xl12">
-                    <a class="btn btn-large nav-color" href="{{route('reservas.makeReserva', $productos->url)}}">RESERVAR</a>
+                    <a class="btn btn-large nav-color" href="{{route('reservas.makeReserva', $productos->url)}}">
+                        RESERVAR
+                    </a>
                 </div>
-                <!--
-                <div class="col s12 m12 l6 xl6">
-                    <a class="btn modal-trigger black" href="#modalReserva">IR A TIENDA</a>
-                </div> -->
             </div>
         </div>
     </div>

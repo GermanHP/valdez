@@ -8,7 +8,8 @@
                 <div class="row center">
                     <form>
                         <div class="input-field container" id="busqueda">
-                            <input name="search" class="center" id="search" type="search" required placeholder="BUSCA POR MARCA, PRODUCTO O CATEGORIA">
+                            <input name="search" class="center" id="search" type="search"
+                                   required placeholder="BUSCA POR MARCA, PRODUCTO O CATEGORIA">
                             <i class="material-icons">search</i>
                         </div>
                     </form>
@@ -18,7 +19,6 @@
         <div class="parallax"><img src="img/ubicaciones/ba-ubicaciones.png" alt="Unsplashed background img 3"></div>
     </div>
 <div id="home">
-
     <br>
     <div class="container" id="filtrar">
         <div class="row">
@@ -121,16 +121,18 @@
                                 <div class="card card-fix">
                                     <div class="card-image">
                                         @if(!empty($sugerencia->image))
-                                            <img src="{{asset('img/enStock/img' . $sugerencia->image)}}" alt="Liquidaciones"
-                                                 class="responsive-img image-liquidacion2">
+                                            <img src="{{asset('img/enStock/img' . $sugerencia->image)}}"
+                                                 alt="Liquidaciones" class="responsive-img image-liquidacion2">
                                         @endif
                                         <div class="overlay">
                                             <div class="text center-align">
-                                                <a href="{{route('reservas.makeReserva', $sugerencia->url)}}" class="yellow-text">RESERVAR</a>
+                                                <a href="{{route('reservas.makeReserva', $sugerencia->url)}}"
+                                                   class="yellow-text">RESERVAR</a>
                                                 <hr class="divider">
                                                 <a href="#sucursales" class="yellow-text">IR A TIENDA</a>
                                                 <hr class="divider">
-                                                <a href="{{ route('productos.detalleProducto', $sugerencia->url) }}" class="yellow-text">VER DETALLES</a>
+                                                <a href="{{ route('productos.detalleProducto', $sugerencia->url) }}"
+                                                   class="yellow-text">VER DETALLES</a>
                                             </div>
                                         </div>
                                     </div>
@@ -159,11 +161,28 @@
                                                 </div>
                                             </div>
                                             <div class="col s6 m6 l6 xl6">
-                                                <p><strong><a href="#">+info</a></strong></p>
-                                                <h6 class="tachado"><strong>${{$sugerencia->precioEs}}</strong></h6>
-                                                <h5 class="red-text"><strong>${{$sugerencia->precioPromoEs}}</strong></h5>
+                                                <p>
+                                                    <strong>
+                                                        <a href="#">
+                                                            +info
+                                                        </a>
+                                                    </strong>
+                                                </p>
+                                                <h6 class="tachado">
+                                                    <strong>
+                                                        ${{$sugerencia->precioEs}}
+                                                    </strong>
+                                                </h6>
+                                                <h5 class="red-text">
+                                                    <strong>
+                                                        ${{$sugerencia->precioPromoEs}}
+                                                    </strong>
+                                                </h5>
                                                 <br><br><br>
-                                                <a class="btn modal-trigger black" href="{{route('reservas.makeReserva', $sugerencia->url)}}">Reservar</a>
+                                                <a class="btn modal-trigger black"
+                                                   href="{{route('reservas.makeReserva', $sugerencia->url)}}">
+                                                    Reservar
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -205,11 +224,17 @@
                             @endif
                             <div class="overlay">
                                 <div class="text center-align">
-                                    <a href="{{route('reservas.makeReserva', $apple->url)}}" class="yellow-text">RESERVAR</a>
+                                    <a href="{{route('reservas.makeReserva', $apple->url)}}" class="yellow-text">
+                                        RESERVAR
+                                    </a>
                                     <hr class="divider">
-                                    <a href="#sucursales" class="yellow-text">IR A TIENDA</a>
+                                    <a href="#sucursales" class="yellow-text">
+                                        IR A TIENDA
+                                    </a>
                                     <hr class="divider">
-                                    <a href="{{ route('productos.detalleProducto', $apple->url) }}" class="yellow-text">VER DETALLES</a>
+                                    <a href="{{ route('productos.detalleProducto', $apple->url) }}" class="yellow-text">
+                                        VER DETALLES
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -242,8 +267,14 @@
                 <h4>SUGERIDOS PARA TI</h4>
             </div>
             <div class="col s6 m6 l6 xl6">
-                <a class="black-text" href="{{url('/productos')}}"><h5 class="right-align">VER TODO<i
-                                class="material-icons">chevron_right</i></h5></a>
+                <a class="black-text" href="{{url('/productos')}}">
+                    <h5 class="right-align">
+                        VER TODO
+                        <i class="material-icons">
+                            chevron_right
+                        </i>
+                    </h5>
+                </a>
             </div>
         </div>
 
@@ -258,12 +289,14 @@
                                 <div class="card card-fix2">
                                     <div class="card-image">
                                         @if(!empty($sugerencia->image))
-                                            <img src="{{asset('img/enStock/img' . $sugerencia->image)}}" alt="Liquidaciones"
+                                            <img src="{{asset('img/enStock/img' . $sugerencia->image)}}"
+                                                 alt="Liquidaciones"
                                                  class="responsive-img ajustar-sugeridos">
                                         @endif
                                         <div class="overlay">
                                             <div class="text center-align">
-                                                <a href="{{route('reservas.makeReserva', $sugerencia->url)}}" class="yellow-text">RESERVAR</a>
+                                                <a href="{{route('reservas.makeReserva', $sugerencia->url)}}"
+                                                   class="yellow-text">RESERVAR</a>
                                                 <hr class="divider">
                                                 <a href="#" class="yellow-text">IR A TIENDA</a>
                                                 <hr class="divider">
@@ -276,15 +309,43 @@
                                         <h5 class="montserrat-extra-light">{{$sugerencia->nombre}}</h5>
                                         <div class="row">
                                             <div class="col s6 m6 l6 xl6">
-                                                <p><strong>{{$sugerencia->caracteristica1}}</strong></p>
-                                                <p><strong>{{$sugerencia->caracteristica2}}</strong></p>
-                                                <p><strong>{{$sugerencia->caracteristica3}}</strong></p>
-                                                <p><strong>{{$sugerencia->caracteristica4}}</strong></p>
+                                                <p>
+                                                    <strong>
+                                                        {{$sugerencia->caracteristica1}}
+                                                    </strong>
+                                                </p>
+                                                <p>
+                                                    <strong>
+                                                        {{$sugerencia->caracteristica2}}
+                                                    </strong>
+                                                </p>
+                                                <p>
+                                                    <strong>
+                                                        {{$sugerencia->caracteristica3}}
+                                                    </strong>
+                                                </p>
+                                                <p>
+                                                    <strong>
+                                                        {{$sugerencia->caracteristica4}}
+                                                    </strong>
+                                                </p>
                                             </div>
                                             <div class="col s6 m6 l6 xl6">
-                                                <p><strong><a href="#">+info</a></strong></p>
-                                                <h6 class="tachado"><strong>Antes: ${{$sugerencia->precioEs}}</strong></h6>
-                                                <h5 class="red-text"><strong>Precio: ${{$sugerencia->precioPromoEs}}</strong></h5>
+                                                <p>
+                                                    <strong>
+                                                        <a href="#">+info</a>
+                                                    </strong>
+                                                </p>
+                                                <h6 class="tachado">
+                                                    <strong>
+                                                        Antes: ${{$sugerencia->precioEs}}
+                                                    </strong>
+                                                </h6>
+                                                <h5 class="red-text">
+                                                    <strong>
+                                                        Precio: ${{$sugerencia->precioPromoEs}}
+                                                    </strong>
+                                                </h5>
                                             </div>
                                         </div>
                                         <h6>Disponible en:</h6>
@@ -333,11 +394,17 @@
                         @endif
                         <div class="overlay">
                             <div class="text center-align">
-                                <a href="{{route('reservas.makeReserva', $telefonos->url)}}" class="yellow-text">RESERVAR</a>
+                                <a href="{{route('reservas.makeReserva', $telefonos->url)}}" class="yellow-text">
+                                    RESERVAR
+                                </a>
                                 <hr class="divider">
-                                <a href="#sucursales" class="yellow-text">IR A TIENDA</a>
+                                <a href="#sucursales" class="yellow-text">
+                                    IR A TIENDA
+                                </a>
                                 <hr class="divider">
-                                <a href="{{ route('productos.detalleProducto', $telefonos->url) }}" class="yellow-text">VER DETALLES</a>
+                                <a href="{{ route('productos.detalleProducto', $telefonos->url) }}" class="yellow-text">
+                                    VER DETALLES
+                                </a>
                             </div>
                         </div>
                     </div>

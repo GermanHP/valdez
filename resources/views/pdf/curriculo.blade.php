@@ -77,8 +77,13 @@
         <main class="demo-main mdl-layout__content">
             <div class="demo-container mdl-grid">
                 <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-                <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-                    <h1 class="text-center"><strong>{{$data[0]->nombreCandidato}} {{$data[0]->apellidoCandidato}}</strong></h1>
+                <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800
+                mdl-cell mdl-cell--8-col">
+                    <h1 class="text-center">
+                        <strong>
+                            {{$data[0]->nombreCandidato}} {{$data[0]->apellidoCandidato}}
+                        </strong>
+                    </h1>
                     <div class="text-center">
                         @if(!empty($data[0]->foto))
                             <img src="{{asset('img/candidatos/foto' . $data[0]->foto)}}" alt="Apple"

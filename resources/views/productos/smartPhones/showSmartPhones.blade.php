@@ -61,7 +61,8 @@
                                 <div class="card card-fix">
                                     <div class="card-image">
                                         @if(!empty($smartphone->image))
-                                            <img src="{{asset('img/enStock/img' . $smartphone->image)}}" alt="Liquidaciones" class="image-liquidacion">
+                                            <img src="{{asset('img/enStock/img' . $smartphone->image)}}"
+                                                 alt="Liquidaciones" class="image-liquidacion">
                                         @endif
                                         <div class="overlay">
                                             <div class="text center-align">
@@ -69,7 +70,8 @@
                                                 <hr class="divider">
                                                 <a href="#sucursales" class="yellow-text">IR A TIENDA</a>
                                                 <hr class="divider">
-                                                <a href="{{ route('productos.detalleProducto', $smartphone->url) }}" class="yellow-text">VER DETALLES</a>
+                                                <a href="{{ route('productos.detalleProducto', $smartphone->url) }}"
+                                                   class="yellow-text">VER DETALLES</a>
                                             </div>
                                         </div>
                                     </div>
@@ -99,10 +101,20 @@
                                             </div>
                                             <div class="col s6 m6 l6 xl6">
                                                 <p><strong><a href="#">+info</a></strong></p>
-                                                <h6 class="tachado"><strong>Antes: ${{$smartphone->precioEs}}</strong></h6>
-                                                <h5 class="red-text"><strong>Ahora: ${{$smartphone->precioPromoEs}}</strong></h5>
+                                                <h6 class="tachado">
+                                                    <strong>
+                                                        Antes: ${{$smartphone->precioEs}}
+                                                    </strong>
+                                                </h6>
+                                                <h5 class="red-text">
+                                                    <strong>
+                                                        Ahora: ${{$smartphone->precioPromoEs}}
+                                                    </strong>
+                                                </h5>
                                                 <br><br><br>
-                                                <a class="btn modal-trigger black" href="{{url('/reserva')}}">Reservar</a>
+                                                <a class="btn modal-trigger black" href="{{url('/reserva')}}">
+                                                    Reservar
+                                                </a>
                                             </div>
                                         </div>
                                     </div>

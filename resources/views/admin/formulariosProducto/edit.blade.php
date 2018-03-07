@@ -10,7 +10,6 @@
 
             {!! Form::model($productos, ['route' => ['producto.update', $productos->id], 'method' => 'PUT']) !!}
 
-
             <div class="col-xs-12 col-md-12 col-md-12 col-lg-12">
                 <img src="{{asset('img/enStock/img' . $productos->image)}}" alt="Apple"
                      class="responsive-img text-center" height="250" width="350">

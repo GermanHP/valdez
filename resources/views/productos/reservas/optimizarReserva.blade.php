@@ -7,7 +7,8 @@
                 <br>
 
                 <div class="col s12 m12 l12 xl12">
-                    <img src="img/arrivals/laptop2arrival.png" alt="Producto a Reservar" class="responsive-img center-block" width="550">
+                    <img src="img/arrivals/laptop2arrival.png" alt="Producto a Reservar"
+                         class="responsive-img center-block" width="550">
                 </div>
                 <div class="container">
                     <div class="input-field col s12 m12 l12 xl12">
@@ -31,7 +32,8 @@
                         <label>Disco Duro</label>
                     </div>
                     <div class="input-field col s6 m6 l6 xl6">
-                        <p>ACTUALIZAR A WINDOWS 10</p><p class="montserrat-extra-light">Licencia Original</p><p class="montserrat-extra-light">$50</p>
+                        <p>ACTUALIZAR A WINDOWS 10</p><p class="montserrat-extra-light">Licencia Original</p><p
+                                class="montserrat-extra-light">$50</p>
                         <select>
                             <option value="0" disabled selected>No</option>
                             <option value="1">Sí</option>

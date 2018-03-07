@@ -24,24 +24,30 @@
                 @if($producto->category_id==1)
                     <!-- Modal Trigger -->
                 <div class="col s12 m12 l12 xl12 center-align">
-                    <a href="#modalOptimizar" class="waves-effect waves-light btn nav-color pulse modal-trigger">ESTE PRODUCTO SE PUEDE OPTIMIZAR</a>
+                    <a href="#modalOptimizar" class="waves-effect waves-light btn nav-color pulse modal-trigger">
+                        ESTE PRODUCTO SE PUEDE OPTIMIZAR
+                    </a>
                 </div>
                 @endif
-                {!! Form::open(['route' => ['reservado.store'], 'method'=>'POST', 'data-parsley-validate' => '', 'files' => true]) !!}
+                {!! Form::open(['route' => ['reservado.store'], 'method'=>'POST', 'data-parsley-validate' => '',
+                'files' => true]) !!}
 
                 <div class="container">
                     <div class="input-field col s12 m12 l12 xl12">
                         {{Form::label('Nombres',null,['class'=>'validate'])}}
-                        {{Form::text('nombres',null, ['class'=>'validate', 'placeholder'=>'Nombres', 'required' => ''])}}
+                        {{Form::text('nombres',null, ['class'=>'validate', 'placeholder'=>'Nombres',
+                        'required' => ''])}}
                     </div>
 
                     <div class="input-field col s12 m12 l12 xl12">
                         {{Form::label('Apellidos',null,['class'=>'validate'])}}
-                        {{Form::text('apellidos',null, ['class'=>'validate', 'placeholder'=>'Apellidos', 'required' => ''])}}
+                        {{Form::text('apellidos',null, ['class'=>'validate', 'placeholder'=>'Apellidos',
+                        'required' => ''])}}
                     </div>
 
                     <div class="input-field col s12 m12 l12 xl12">
-                        {{Form::text('numeroDUI',null,['class'=>'validate','pattern'=>'[0-9]{9}','placeholder'=>'Numero de DUI sin guiones.', 'maxlength'=>'9', 'required' => ''])}}
+                        {{Form::text('numeroDUI',null,['class'=>'validate','pattern'=>'[0-9]{9}','placeholder'=>
+                        'Numero de DUI sin guiones.', 'maxlength'=>'9', 'required' => ''])}}
                         <label for="numeroDUI">DUI</label>
                     </div>
 
@@ -61,27 +67,34 @@
                     <div class="input-field col s12 m12 l12 xl12">
                         {{Form::label('Correo Electrónico',null,['class'=>'input-group-addon'])}}
                         <p></p><br>
-                        {{Form::email('correoReserva',null, ['class'=>'validate', 'placeholder'=>'e-mail', 'id'=>'correoReserva'])}}
+                        {{Form::email('correoReserva',null, ['class'=>'validate', 'placeholder'=>'e-mail',
+                        'id'=>'correoReserva'])}}
                     </div>
 
                     <div class="input-field col s12 m12 l12 xl12">
-                        {{Form::text('telefonoCliente',null,['class'=>'validate','placeholder'=>'Numero de teléfono sin guiones.', 'maxlength'=>'8'])}}
+                        {{Form::text('telefonoCliente',null,['class'=>'validate','placeholder'=>
+                        'Numero de teléfono sin guiones.', 'maxlength'=>'8'])}}
                         <label for="telefonoCliente">Teléfono</label>
                     </div>
 
                     <div class="input-field col s12 m12 l12 xl12">
                         {{Form::label('Describenos tu necesidad',null,['class'=>'validate'])}}
-                        {{Form::textarea('mensaje',null, ['class'=>'validate materialize-textarea', 'placeholder'=>'Descripción'])}}
+                        {{Form::textarea('mensaje',null, ['class'=>'validate materialize-textarea',
+                        'placeholder'=>'Descripción'])}}
                     </div>
 
                     <div class="input-field col s6 m6 l6 xl6">
-                        {{ Form::label('centroLiqui', 'Selecciona el Centro Donde Reservará:', ['class'=>'input-group-addon']) }}
+                        {{ Form::label('centroLiqui', 'Selecciona el Centro Donde Reservará:', ['class'=>
+                        'input-group-addon']) }}
                         <br>
-                        {!! Form::select('centroLiqui',$centros,null,['class'=>'js-example-basic-single form-control ',"describedby"=>"basic-addon1",'required', 'id'=>'department', 'onchange'=>'GetMunicipios(this)', 'style'=>'width: 100%']) !!}
+                        {!! Form::select('centroLiqui',$centros,null,['class'=>'js-example-basic-single form-control ',
+                        "describedby"=>"basic-addon1",'required', 'id'=>'department', 'onchange'=>'GetMunicipios(this)',
+                        'style'=>'width: 100%']) !!}
                     </div>
 
                     <div class="input-field col s6 m6 l6 xl6">
-                       <blockquote>El tiempo de reserva son 8 horas, si no realizas tu compra durante éste lapso, el producto
+                       <blockquote>El tiempo de reserva son 8 horas, si no realizas tu compra durante éste lapso,
+                           el producto
                        pasará a stock nuevamente. <br><br>
                        Al dar click en RESERVAR estás aceptando ésta condición.</blockquote>
                     </div>
@@ -98,29 +111,45 @@
                                             <div class="input-field col s6 m6 l6 xl6">
                                                 {{ Form::label('optimizaRam', 'RAM', ['class'=>'input-group-addon']) }}
                                                 <br>
-                                                {!! Form::select('optimizaRam',$ram,null,['class'=>'js-example-basic-single form-control ',"describedby"=>"basic-addon1",'required', 'id'=>'department', 'onchange'=>'GetMunicipios(this)', 'style'=>'width: 100%']) !!}
+                                                {!! Form::select('optimizaRam',$ram,null,['class'=>
+                                                'js-example-basic-single form-control ',"describedby"=>"basic-addon1",
+                                                'required', 'id'=>'department', 'onchange'=>'GetMunicipios(this)',
+                                                'style'=>'width: 100%']) !!}
                                             </div>
                                         </div>
                                     </div>
                                     <div class="input-field col s12 m12 l12 xl12">
                                         <div class="input-field col s6 m6 l6 xl6">
-                                            {{ Form::label('optimizaDisco', 'Almacenamiento', ['class'=>'input-group-addon']) }}
+                                            {{ Form::label('optimizaDisco', 'Almacenamiento', ['class'=>
+                                            'input-group-addon']) }}
                                             <br>
-                                            {!! Form::select('optimizaDisco',$disco,null,['class'=>'js-example-basic-single form-control ',"describedby"=>"basic-addon1",'required', 'id'=>'department', 'onchange'=>'GetMunicipios(this)', 'style'=>'width: 100%']) !!}
+                                            {!! Form::select('optimizaDisco',$disco,null,['class'=>
+                                            'js-example-basic-single form-control ',"describedby"=>"basic-addon1",
+                                            'required', 'id'=>'department', 'onchange'=>'GetMunicipios(this)', 'style'=>
+                                            'width: 100%']) !!}
                                         </div>
                                     </div>
                                     <div class="input-field col s12 m12 l12 xl12">
-                                        <p>ACTUALIZAR A WINDOWS 10</p><p class="montserrat-extra-light">Licencia Original</p><p class="montserrat-extra-light">$50</p>
+                                        <p>ACTUALIZAR A WINDOWS 10</p>
+                                        <p class="montserrat-extra-light">
+                                            Licencia Original</p>
+                                        <p class="montserrat-extra-light">$50</p>
                                         <select>
-                                            <option value="{{$producto->precioPromoEs + 0}}" disabled selected>No</option>
-                                            <option value="{{$producto->precioPromoEs + 50}}">Sí</option>
+                                            <option value="{{$producto->precioPromoEs + 0}}" disabled selected>
+                                                No
+                                            </option>
+                                            <option value="{{$producto->precioPromoEs + 50}}">
+                                                Sí
+                                            </option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat center">Ok</a>
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat center">
+                                Ok
+                            </a>
                         </div>
                     </div>
 

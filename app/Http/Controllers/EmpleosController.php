@@ -16,6 +16,7 @@ class EmpleosController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    //se listan todas las plazas disponibles para aplicar devolviendo a  la vez la vista en la que se ingresarán los datos del candidato
     public function index()
     {
         $puestos = Puestos::pluck('nombre', 'id');
@@ -39,6 +40,7 @@ class EmpleosController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+    //se almacena en la base de datos lo que se envía a través del formulario de creación del currículo
     public function store(Request $request)
     {
         $candidato = new Empleos();
@@ -59,6 +61,7 @@ class EmpleosController extends Controller
 
         $candidato->save();
 
+        //se almacena la imagen proporcionada para el perfil del candidato
         if ($request->hasFile('featured_foto')){
 
             $image = $request->file('featured_foto');
@@ -82,6 +85,7 @@ class EmpleosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    //se llama al candidato por medio del id para visualizar su perfil
     public function show($id)
     {
         $candidatos = Empleos::find($id);
@@ -101,6 +105,7 @@ class EmpleosController extends Controller
         return view('admin.candidatos.vista-html-pdf');
     }
 
+    //se muestra en la tabla todos los candidatos que han aplicado
     public function mostrarCandidatos(Request $request){
         $candidatos = Empleos::paginate(10);
 

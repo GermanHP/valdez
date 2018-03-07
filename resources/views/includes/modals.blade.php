@@ -1,4 +1,4 @@
-<!-- Modal Formulario de Consulta -->
+<!-- Modal Formulario de Consulta
 <div id="modalConsulta" class="modal modal-fixed-footer">
     <div class="modal-content center">
         <img class="responsive-img" src="img/logos/logo_valdez.png" alt="">
@@ -47,7 +47,7 @@
     <div class="modal-footer">
         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
     </div>
-</div>
+</div>-->
 
 
 <!-- Ubicaciones -->
@@ -68,7 +68,7 @@
     </div>
 </div>
 
-<!-- Modal Formulario de Reserva -->
+<!-- Modal Formulario de Reserva
 <div id="modalReserva" class="modal modal-fixed-footer">
     <div class="modal-content center">
         <img class="responsive-img" src="img/logos/logo_valdez.png" alt="">
@@ -145,5 +145,4 @@
     <div class="modal-footer">
         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
     </div>
-</div>
-
+</div> -->

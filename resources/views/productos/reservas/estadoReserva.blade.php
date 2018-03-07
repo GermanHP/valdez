@@ -9,7 +9,8 @@
         </div>
         <br><br>
         <h5 class="texto-justificado">Hola {{$reserva->nombreCliente}}!,</h5>
-        <h5>Has reservado con éxito un {{$reserva->nombreProducto}} a las {{\Carbon\Carbon::now('America/El_Salvador')}} en el centro de liquidación
+        <h5>Has reservado con éxito un {{$reserva->nombreProducto}} a las {{\Carbon\Carbon::now('America/El_Salvador')}}
+            en el centro de liquidación
             @if($reserva->idSucursal==1)
                 Merliot
             @elseif($reserva->idSucursal==2)
@@ -19,7 +20,9 @@
             @else
                 San Miguel
             @endif
-                con el nombre de {{$reserva->nombreCliente}} {{$reserva->apellidoCliente}} y DUI {{$reserva->DUICliente}}.</h5>
+                con el nombre de {{$reserva->nombreCliente}} {{$reserva->apellidoCliente}} y DUI
+            {{$reserva->DUICliente}}.
+        </h5>
         <br>
         <div class="row center-align">
             <div class="col xs6 sm6 m6 l6 xl6 text-center">
@@ -54,10 +57,18 @@
         <img src="img/logos/logo_valdez.png" alt="Valdez Store" class="center-block">
         <div class="row center-align" id="redes">
             <div class="col xs12 l12 s12">
-                <a class="white-text" href="#!">{{Form::image('/img/reservaicons/facebook.png','Facebook',['id'=>'FooterValdez', 'class'=>'icon-img'])}}</a>
-                <a class="white-text" href="#!">{{Form::image('/img/reservaicons/twitter.png','Twitter',['id'=>'FooterValdez', 'class'=>'icon-img'])}}</a>
-                <a class="white-text" href="#!">{{Form::image('/img/reservaicons/instagram.png','Instagram',['id'=>'FooterValdez', 'class'=>'icon-img'])}}</a>
-                <a class="white-text" href="#!">{{Form::image('/img/reservaicons/googleplus.png','GooglePlus',['id'=>'FooterValdez', 'class'=>'icon-img'])}}</a>
+                <a class="white-text" href="#!">{{Form::image('/img/reservaicons/facebook.png','Facebook',
+                ['id'=>'FooterValdez', 'class'=>'icon-img'])}}
+                </a>
+                <a class="white-text" href="#!">{{Form::image('/img/reservaicons/twitter.png','Twitter',
+                ['id'=>'FooterValdez', 'class'=>'icon-img'])}}
+                </a>
+                <a class="white-text" href="#!">{{Form::image('/img/reservaicons/instagram.png','Instagram',
+                ['id'=>'FooterValdez', 'class'=>'icon-img'])}}
+                </a>
+                <a class="white-text" href="#!">{{Form::image('/img/reservaicons/googleplus.png','GooglePlus',
+                ['id'=>'FooterValdez', 'class'=>'icon-img'])}}
+                </a>
             </div>
         </div>
         <div class="center">

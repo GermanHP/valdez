@@ -40,7 +40,8 @@
 
                         <div class="input-field">
                             <p>DUI</p>
-                            {{Form::text('DUIpadre',null,['class'=>'form-control','pattern'=>'[0-9]{9}','placeholder'=>'DUI sin guiones', 'maxlength'=>'9'])}}
+                            {{Form::text('DUIpadre',null,['class'=>'form-control','pattern'=>'[0-9]{9}',
+                            'placeholder'=>'DUI sin guiones', 'maxlength'=>'9'])}}
                         </div>
 
                         <div class="input-field">
@@ -57,9 +58,9 @@
 
                         <div class="input-field">
                             <p>Contraseña</p>
-                            {!! Form::password('passwordCliente', null,['id'=>'pass','class'=>'validate', 'placeholder'=>'Elija una contraseña', get_required_files()]) !!}
+                            {!! Form::password('passwordCliente', null,['id'=>'pass','class'=>'validate',
+                            'placeholder'=>'Elija una contraseña', get_required_files()]) !!}
                         </div>
-
 
                         <div class="form-group center-align">
                             <div class="col-md-6 col-md-offset-4">

@@ -13,6 +13,7 @@ class Kernel extends ConsoleKernel
      *
      * @var array
      */
+    //se registra el comando a ejecutar
     protected $commands = [
         Commands\CronJobReserva::class,
     ];
@@ -26,7 +27,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $schedule->command('CronJob:Reserva')
-            ->cron('0 */8 * * *');
+            ->cron('0 */8 * * *');//definimos el intervalo en el que se realizará la acción del cronjob
     }
 
     /**

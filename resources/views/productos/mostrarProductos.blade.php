@@ -5,7 +5,8 @@
         <div class="nav-wrapper nav-color">
             <form>
                 <div class="input-field">
-                    <input id="search" type="search" placeholder="BUSCAR" class="center-align" required value="{{ old('search') }}">
+                    <input id="search" type="search" placeholder="BUSCAR" class="center-align" required
+                           value="{{ old('search') }}">
                     <label class="label-icon" for="search"><i class="material-icons">search</i></label>
                     <i class="material-icons">close</i>
                 </div>
@@ -105,7 +106,12 @@
                     <h5>Productos</h5>
                 </div>
                 <div class="col s6 m6 l6 xl6">
-                    <a class="black-text" href="{{url('/productos')}}"><h5 class="right-align">VER TODO<i class="material-icons">chevron_right</i></h5></a>
+                    <a class="black-text" href="{{url('/productos')}}">
+                        <h5 class="right-align">
+                            VER TODO
+                            <i class="material-icons">chevron_right</i>
+                        </h5>
+                    </a>
                 </div>
             </div>
             <hr class="divider">
@@ -118,15 +124,18 @@
                             <div class="card card-fix2">
                                 <div class="card-image">
                                     @if(!empty($producto->image))
-                                    <img src="{{asset('img/enStock/img' . $producto->image)}}" alt="Liquidaciones" class="image-liquidacion">
+                                    <img src="{{asset('img/enStock/img' . $producto->image)}}" alt="Liquidaciones"
+                                         class="image-liquidacion">
                                     @endif
                                     <div class="overlay">
                                         <div class="text center-align">
-                                            <a href="{{ route('reservas.makeReserva', $producto->url) }}" class="yellow-text">RESERVAR</a>
+                                            <a href="{{ route('reservas.makeReserva', $producto->url) }}"
+                                               class="yellow-text">RESERVAR</a>
                                             <hr class="divider">
                                             <a href="#sucursales" class="yellow-text">IR A TIENDA</a>
                                             <hr class="divider">
-                                            <a href="{{ route('productos.detalleProducto', $producto->url) }}" class="yellow-text">VER DETALLES</a>
+                                            <a href="{{ route('productos.detalleProducto', $producto->url) }}"
+                                               class="yellow-text">VER DETALLES</a>
                                         </div>
                                     </div>
                                 </div>
@@ -156,9 +165,16 @@
                                         </div>
                                         <div class="col s6 m6 l6 xl6">
                                             <p><strong><a href="#">+info</a></strong></p>
-                                            <h6 class="tachado"><strong>Antes: ${{$producto->precioEs}}</strong></h6>
-                                            <h5 class="red-text"><strong>Precio: ${{$producto->precioPromoEs}}</strong></h5>
-
+                                            <h6 class="tachado">
+                                                <strong>
+                                                    Antes: ${{$producto->precioEs}}
+                                                </strong>
+                                            </h6>
+                                            <h5 class="red-text">
+                                                <strong>
+                                                    Precio: ${{$producto->precioPromoEs}}
+                                                </strong>
+                                            </h5>
                                         </div>
                                     </div>
                                 </div>

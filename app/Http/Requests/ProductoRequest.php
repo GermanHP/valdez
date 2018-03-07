@@ -13,7 +13,7 @@ class ProductoRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        return true;//se cambia a true el valor por defecto al crear el request para que tengan efecto las validaciones
     }
 
     /**
@@ -21,6 +21,7 @@ class ProductoRequest extends FormRequest
      *
      * @return array
      */
+    //se establecen las reglas de validación que debe de cumplir la data que se ingresará en el formulario
     public function rules()
     {
         return [

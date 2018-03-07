@@ -31,7 +31,7 @@ class LoginController extends Controller
     //protected $redirectTo = '/inbox';
 
     protected function redirectTo(){
-        $bitacora = new Bitacora();
+        $bitacora = new Bitacora();//se almacena el inicio de sesión por cada usuario que efectúe ésta acción
         $bitacora->fill([
             'idUsuario'=>Auth::user()->getAuthIdentifier(),
             'accion'=>'LOGIN',

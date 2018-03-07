@@ -13,7 +13,7 @@ class MakeReservaRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        return true;//se cambia a true el valor por defecto al crear el request para que tengan efecto las validaciones
     }
 
     /**
@@ -21,6 +21,8 @@ class MakeReservaRequest extends FormRequest
      *
      * @return array
      */
+
+    //aquí se colocan las reglas a seguir para el almacenamiento de los datos que están en el formulario de reserva
     public function rules()
     {
         return [

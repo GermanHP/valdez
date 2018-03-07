@@ -15,6 +15,7 @@ class CronJobReserva extends Command
      *
      * @var string
      */
+    //éste será el comando con el que se ejecutará de manera manual el cronjob
     protected $signature = 'CronJob:Reserva';
 
     /**
@@ -22,6 +23,7 @@ class CronJobReserva extends Command
      *
      * @var string
      */
+    //descripción que despliegará el cronjob al ser ejecutado
     protected $description = 'Eliminar las reservas pasadas las 8 horas de plazo.';
 
     /**
@@ -39,9 +41,10 @@ class CronJobReserva extends Command
      *
      * @return mixed
      */
+    //aquí se efectúa toda la lógica del cronjob
     public function handle()
     {
-        $reservas = Reservas::where('fechaDeVigencia','<', date('Y-m-d'))->whereNull('deleted_at')->get();
+        $reservas = Reservas::where('fechaDeVigencia','<', date('Y-m-d'))->whereNull('deleted_at')->get();//sl la fecha de vigencia es menor a la fecha actual y si es nulo
         foreach ($reservas as $reserva){
             $reserva->delete();
         }

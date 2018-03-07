@@ -10,8 +10,9 @@
                         @include('alertas.flash')
                         <h3 class="center">Por favor cambie su contraseña por defecto</h3>
                         <blockquote>La contraseña debe tener un minimo de 6 caracteres</blockquote>
-                        {!!Form::open(['route'=>['Password.guardar.nuevo'], 'method'=>'POST', 'onsubmit'=>"waitingDialog.show('Cargando... ',{ progressType: 'info'});setTimeout(function () {waitingDialog.hide();}, 3000);"])!!}
-
+                        {!!Form::open(['route'=>['Password.guardar.nuevo'], 'method'=>'POST',
+                        'onsubmit'=>"waitingDialog.show('Cargando... ',{ progressType: 'info'});setTimeout(function ()
+                        {waitingDialog.hide();}, 3000);"])!!}
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 control-label">Nueva Contraseña </label>
@@ -30,7 +31,8 @@
                         <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
                             <label for="password-confirm" class="col-md-4 control-label">Confirmar contrasña</label>
                             <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                                <input id="password-confirm" type="password" class="form-control"
+                                       name="password_confirmation" required>
 
                                 @if ($errors->has('password_confirmation'))
                                     <span class="help-block">
@@ -42,7 +44,8 @@
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
-                                <blockquote>Una vez presione el boton "Cambiar contraseña" la proxima vez que acceda al sistema sera con la contraseña que colocó arriba.</blockquote><br>
+                                <blockquote>Una vez presione el boton "Cambiar contraseña" la proxima vez que acceda al
+                                    sistema sera con la contraseña que colocó arriba.</blockquote><br>
                                 <button type="submit" class="btn btn-primary">
                                     Cambiar Contraseña
                                 </button>

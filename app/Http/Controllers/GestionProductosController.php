@@ -21,6 +21,7 @@ class GestionProductosController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    //se muestran los productos registrados en el sistema con una paginación de 5 productos por vista
     public function index()
     {
         $productos = Producto::orderBy('id', 'DESC')->simplePaginate(5);
@@ -33,6 +34,7 @@ class GestionProductosController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    //se listan las categorías, centros de liquidación, categoría del cliente y se devuelve la vista para registrar el producto
     public function create()
     {
         $categories = Category::pluck('nombre', 'id');
@@ -40,7 +42,6 @@ class GestionProductosController extends Controller
         $centros = Centros::all();
 
         return view('admin.formulariosProducto.registrarProducto', compact('categories', 'centros', 'clienteCat'));
-
     }
 
     /**
@@ -49,6 +50,7 @@ class GestionProductosController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+    //se almacena la data del producto que se está registrando
     public function store(ProductoRequest $request)
     {
 
@@ -69,7 +71,7 @@ class GestionProductosController extends Controller
             'stock'=>$request['stockEntrante']
         ]);
 
-        $bitacora = new Bitacora();
+        $bitacora = new Bitacora(); //se registra la operación correspondiente en la bitacora
         $bitacora->fill([
             'idUsuario'=>Auth::user()->getAuthIdentifier(),
             'otraInformacion'=>'Registro Correcto',
@@ -79,7 +81,7 @@ class GestionProductosController extends Controller
 
         $productos->save();
 
-        if ($request->hasFile('featured_img')){
+        if ($request->hasFile('featured_img')){ //se almacena la imagen del producto registrado
 
             $image = $request->file('featured_img');
             $filename = time() . '.' . $image->getClientOriginalExtension();
@@ -105,6 +107,7 @@ class GestionProductosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    //se muestra el producto seleccionado con el id correspondiente
     public function show($id)
     {
         $productos = Producto::find($id);
@@ -118,6 +121,7 @@ class GestionProductosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    //se listan las categorías del producto, las características del producto, los centros y se devuelve en una vista para ser editado
     public function edit($id)
     {
         $productos = Producto::find($id);
@@ -144,6 +148,7 @@ class GestionProductosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    //se actualiza toda la data del producto seleccionado para editar
     public function update(Request $request, $id)
     {
         $productos = Producto::find($id);
@@ -182,7 +187,7 @@ class GestionProductosController extends Controller
 
         $productos->save();
 
-        $bitacora = new Bitacora();
+        $bitacora = new Bitacora();//se registra la acción correspondiente en la bitacora
         $bitacora->fill([
             'idUsuario'=>Auth::user()->getAuthIdentifier(),
             'otraInformacion'=>'Edición Correcta',
@@ -216,6 +221,7 @@ class GestionProductosController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    //función que elimina el producto que se ha seleccionado
     public function destroy($id)
     {
         $producto = Producto::find($id);
