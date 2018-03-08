@@ -2,7 +2,7 @@
 @section('content')
     @include('includes.modals')
 
-    <div class="parallax-container valign-wrapper">
+    <div class="parallax-container valign-wrapper" id="inicio">
         <div class="section no-pad-bot">
             <div class="container">
                 <div class="row center">
@@ -24,7 +24,7 @@
         <div class="row">
             <div class="col l3 xl3 hide-on-med-and-down">
                 <ul class="collapsible" data-collapsible="expandable">
-                    <li>
+                    <!--<li>
                         <div class="collapsible-header"><i class="material-icons">school</i>CATEGORIA</div>
                         <div class="collapsible-body">
                             <p>
@@ -40,7 +40,7 @@
                                 <label for="cat3">Profesionales</label>
                             </p>
                         </div>
-                    </li>
+                    </li>-->
                     <li>
                         <div class="collapsible-header active"><i class="material-icons">devices_other</i>PRODUCTO</div>
                         <div class="collapsible-body">
@@ -104,6 +104,14 @@
                         </div>
                     </li>
                 </ul>
+                <div class="row">
+                    <div class="col s6 m6 l6 xl6">
+                        <a class="waves-effect waves-light btn">FILTRAR</a>
+                    </div>
+                    <div class="col s6 m6 l6 xl6">
+                        <a class="waves-effect waves-light btn">CANCELAR</a>
+                    </div>
+                </div>
             </div>
             <div class="col s12 m12 l9 xl9 white">
                 <h5>
@@ -129,7 +137,7 @@
                                                 <a href="{{route('reservas.makeReserva', $sugerencia->url)}}"
                                                    class="yellow-text">RESERVAR</a>
                                                 <hr class="divider">
-                                                <a href="#sucursales" class="yellow-text">IR A TIENDA</a>
+                                                <a id="anchorCentros" href="#sucursales" class="yellow-text">IR A TIENDA</a>
                                                 <hr class="divider">
                                                 <a href="{{ route('productos.detalleProducto', $sugerencia->url) }}"
                                                    class="yellow-text">VER DETALLES</a>
@@ -228,7 +236,7 @@
                                         RESERVAR
                                     </a>
                                     <hr class="divider">
-                                    <a href="#sucursales" class="yellow-text">
+                                    <a href="#sucursales" class="yellow-text" id="anchorCentros">
                                         IR A TIENDA
                                     </a>
                                     <hr class="divider">
@@ -298,7 +306,7 @@
                                                 <a href="{{route('reservas.makeReserva', $sugerencia->url)}}"
                                                    class="yellow-text">RESERVAR</a>
                                                 <hr class="divider">
-                                                <a href="#" class="yellow-text">IR A TIENDA</a>
+                                                <a href="#sucursales" class="yellow-text" id="anchorCentros">IR A TIENDA</a>
                                                 <hr class="divider">
                                                 <a href="{{ route('productos.detalleProducto', $sugerencia->url) }}"
                                                    class="yellow-text">VER DETALLES</a>
@@ -398,7 +406,7 @@
                                     RESERVAR
                                 </a>
                                 <hr class="divider">
-                                <a href="#sucursales" class="yellow-text">
+                                <a href="#sucursales" class="yellow-text" id="anchorCentros">
                                     IR A TIENDA
                                 </a>
                                 <hr class="divider">
@@ -430,27 +438,6 @@
         </div>
     </div>
 </div>
-
-    <script type="text/javascript">
-        $('#search').on('keyup', function () {
-            $value=$(this).val();
-            $.ajax({
-               type: 'get',
-                url : '{{URL::to('search')}}',
-                data:{'search':$value},
-
-                succes:function (data) {
-                    $('div#home').html(data);
-                }
-            });
-        })
-    </script>
-
-    <script type="text/javascript">
-
-        $.ajaxSetup({ headers: { 'csrftoken' : '{{ csrf_token() }}' } });
-
-    </script>
 
     @include('sections.ubicaciones')
 @stop

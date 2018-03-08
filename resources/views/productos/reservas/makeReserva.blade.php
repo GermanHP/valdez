@@ -106,8 +106,7 @@
                             <div class="row">
                                 <br>
                                 <div class="container">
-                                    <div class="input-field col s12 m12 l12 xl12">
-                                        <div class="input-field col s12">
+                                    <div class="input-field col s4 m4 l4 xl4">
                                             <div class="input-field col s6 m6 l6 xl6">
                                                 {{ Form::label('optimizaRam', 'RAM', ['class'=>'input-group-addon']) }}
                                                 <br>
@@ -116,9 +115,8 @@
                                                 'required', 'id'=>'department', 'onchange'=>'GetMunicipios(this)',
                                                 'style'=>'width: 100%']) !!}
                                             </div>
-                                        </div>
                                     </div>
-                                    <div class="input-field col s12 m12 l12 xl12">
+                                    <div class="input-field col s4 m4 l4 xl4">
                                         <div class="input-field col s6 m6 l6 xl6">
                                             {{ Form::label('optimizaDisco', 'Almacenamiento', ['class'=>
                                             'input-group-addon']) }}
@@ -129,17 +127,16 @@
                                             'width: 100%']) !!}
                                         </div>
                                     </div>
-                                    <div class="input-field col s12 m12 l12 xl12">
-                                        <p>ACTUALIZAR A WINDOWS 10</p>
-                                        <p class="montserrat-extra-light">
-                                            Licencia Original</p>
-                                        <p class="montserrat-extra-light">$50</p>
+                                    <div class="col s4 m4 l4 xl4">
+                                        <br>
+                                        {{ Form::label('optimizaDisco', 'ACTUALIZAR SISTEMA OPERATIVO $50', ['class'=>
+                                            'input-group-addon']) }}
                                         <select>
-                                            <option value="{{$producto->precioPromoEs + 0}}" disabled selected>
+                                            <option value="{{$producto->precioPromoEs + 0}}" selected>
                                                 No
                                             </option>
                                             <option value="{{$producto->precioPromoEs + 50}}">
-                                                Sí
+                                                Windows 10 Pro Original
                                             </option>
                                         </select>
                                     </div>

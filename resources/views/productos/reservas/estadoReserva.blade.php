@@ -28,27 +28,27 @@
             <div class="col xs6 sm6 m6 l6 xl6 text-center">
                 @if(!empty($reserva->image))
                     <img src="{{asset('img/enStock/img' . $reserva->image)}}" alt="Imagen Reserva"
-                         class="responsive-img image-liquidacion" width="500" height="500">
+                         class="responsive-img image-liquidacion" width="460" height="450">
                 @endif
             </div>
             <div class="col s6 m6 l6 xl6 text-center">
                 <br><br>
                 <ul>
-                    <li><h4 class="text-center">{{$reserva->spec1}}</h4></li>
+                    <li><h5 class="text-center">{{$reserva->spec1}}</h5></li>
                     <br>
-                    <li><h4 class="text-center">{{$reserva->spec2}}</h4></li>
+                    <li><h5 class="text-center">{{$reserva->spec2}}</h5></li>
                     <br>
-                    <li><h4 class="text-center">{{$reserva->spec3}}</h4></li>
+                    <li><h5 class="text-center">{{$reserva->spec3}}</h5></li>
                     <br>
-                    <li><h4 class="text-center">{{$reserva->spec4}}</h4></li>
+                    <li><h5 class="text-center">{{$reserva->spec4}}</h5></li>
                     <br>
-                    <li><h4 class="text-center">Precio Final:
+                    <li><h5 class="text-center">Precio Final:
                             @if($reserva->idRam!=1 || $reserva->idDisco!=1)
-                                ${{$reserva->precio + 50}}
+                                ${{$reserva->precio + 100}}
                                 @else
                             ${{$reserva->precio}}
                                 @endif
-                        </h4>
+                        </h5>
                     </li>
                 </ul>
             </div>
@@ -72,10 +72,11 @@
             </div>
         </div>
         <div class="center">
-            <h5>www.valdezstore.com</h5>
-            <h5 class="text-center"><i class="material-icons">call</i>(503)2201-3000</h5>
-            <h5 class="text-center"><i class="material-icons">home</i>Jardines de Cuscatlán Av. L-A, Calle L-4, Polígono
-                D, Edificio VALDEZ - Merliot, Antiguo Cuscatlán, La Libertad</h5>
+            <h6>www.valdezstore.com</h6>
+            <h6 class="text-center"><i class="material-icons">call</i>(503)2201-3000</h6>
+            <h6 class="text-center"><i class="material-icons">home</i>Jardines de Cuscatlán Av. L-A, Calle L-4, Polígono
+                D, <br> Edificio VALDEZ - Merliot, Antiguo Cuscatlán, La Libertad</h6>
         </div>
+        <br><br>
     </div>
 @stop

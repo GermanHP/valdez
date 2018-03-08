@@ -27,7 +27,7 @@
             {{Form::image('/img/logos/logo_valdez.png','Valdez Store',['id'=>'Valdez Store', 'height'=>'55', 'width'=>'300'])}}
         </a>
         <ul class="right hide-on-med-and-down">
-            <li class="active current-link"><a href="{{url('/')}}" class="evogria">LIQUIDACIONES DE HOY</a></li>
+            <li class="active current-link"><a href="#inicio" class="evogria" id="anchorInicio">LIQUIDACIONES DE HOY</a></li>
             <li><a href="#sucursales" class="black-text evogria" rel="" id="anchorCentros">VER CENTRO DE LIQUIDACIONES</a></li>
             <li><a href="{{url('/quienes-somos')}}" class="black-text evogria" rel="" id="anchorCentros">QUIÉNES SOMOS</a></li>
             <!-- <li><i class="material-icons">more_vert</i></li>
@@ -46,7 +46,7 @@
         </div>
         <div class="nav-content">
             <ul>
-                <li class="active"><span class="nav-title"><a href="{{url('/')}}" class="evogria black-text">LIQUIDACIONES DE HOY</a></span></li>
+                <li class="active"><span class="nav-title"><a href="#inicio" class="evogria black-text" id="anchorInicio">LIQUIDACIONES DE HOY</a></span></li>
                 <li><span class="nav-title"><a href="#sucursales" class="black-text evogria" rel="" id="anchorCentros">VER CENTRO DE LIQUIDACIONES</a></span></li>
                 <li><span class="nav-title"><a href="{{url('/quienes-somos')}}" class="black-text evogria" rel="" id="anchorCentros">QUIÉNES SOMOS</a></span></li>
             </ul>

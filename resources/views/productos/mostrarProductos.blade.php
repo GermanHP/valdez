@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     @include('includes.modals')
-    <nav>
+    <nav id="inicio">
         <div class="nav-wrapper nav-color">
             <form>
                 <div class="input-field">
@@ -203,4 +203,4 @@
 </div>
 
     @include('sections.ubicaciones')
-    @stop
+@stop
