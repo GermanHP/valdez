@@ -43,7 +43,6 @@
 
                         <p>{{$productos->caracteristica3}}</p>
                         <p>{{$productos->caracteristica4}}</p>
-
                     </div>
                 </div>
                 <h5>Optimizar</h5>
@@ -91,5 +90,4 @@
         </div>
     </div>
     <br>
-    @include('productos.productosSugeridos')
 @stop
