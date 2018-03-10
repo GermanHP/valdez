@@ -30,6 +30,21 @@ Route::get('/', 'HomeController@index');
 Route::get('/search', 'GestionProductosController@productsList')->name('products.list');
 */
 
+/*rutas para los filtros */
+Route::get('/laptops', 'SearchUserController@searchLaptops');
+Route::get('/tablets', 'SearchUserController@searchTablets');
+Route::get('/smartphones', 'SearchUserController@searchSmartphones');
+Route::get('/all-in-one', 'SearchUserController@searchAllinOne');
+Route::get('/marca/hp', 'SearchUserController@filterHP');
+Route::get('/marca/dell', 'SearchUserController@filterDell');
+Route::get('/marca/apple', 'SearchUserController@filterApple');
+Route::get('/marca/acer', 'SearchUserController@filterAcer');
+Route::get('/marca/samsung', 'SearchUserController@filterSamsung');
+Route::get('/marca/asus', 'SearchUserController@filterAsus');
+Route::get('/marca/toshiba', 'SearchUserController@filterToshiba');
+Route::get('/marca/lenovo', 'SearchUserController@filterLenovo');
+Route::get('/marca/otros', 'SearchUserController@filterOtros');
+
 Route::get('/productos', 'ProductosController@mostrarProductos');
 
 Route::get('user-lists', 'SearchUserController@userList')->name('user-lists');

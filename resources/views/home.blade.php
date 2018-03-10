@@ -45,19 +45,19 @@
                             <div class="collapsible-body">
                                 <p>
                                     <input name="group2" type="radio" id="prod1" />
-                                    <label for="prod1">Laptop</label>
+                                    <label for="prod1"><a class="black-text" href="{{url('laptops')}}">Laptops</a></label>
                                 </p>
                                 <p>
                                     <input name="group2" type="radio" id="prod2" />
-                                    <label for="prod2">Tablet</label>
+                                    <label for="prod2"><a class="black-text" href="{{url('tablets')}}">Tablets</a></label>
                                 </p>
                                 <p>
                                     <input class="group1" name="group2" type="radio" id="prod3"  />
-                                    <label for="prod3">Smartphone</label>
+                                    <label for="prod3"><a class="black-text" href="{{url('smartphones')}}">Smartphones</a></label>
                                 </p>
                                 <p>
                                     <input class="group1" name="group2" type="radio" id="prod4"  />
-                                    <label for="prod4">All in One</label>
+                                    <label for="prod4"><a class="black-text" href="{{url('all-in-one')}}">All in One</a></label>
                                 </p>
                             </div>
                         </li>
@@ -66,51 +66,43 @@
                             <div class="collapsible-body">
                                 <p>
                                     <input name="group3" type="radio" id="brand1" />
-                                    <label for="brand1">HP</label>
+                                    <label for="brand1"><a class="black-text" href="{{url('/marca/hp')}}">HP</a></label>
                                 </p>
                                 <p>
                                     <input name="group3" type="radio" id="brand2" />
-                                    <label for="brand2">DELL</label>
+                                    <label for="brand2"><a class="black-text" href="{{url('/marca/dell')}}">DELL</a></label>
                                 </p>
                                 <p>
                                     <input class="group1" name="group3" type="radio" id="brand3"  />
-                                    <label for="brand3">APPLE</label>
+                                    <label for="brand3"><a class="black-text" href="{{url('/marca/apple')}}">APPLE</a></label>
                                 </p>
                                 <p>
                                     <input class="group1" name="group3" type="radio" id="brand4"  />
-                                    <label for="brand4">ACER</label>
+                                    <label for="brand4"><a class="black-text" href="{{url('/marca/acer')}}">ACER</a></label>
                                 </p>
                                 <p>
                                     <input class="group1" name="group3" type="radio" id="brand5"  />
-                                    <label for="brand5">SAMSUNG</label>
+                                    <label for="brand5"><a class="black-text" href="{{url('/marca/samsung')}}">SAMSUNG</a></label>
                                 </p>
                                 <p>
                                     <input class="group1" name="group3" type="radio" id="brand6"  />
-                                    <label for="brand6">ASUS</label>
+                                    <label for="brand6"><a class="black-text" href="{{url('/marca/asus')}}">ASUS</a></label>
                                 </p>
                                 <p>
                                     <input class="group1" name="group3" type="radio" id="brand7"  />
-                                    <label for="brand7">TOSHIBA</label>
+                                    <label for="brand7"><a class="black-text" href="{{url('/marca/toshiba')}}">TOSHIBA</a></label>
                                 </p>
                                 <p>
                                     <input class="group1" name="group3" type="radio" id="brand8"  />
-                                    <label for="brand8">LENOVO</label>
+                                    <label for="brand8"><a class="black-text" href="{{url('/marca/lenovo')}}">LENOVO</a></label>
                                 </p>
                                 <p>
                                     <input class="group1" name="group3" type="radio" id="brand9"  />
-                                    <label for="brand9">OTROS</label>
+                                    <label for="brand9"><a class="black-text" href="{{url('/marca/otros')}}">OTROS</a></label>
                                 </p>
                             </div>
                         </li>
                     </ul>
-                    <div class="row">
-                        <div class="col s6 m6 l6 xl6">
-                            <a class="waves-effect waves-light btn">FILTRAR</a>
-                        </div>
-                        <div class="col s6 m6 l6 xl6">
-                            <a class="waves-effect waves-light btn">CANCELAR</a>
-                        </div>
-                    </div>
                 </div>
                 <div class="col s12 m12 l9 xl9 white hide-on-med-and-down">
                     <h5>
