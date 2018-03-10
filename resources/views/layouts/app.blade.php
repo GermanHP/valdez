@@ -3,7 +3,7 @@
 <head>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>  VALDEZ STORE – Liquidacion de Laptops, Computadoras y Smartphones</title>
     <meta name=”robots” content=”noindex,follow”>
     <meta name="description" content="">
@@ -14,29 +14,34 @@
     {!! Html::style('https://unpkg.com/flickity@2/dist/flickity.min.css') !!}
     {!! Html::style('css/materialize.css') !!}
     {!! Html::style('css/style.css') !!}
-    @yield('css')
 
     @include('includes.zopim')
 </head>
 <body>
-@include('includes.facebookFeed')
-<div class="navbar-fixed hide-on-med-and-down">
-<nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-        <a id="logo-container" href="{{url('/')}}" class="brand-logo">
-            {{Form::image('/img/logos/logo_valdez.png','Valdez Store',['id'=>'Valdez Store', 'height'=>'55', 'width'=>'300'])}}
-        </a>
-        <ul class="right hide-on-med-and-down">
-            <li class="active current-link"><a href="#inicio" class="evogria" id="anchorInicio">LIQUIDACIONES DE HOY</a></li>
-            <li><a href="#sucursales" class="black-text evogria" rel="" id="anchorCentros">VER CENTRO DE LIQUIDACIONES</a></li>
-            <li><a href="{{url('/quienes-somos')}}" class="black-text evogria" rel="" id="anchorCentros">QUIÉNES SOMOS</a></li>
-            <!-- <li><i class="material-icons">more_vert</i></li>
-            <li><a href="#" class="white-text">El Salvador</a></li>
-            <li><a href="#" class="white-text">Nicaragua</a></li>-->
-        </ul>
+<header>
+    <div class="navbar-fixed">
+        <nav class="white" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="{{url('/')}}" class="brand-logo">
+                    {{Form::image('/img/logos/logo_valdez.png','Valdez Store',['id'=>'Valdez Store', 'height'=>'50', 'width'=>'250'])}}
+                </a>
+                <a href="#" class="button-collapse" data-activates="mobile-menu"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="active current-link"><a href="#inicio" class="evogria" id="anchorInicio">LIQUIDACIONES DE HOY</a></li>
+                    <li><a href="#sucursales" class="black-text evogria" rel="" id="anchorCentros">VER CENTRO DE LIQUIDACIONES</a></li>
+                    <li><a href="{{url('/quienes-somos')}}" class="black-text evogria" rel="" id="anchorCentros">QUIÉNES SOMOS</a></li>
+                </ul>
+
+                <ul class="side-nav" id="mobile-menu">
+                    <li class="active current-link"><a href="#inicio" class="evogria" id="anchorInicio">LIQUIDACIONES DE HOY</a></li>
+                    <li><a href="#sucursales" class="black-text evogria" rel="" id="anchorCentros">VER CENTRO DE LIQUIDACIONES</a></li>
+                    <li><a href="{{url('/quienes-somos')}}" class="black-text evogria" rel="" id="anchorCentros">QUIÉNES SOMOS</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
-</nav>
-</div>
+</header>
+<!--
 <div class="navbar-static-top hide-on-large-only">
     <nav class="nav-extended white center">
         <div class="nav-wrapper">
@@ -52,15 +57,16 @@
             </ul>
         </div>
     </nav>
-</div>
-<div id="content1" class="hide-on-med-and-down">
-    @yield('content')
-</div>
-<div id="content2" class="hide-on-large-only">
-    <br><br><br>
-    @yield('content')
-</div>
-
+</div>-->
+<main>
+    @include('includes.modals')
+    <div id="content1" class="hide-on-med-and-down">
+        @yield('content')
+    </div>
+    <div id="content2" class="hide-on-large-only">
+        @yield('content')
+    </div>
+</main>
 <footer class="page-footer grey darken-4">
     <div class="container">
         <div class="row">
@@ -73,7 +79,7 @@
                 </p><br>
                 <a href="#">
                     <p class="teal-text">Jardines de Cuscatlán, Av. L-A Calle L4, Polígono D, Edificio VALDEZ, Merliot, Antiguo
-                    Cuscatlán, La Libertad, El Salvador, C.A.</p>
+                        Cuscatlán, La Libertad, El Salvador, C.A.</p>
                 </a>
                 <a href="#">
                     <p class="teal-text">Teléfono: +503 2201-3004</p>
@@ -145,7 +151,7 @@
 </footer>
 
 <!--  Scripts-->
-{!! Html::script('http://code.jquery.com/jquery-2.2.4.min.js') !!}
+{!! Html::script('https://code.jquery.com/jquery-2.2.4.min.js') !!}
 {!! Html::script('https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js') !!}
 {!! Html::script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js') !!}
 {!! Html::script('js/materialize.js') !!}

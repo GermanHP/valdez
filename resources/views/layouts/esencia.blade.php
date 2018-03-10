@@ -19,12 +19,13 @@
 <body>
 @include('includes.facebookFeed')
 @include('includes.modals')
-<div class="navbar-fixed hide-on-med-and-down">
+<div class="navbar-fixed">
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
             <a id="logo-container" href="{{url('/')}}" class="brand-logo">
                 <img class="responsive-img" src="img/logos/logo_valdez.png" alt="Valdez Store" height="90" width="300">
             </a>
+
             <ul class="right hide-on-med-and-down">
                 <li><a href="{{url('/')}}" class="evogria">LIQUIDACIONES DE HOY</a></li>
                 <li><a href="#sucursales" class="evogria" rel="" id="anchorCentros">VER CENTRO DE LIQUIDACIONES</a></li>
@@ -33,22 +34,13 @@
                 <li><a href="#" class="white-text">El Salvador</a></li>
                 <li><a href="#" class="white-text">Nicaragua</a></li>-->
             </ul>
-        </div>
-    </nav>
-</div>
-<div class="navbar-fixed hide-on-large-only">
-    <nav class="nav-extended white center">
-        <div class="nav-wrapper">
-            <a id="logo-container" href="{{url('/')}}" class="brand-logo">
-                <img src="img/logos/logo_valdez.png" alt="Valdez Store" height="55" width="300">
-            </a>
-        </div>
-        <div class="nav-content">
-            <ul>
-                <li class="active"><span class="nav-title"><a href="{{url('/')}}" class="evogria black-text">LIQUIDACIONES DE HOY</a></span></li>
-                <li><span class="nav-title"><a href="#sucursales" class="black-text evogria" rel="" id="anchorCentros">VER CENTRO DE LIQUIDACIONES</a></span></li>
-                <li><span class="nav-title"><a href="{{url('/quienes-somos')}}" class="black-text evogria" rel="" id="anchorCentros">QUIÉNES SOMOS</a></span></li>
+
+            <ul class="side-nav" id="mobile-menu">
+                <li><a href="{{url('/')}}" class="evogria" id="anchorInicio">LIQUIDACIONES DE HOY</a></li>
+                <li><a href="#sucursales" class="black-text evogria" rel="" id="anchorCentros">VER CENTRO DE LIQUIDACIONES</a></li>
+                <li class="active current-link"><a href="{{url('/quienes-somos')}}" class="black-text evogria" rel="" id="anchorCentros">QUIÉNES SOMOS</a></li>
             </ul>
+            <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
     </nav>
 </div>
@@ -140,7 +132,7 @@
 </footer>
 
 <!--  Scripts-->
-{!! Html::script('http://code.jquery.com/jquery-2.2.4.min.js') !!}
+{!! Html::script('https://code.jquery.com/jquery-2.2.4.min.js') !!}
 {!! Html::script('https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js') !!}
 {!! Html::script('js/materialize.js') !!}
 {!! Html::script('js/init.js') !!}

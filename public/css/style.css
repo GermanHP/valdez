@@ -1,3 +1,60 @@
+.navbar-fixed {
+    z-index: 9999;
+}
+/*
+.navigation-v{
+   border-bottom: 1px solid #EAEAEB;
+   margin-top: 8px;
+   height: 60px;
+   line-height: 70px;
+}
+
+
+.menu{
+   margin: 0 30px 0 0;
+}
+
+.menu a{
+   clear: right;
+   text-decoration: none;
+   margin: 0 10px;
+   line-height: 70px;
+   background-color: white;
+}
+
+label{
+   margin: 0 40px 0 0;
+   font-size: 26px;
+   line-height: 70px;
+   display: none;
+   width: 26px;
+   float: right;
+}
+#toggle{
+   display: none;
+}
+
+@media only screen and (max-width: 867px) {
+   label{
+       display: block;
+       cursor: pointer;
+   }
+   .menu{
+       text-align: center;
+       width: 100%;
+       display: none;
+   }
+   .menu a{
+       display: block;
+       border-bottom: 1px solid #EAEAEB;
+       margin: 0;
+   }
+
+   #toggle:checked + .menu{
+       display: block;
+   }
+}
+*/
 /* Custom Stylesheet */
 @font-face {
     font-family: Montserrat;
@@ -14,14 +71,14 @@
 }
 
 @font-face {
-  font-family: Evogria;
-  font-style: all;
-  font-weight: normal;
-  src: url("../fonts/montserrat/Evogria-Italic.otf");
+    font-family: Evogria;
+    font-style: all;
+    font-weight: normal;
+    src: url("../fonts/montserrat/Evogria-Italic.otf");
 }
 
 .evogria{
-  font-family: Evogria;
+    font-family: Evogria;
 }
 
 a#logo-container2{
@@ -29,11 +86,11 @@ a#logo-container2{
 }
 
 .montserrat-extra-light{
-  font-family: "Montserrat Extra Light";
+    font-family: "Montserrat Extra Light";
 }
 
 h1, h2, h3, h4, h5, h6, p, a{
-  font-family: Montserrat;
+    font-family: Montserrat;
 }
 
 body {
@@ -48,62 +105,61 @@ main {
 
 nav ul a,
 nav .brand-logo {
-  color: #444;
+    color: #444;
 }
 
 p {
-  line-height: 2rem;
+    line-height: 2rem;
 }
 
 .button-collapse {
-  color: #26a69a;
+    color: #26a69a;
 }
 
 .parallax-container {
-  min-height: 350px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
+    min-height: 350px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
+.parallax-container .section {
     width: 100%;
-  }
+}
 
 @media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
+    .parallax-container .section {
+        top: 40%;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
 }
 
 @media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
+    #index-banner .section {
+        top: 0;
+    }
 }
 
 .icon-block {
-  padding: 0 15px;
+    padding: 0 15px;
 }
 
 .icon-block .material-icons {
-  font-size: inherit;
+    font-size: inherit;
 }
 
 footer.page-footer {
-  margin: 0;
+    margin: 0;
 }
 
 div#liquidacionButton{
-  margin-top: 50%;
+    margin-top: 50%;
 }
 
 /*clases para efecto hover en las ubicaciones*/
 div#sucursales{
-  background-color: #524d94    ;
+    background-color: #524d94    ;
 }
 
 .nav-color{
@@ -116,54 +172,54 @@ div#sucursales{
 }
 
 img#purple{
-  margin-bottom: -130px;
+    margin-bottom: -130px;
 }
 
 div#consulta{
-  margin-top: -20px;
+    margin-top: -20px;
 }
 
 .div-imagen {
-  display:inline-block;
-  position:relative;
+    display:inline-block;
+    position:relative;
 }
 
 .div-imagen > div {
-  position: fixed;
-  top:0;
-  left:0;
-  z-index:-1;
-  padding:10px;
-  margin:0;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+    padding:10px;
+    margin:0;
 }
 
 .desvanecer:hover {
-  opacity: 0.09;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  -ms-transition: opacity 500ms;
-  transition: opacity 500ms;
+    opacity: 0.09;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
 }
 
 .ajustar-texto{
-  margin-top: 50px;
-  margin-left: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
 .desvanecer2:hover {
-  background-color: white;
-  opacity: 0.09;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  -ms-transition: opacity 500ms;
-  transition: opacity 500ms;
+    background-color: white;
+    opacity: 0.09;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
 }
 
 .card-fix{
-  width: 400px;
-  height: auto;
+    width: 400px;
+    height: auto;
 }
 
 .card-fix2{
@@ -177,16 +233,16 @@ div#consulta{
 }
 
 .tachado{
-  text-decoration: line-through;
+    text-decoration: line-through;
 }
 
 .icon-img{
-  width: 70px;
-  height: auto;
+    width: 70px;
+    height: auto;
 }
 
 a#fab-menu{
-  margin-top: -50px;
+    margin-top: -50px;
 }
 
 .apple{
@@ -195,7 +251,7 @@ a#fab-menu{
 }
 
 .foo-img{
-    width: 350px;
+    width: 250px;
     height: auto;
 }
 
@@ -303,4 +359,14 @@ a#logo-container{
 img#bannerRestablecer{
     width: 100%;
     height: auto;
+}
+
+.button-collapse{
+    margin-left: -8px;
+}
+
+span#fixed{
+    margin-left: -50px;
+    margin-top: -50px;
+    position: fixed;
 }
