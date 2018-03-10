@@ -62,21 +62,49 @@
         <div class="mdl-layout__drawer">
             <span class="mdl-layout-title">
                 <br>
-                {{Form::image('/img/logos/logo_valdez.png','Valdez Store',['class'=>'responsive-img', 'id'=>'Valdez Store', 'height'=>'50', 'width'=>'170'])}}
+                {{Form::image('/img/logos/logo_valdez.png','Valdez Store',['class'=>'responsive-img',
+                'id'=>'Valdez Store', 'height'=>'50', 'width'=>'170'])}}
             </span>
 
             <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="{{url('/inbox')}}"><i class="material-icons">folder_shared</i>Reservas</a>
-                <a class="mdl-navigation__link" href="{{url('/contactos')}}"><i class="material-icons">supervisor_account</i>Contactos</a>
-                <a class="mdl-navigation__link" href="{{url('/candidatos')}}"><i class="material-icons">face</i>Candidatos</a>
+                <a class="mdl-navigation__link" href="{{url('/inbox')}}">
+                    <i class="material-icons">folder_shared</i>
+                    Reservas
+                </a>
+                <a class="mdl-navigation__link" href="{{url('/contactos')}}">
+                    <i class="material-icons">supervisor_account</i>
+                    Contactos
+                </a>
+                <a class="mdl-navigation__link" href="{{url('/candidatos')}}">
+                    <i class="material-icons">face</i>
+                    Candidatos
+                </a>
                 <hr class="divider">
-                <a class="mdl-navigation__link" href="{{route('producto.create')}}"><i class="material-icons">add_shopping_cart</i>Nuevo Producto</a>
-                <a class="mdl-navigation__link" href="{{route('producto.index')}}"><i class="material-icons">build</i>Gestión de Productos</a>
-                <a class="mdl-navigation__link" href="{{url('/usuarios-en-el-sistema')}}"><i class="material-icons">person_outline</i>Usuarios del Sistema</a>
+                <a class="mdl-navigation__link" href="{{route('producto.create')}}">
+                    <i class="material-icons">add_shopping_cart</i>
+                    Nuevo Producto
+                </a>
+                <a class="mdl-navigation__link" href="{{route('producto.index')}}">
+                    <i class="material-icons">build</i>
+                    Gestión de Productos
+                </a>
+                <a class="mdl-navigation__link" href="{{url('/usuarios-en-el-sistema')}}">
+                    <i class="material-icons">person_outline</i>
+                    Usuarios del Sistema
+                </a>
                 <hr class="divider">
-                <a class="mdl-navigation__link" href="#"><i class="material-icons">create</i>Nuevo Post</a>
-                <a class="mdl-navigation__link" href="#"><i class="material-icons">library_books</i>Posts</a>
-                <a class="mdl-navigation__link" href="#"><i class="material-icons">bookmark</i>Tags</a>
+                <a class="mdl-navigation__link" href="#">
+                    <i class="material-icons">create</i>
+                    Nuevo Post
+                </a>
+                <a class="mdl-navigation__link" href="#">
+                    <i class="material-icons">library_books</i>
+                    Posts
+                </a>
+                <a class="mdl-navigation__link" href="#">
+                    <i class="material-icons">bookmark</i>
+                    Tags
+                </a>
             </nav>
 
         </div>

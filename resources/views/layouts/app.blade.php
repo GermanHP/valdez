@@ -7,7 +7,8 @@
     <title>  VALDEZ STORE – Liquidacion de Laptops, Computadoras y Smartphones</title>
     <meta name=”robots” content=”noindex,follow”>
     <meta name="description" content="">
-    <meta name="keywords" content="Valdez Mobile, Valdez Store, Liquidacion, Laptops en Liquidacion, Valdes,HP,Dell, Laptops en oferta, promociones en laptops, Venta de computadoras,ofertas notebook, laptops economicas">
+    <meta name="keywords" content="Valdez Mobile, Valdez Store, Liquidacion, Laptops en Liquidacion, Valdes,HP,Dell,
+    Laptops en oferta, promociones en laptops, Venta de computadoras,ofertas notebook, laptops economicas">
 
     <!-- CSS  -->
     {!! Html::style('https://fonts.googleapis.com/icon?family=Material+Icons') !!}
@@ -23,41 +24,59 @@
         <nav class="white" role="navigation">
             <div class="nav-wrapper container">
                 <a id="logo-container" href="{{url('/')}}" class="brand-logo">
-                    {{Form::image('/img/logos/logo_valdez.png','Valdez Store',['id'=>'Valdez Store', 'height'=>'50', 'width'=>'250'])}}
+                    {{Form::image('/img/logos/logo_valdez.png','Valdez Store',
+                    ['id'=>'Valdez Store', 'height'=>'50', 'width'=>'250'])}}
                 </a>
                 <a href="#" class="button-collapse" data-activates="mobile-menu"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li class="active current-link"><a href="#inicio" class="evogria" id="anchorInicio">LIQUIDACIONES DE HOY</a></li>
-                    <li><a href="#sucursales" class="black-text evogria" rel="" id="anchorCentros">VER CENTRO DE LIQUIDACIONES</a></li>
-                    <li><a href="{{url('/quienes-somos')}}" class="black-text evogria" rel="" id="anchorCentros">QUIÉNES SOMOS</a></li>
+                    <li class="active current-link">
+                        <a href="#inicio" class="evogria" id="anchorInicio">
+                            LIQUIDACIONES DE HOY
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#sucursales" class="black-text evogria" rel="" id="anchorCentros">
+                            VER CENTRO DE LIQUIDACIONES
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{url('/quienes-somos')}}" class="black-text evogria" rel="" id="anchorCentros">
+                            QUIÉNES SOMOS
+                        </a>
+                    </li>
                 </ul>
 
                 <ul class="side-nav" id="mobile-menu">
-                    <li class="active current-link"><a href="#inicio" class="evogria" id="anchorInicio">LIQUIDACIONES DE HOY</a></li>
-                    <li><a href="#sucursales" class="black-text evogria" rel="" id="anchorCentros">VER CENTRO DE LIQUIDACIONES</a></li>
-                    <li><a href="{{url('/quienes-somos')}}" class="black-text evogria" rel="" id="anchorCentros">QUIÉNES SOMOS</a></li>
+                    <li>
+                        <div>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{Form::image('/img/logos/logo_valdez.png','Valdez Store',
+                            ['id'=>'Valdez Store', 'height'=>'50', 'width'=>'250'])}}
+                            <br><br>
+                            <hr class="divider">
+                        </div>
+                    </li>
+                    <li class="active current-link">
+                        <a href="#inicio" class="evogria" id="anchorInicio">
+                            LIQUIDACIONES DE HOY
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#sucursales" class="black-text evogria" rel="" id="anchorCentros">
+                            VER CENTRO DE LIQUIDACIONES
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{url('/quienes-somos')}}" class="black-text evogria" rel="" id="anchorCentros">
+                            QUIÉNES SOMOS
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </div>
 </header>
-<!--
-<div class="navbar-static-top hide-on-large-only">
-    <nav class="nav-extended white center">
-        <div class="nav-wrapper">
-            <a id="logo-container" href="{{url('/')}}" class="brand-logo">
-                <img src="img/logos/logo_valdez.png" alt="Valdez Store" height="55" width="300">
-            </a>
-        </div>
-        <div class="nav-content">
-            <ul>
-                <li class="active"><span class="nav-title"><a href="#inicio" class="evogria black-text" id="anchorInicio">LIQUIDACIONES DE HOY</a></span></li>
-                <li><span class="nav-title"><a href="#sucursales" class="black-text evogria" rel="" id="anchorCentros">VER CENTRO DE LIQUIDACIONES</a></span></li>
-                <li><span class="nav-title"><a href="{{url('/quienes-somos')}}" class="black-text evogria" rel="" id="anchorCentros">QUIÉNES SOMOS</a></span></li>
-            </ul>
-        </div>
-    </nav>
-</div>-->
+
 <main>
     @include('includes.modals')
     <div id="content1" class="hide-on-med-and-down">
@@ -78,8 +97,8 @@
                     cada producto.
                 </p><br>
                 <a href="#">
-                    <p class="teal-text">Jardines de Cuscatlán, Av. L-A Calle L4, Polígono D, Edificio VALDEZ, Merliot, Antiguo
-                        Cuscatlán, La Libertad, El Salvador, C.A.</p>
+                    <p class="teal-text">Jardines de Cuscatlán, Av. L-A Calle L4, Polígono D, Edificio VALDEZ, Merliot,
+                        Antiguo Cuscatlán, La Libertad, El Salvador, C.A.</p>
                 </a>
                 <a href="#">
                     <p class="teal-text">Teléfono: +503 2201-3004</p>
@@ -88,10 +107,14 @@
                     <p class="teal-text">WhatsApp: +503 7601-2233</p>
                 </a>
                 <br>
-                <a class="white-text" href="#!">{{Form::image('/img/icons/facebook.png','Facebook',['id'=>'FooterValdez', 'class'=>'icon-img'])}}</a>
-                <a class="white-text" href="#!">{{Form::image('/img/icons/twitter.png','Twitter',['id'=>'FooterValdez', 'class'=>'icon-img'])}}</a>
-                <a class="white-text" href="#!">{{Form::image('/img/icons/instagram.png','Instagram',['id'=>'FooterValdez', 'class'=>'icon-img'])}}</a>
-                <a class="white-text" href="#!">{{Form::image('/img/icons/googleplus.png','GooglePlus',['id'=>'FooterValdez', 'class'=>'icon-img'])}}</a>
+                <a class="white-text" href="#!">{{Form::image('/img/icons/facebook.png','Facebook',
+                ['id'=>'FooterValdez', 'class'=>'icon-img'])}}</a>
+                <a class="white-text" href="#!">{{Form::image('/img/icons/twitter.png','Twitter',
+                ['id'=>'FooterValdez', 'class'=>'icon-img'])}}</a>
+                <a class="white-text" href="#!">{{Form::image('/img/icons/instagram.png','Instagram',
+                ['id'=>'FooterValdez', 'class'=>'icon-img'])}}</a>
+                <a class="white-text" href="#!">{{Form::image('/img/icons/googleplus.png','GooglePlus',
+                ['id'=>'FooterValdez', 'class'=>'icon-img'])}}</a>
             </div>
             <div class="col l3 s12">
                 <br>

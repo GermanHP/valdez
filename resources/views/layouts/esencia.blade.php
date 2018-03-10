@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>  VALDEZ STORE – Liquidacion de Laptops, Computadoras y Smartphones</title>
     <meta name="description" content="">
-    <meta name="keywords" content="Valdez Mobile, Valdez Store, Liquidacion, Laptops en Liquidacion, Valdes,HP,Dell, Laptops en oferta, promociones en laptops, Venta de computadoras,ofertas notebook, laptops economicas">
+    <meta name="keywords" content="Valdez Mobile, Valdez Store, Liquidacion, Laptops en Liquidacion, Valdes,HP,Dell,
+    Laptops en oferta, promociones en laptops, Venta de computadoras,ofertas notebook, laptops economicas">
 
     <!-- CSS  -->
     {!! Html::style('https://fonts.googleapis.com/icon?family=Material+Icons') !!}
@@ -27,20 +28,38 @@
             </a>
 
             <ul class="right hide-on-med-and-down">
-                <li><a href="{{url('/')}}" class="evogria">LIQUIDACIONES DE HOY</a></li>
-                <li><a href="#sucursales" class="evogria" rel="" id="anchorCentros">VER CENTRO DE LIQUIDACIONES</a></li>
-                <li class="active current-link"><a href="{{url('/quienes-somos')}}" class="evogria" rel="" id="anchorCentros">QUIÉNES SOMOS</a></li>
+                <li>
+                    <a href="{{url('/')}}" class="evogria">LIQUIDACIONES DE HOY</a>
+                </li>
+                <li>
+                    <a href="#sucursales" class="evogria" rel="" id="anchorCentros">VER CENTRO DE LIQUIDACIONES</a>
+                </li>
+                <li class="active current-link">
+                    <a href="{{url('/quienes-somos')}}" class="evogria" rel="" id="anchorCentros">QUIÉNES SOMOS</a>
+                </li>
                 <!-- <li><i class="material-icons">more_vert</i></li>
                 <li><a href="#" class="white-text">El Salvador</a></li>
                 <li><a href="#" class="white-text">Nicaragua</a></li>-->
             </ul>
 
             <ul class="side-nav" id="mobile-menu">
-                <li><a href="{{url('/')}}" class="evogria" id="anchorInicio">LIQUIDACIONES DE HOY</a></li>
-                <li><a href="#sucursales" class="black-text evogria" rel="" id="anchorCentros">VER CENTRO DE LIQUIDACIONES</a></li>
-                <li class="active current-link"><a href="{{url('/quienes-somos')}}" class="black-text evogria" rel="" id="anchorCentros">QUIÉNES SOMOS</a></li>
+                <li>
+                    <a href="{{url('/')}}" class="evogria" id="anchorInicio">LIQUIDACIONES DE HOY</a>
+                </li>
+                <li>
+                    <a href="#sucursales" class="black-text evogria" rel="" id="anchorCentros">
+                        VER CENTRO DE LIQUIDACIONES
+                    </a>
+                </li>
+                <li class="active current-link">
+                    <a href="{{url('/quienes-somos')}}" class="black-text evogria" rel="" id="anchorCentros">
+                        QUIÉNES SOMOS
+                    </a>
+                </li>
             </ul>
-            <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+            <a href="#" data-activates="mobile-menu" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
         </div>
     </nav>
 </div>
@@ -59,8 +78,8 @@
                     cada producto.
                 </p><br>
                 <a href="#">
-                    <p class="teal-text">Jardines de Cuscatlán, Av. L-A Calle L4, Polígono D, Edificio VALDEZ, Merliot, Antiguo
-                        Cuscatlán, La Libertad, El Salvador, C.A.</p>
+                    <p class="teal-text">Jardines de Cuscatlán, Av. L-A Calle L4, Polígono D, Edificio VALDEZ, Merliot,
+                        Antiguo Cuscatlán, La Libertad, El Salvador, C.A.</p>
                 </a>
                 <a href="#">
                     <p class="teal-text">Teléfono: +503 2201-3004</p>
