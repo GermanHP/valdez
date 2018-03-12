@@ -289,7 +289,6 @@
             </div>
         </div>
         <br>
-
         <!-- start apple -->
         <div class="container">
             <div class="section">
@@ -358,7 +357,7 @@
                 <div class="col s6 m6 l6 xl6">
                     <h5>SUGERIDOS PARA TI</h5>
                 </div>
-                <div class="col s12 m12 l6 xl6">
+                <div class="col s6 m6 l6 xl6">
                     <a class="black-text" href="{{url('/productos')}}">
                         <h5 class="right-align">
                             VER TODO
@@ -459,7 +458,7 @@
             </div>
         </div>
 
-        <!--   Apple Section   -->
+        <!--   Smartphone Section   -->
         <div class="container">
             <div class="row">
                 <div class="col l1 xl1"></div>
