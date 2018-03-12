@@ -180,7 +180,7 @@
                                                                 </strong>
                                                             </h5>
                                                             <br><br><br>
-                                                            <a class="btn modal-trigger black"
+                                                            <a class="btn black"
                                                                href="{{route('reservas.makeReserva', $sugerencia->url)}}">
                                                                 Reservar
                                                             </a>

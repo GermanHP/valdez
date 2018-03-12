@@ -102,7 +102,7 @@
                             <p class="light white-text center-align">
                                 Con Valdez Store, usted reduce su presupuesto. Estamos conscientes de que la economía puede
                                 alcanzarse con un socio estratégico que además de brindarle un buen producto, le ofrezca la
-                                mejor atención y asesoría.<br> <br>
+                                mejor atención y asesoría.<br>
                             </p>
                         </div>
                         <hr class="divider teal">

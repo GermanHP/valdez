@@ -1,3 +1,4 @@
+//Se inicializan todos los componentes jQuery que se utilizarán
 (function($){
   $(function(){
 
@@ -61,6 +62,16 @@
           return false;
       });
       //fin de la funcion para animar
+
+      //Popup para geolocalización
+      $(window).scroll(function(){
+          if($(document).scrollTop()>=$(document).height()/5)
+              $("#spopup").show("slow");else $("#spopup").hide("slow");
+      });
+      function closeSPopup(){
+          $('#spopup').close('slow');
+      }
+      //Fin geolocalización
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space

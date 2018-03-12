@@ -28,26 +28,64 @@
                 <ul class="collapsible" data-collapsible="expandable">
 
                     <li>
+                        <div class="collapsible-header active"><i class="material-icons">devices_other</i>PRODUCTO</div>
+                        <div class="collapsible-body">
+                            <p>
+                                <input name="group2" type="radio" id="prod1" />
+                                <label for="prod1"><a class="black-text" href="{{url('laptops')}}">Laptops</a></label>
+                            </p>
+                            <p>
+                                <input name="group2" type="radio" id="prod2" />
+                                <label for="prod2"><a class="black-text" href="{{url('tablets')}}">Tablets</a></label>
+                            </p>
+                            <p>
+                                <input class="group1" name="group2" type="radio" id="prod3"  />
+                                <label for="prod3"><a class="black-text" href="{{url('smartphones')}}">Smartphones</a></label>
+                            </p>
+                            <p>
+                                <input class="group1" name="group2" type="radio" id="prod4"  />
+                                <label for="prod4"><a class="black-text" href="{{url('all-in-one')}}">All in One</a></label>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
                         <div class="collapsible-header active"><i class="material-icons">local_offer</i>MARCA</div>
                         <div class="collapsible-body">
-
+                            <p>
+                                <input name="group3" type="radio" id="brand1" />
+                                <label for="brand1"><a class="black-text" href="{{url('/marca/hp')}}">HP</a></label>
+                            </p>
+                            <p>
+                                <input name="group3" type="radio" id="brand2" />
+                                <label for="brand2"><a class="black-text" href="{{url('/marca/dell')}}">DELL</a></label>
+                            </p>
                             <p>
                                 <input class="group1" name="group3" type="radio" id="brand3"  />
-                                <label for="brand3">APPLE</label>
+                                <label for="brand3"><a class="black-text" href="{{url('/marca/apple')}}">APPLE</a></label>
                             </p>
-
+                            <p>
+                                <input class="group1" name="group3" type="radio" id="brand4"  />
+                                <label for="brand4"><a class="black-text" href="{{url('/marca/acer')}}">ACER</a></label>
+                            </p>
                             <p>
                                 <input class="group1" name="group3" type="radio" id="brand5"  />
-                                <label for="brand5">SAMSUNG</label>
+                                <label for="brand5"><a class="black-text" href="{{url('/marca/samsung')}}">SAMSUNG</a></label>
                             </p>
                             <p>
                                 <input class="group1" name="group3" type="radio" id="brand6"  />
-                                <label for="brand6">ASUS</label>
+                                <label for="brand6"><a class="black-text" href="{{url('/marca/asus')}}">ASUS</a></label>
                             </p>
-
+                            <p>
+                                <input class="group1" name="group3" type="radio" id="brand7"  />
+                                <label for="brand7"><a class="black-text" href="{{url('/marca/toshiba')}}">TOSHIBA</a></label>
+                            </p>
+                            <p>
+                                <input class="group1" name="group3" type="radio" id="brand8"  />
+                                <label for="brand8"><a class="black-text" href="{{url('/marca/lenovo')}}">LENOVO</a></label>
+                            </p>
                             <p>
                                 <input class="group1" name="group3" type="radio" id="brand9"  />
-                                <label for="brand9">OTROS</label>
+                                <label for="brand9"><a class="black-text" href="{{url('/marca/otros')}}">OTROS</a></label>
                             </p>
                         </div>
                     </li>
@@ -90,19 +128,6 @@
                                                     <p><strong>{{$tablet->caracteristica3}}</strong></p>
                                                     <p><strong>{{$tablet->caracteristica4}}</strong></p>
                                                     <br>
-                                                    <p>Disponible en:</p>
-                                                    <div class="row">
-                                                        <div class="col s6 m6 l6 xl6">
-                                                            <div class="chip yellow">
-                                                                Merliot
-                                                            </div>
-                                                        </div>
-                                                        <div class="col s6 m6 l6 xl6">
-                                                            <div class="chip yellow">
-                                                                Escalón
-                                                            </div>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                                 <div class="col s6 m6 l6 xl6">
                                                     <p><strong><a href="#">+info</a></strong></p>
@@ -116,8 +141,20 @@
                                                             Ahora: ${{$tablet->precioPromoEs}}
                                                         </strong>
                                                     </h5>
-                                                    <br><br><br>
-                                                    <a class="btn modal-trigger black" href="{{url('/reserva')}}">
+                                                    <br>
+                                                </div>
+                                                <div class="col s12 m12 l12 xl12">
+                                                    <p>Disponible en:</p>
+
+                                                    <div class="chip yellow">
+                                                        Merliot
+                                                    </div>
+                                                    <div class="chip yellow">
+                                                        Escalón
+                                                    </div>
+                                                </div>
+                                                <div class="col s12 m12 l12 xl12">
+                                                    <a class="btn black" href="{{route('reservas.makeReserva', $tablet   ->url)}}">
                                                         Reservar
                                                     </a>
                                                 </div>

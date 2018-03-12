@@ -98,7 +98,6 @@
                             </strong>
                         </h4>
                     </div>
-                    <a class="btn" href="{{ url('/pdf') }}">Descargar PDF</a>
                 </div>
             </div>
         </main>

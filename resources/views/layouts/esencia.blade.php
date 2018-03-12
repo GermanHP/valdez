@@ -30,13 +30,13 @@
 
             <ul class="right hide-on-med-and-down">
                 <li>
-                    <a href="{{url('/')}}" class="white-text evogria">LIQUIDACIONES DE HOY</a>
+                    <a href="{{url('/')}}" class="white-text evogria letter-spacing">LIQUIDACIONES DE HOY</a>
                 </li>
                 <li>
-                    <a href="#sucursales" class="white-text evogria" rel="" id="anchorCentros">VER CENTRO DE LIQUIDACIONES</a>
+                    <a href="#sucursales" class="white-text evogria letter-spacing" rel="" id="anchorCentros">VER CENTRO DE LIQUIDACIONES</a>
                 </li>
                 <li class="active current-link">
-                    <a href="{{url('/quienes-somos')}}" class="white-text evogria" rel="" id="anchorCentros">QUIÉNES SOMOS</a>
+                    <a href="{{url('/quienes-somos')}}" class="white-text evogria letter-spacing" rel="" id="anchorCentros">QUIÉNES SOMOS</a>
                 </li>
                 <!-- <li><i class="material-icons">more_vert</i></li>
                 <li><a href="#" class="white-text">El Salvador</a></li>

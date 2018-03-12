@@ -30,17 +30,17 @@
                 <a href="#" class="button-collapse" data-activates="mobile-menu"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li class="active current-link">
-                        <a href="#inicio" class="white-text evogria" id="anchorInicio">
+                        <a href="#inicio" class="white-text evogria letter-spacing" id="anchorInicio">
                             LIQUIDACIONES DE HOY
                         </a>
                     </li>
                     <li>
-                        <a href="#sucursales" class="white-text evogria" rel="" id="anchorCentros">
+                        <a href="#sucursales" class="white-text evogria letter-spacing" rel="" id="anchorCentros">
                             VER CENTRO DE LIQUIDACIONES
                         </a>
                     </li>
                     <li>
-                        <a href="{{url('/quienes-somos')}}" class="white-text evogria" rel="" id="anchorCentros">
+                        <a href="{{url('/quienes-somos')}}" class="white-text evogria letter-spacing" rel="" id="anchorCentros">
                             QUIÉNES SOMOS
                         </a>
                     </li>
@@ -79,6 +79,7 @@
 
 <main>
     @include('includes.modals')
+    @include('includes.popup')
     <div id="content1" class="hide-on-med-and-down">
         @yield('content')
     </div>

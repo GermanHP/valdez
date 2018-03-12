@@ -6,7 +6,7 @@
         <div class="section no-pad-bot">
             <div class="container">
                 <div class="row center">
-                    <h3 class="evogria center-align white-text">Únete a Nuestra Familia</h3>
+                    <h4 class="evogria center-align white-text">Únete a Nuestra Familia</h4>
                 </div>
             </div>
         </div>
@@ -14,13 +14,13 @@
     </div>
     <br><br>
     <div class="container">
-    <h2 class="center">Crear Currículo</h2>
+    <h4 class="center">Crear Currículo</h4>
     {!!Form::open(['route'=>['empleo.store'], 'method'=>'POST', 'files'=>true,
     'onsubmit'=>"waitingDialog.show('Cargando... ',{ progressType: 'info'});setTimeout(function ()
     {waitingDialog.hide();}, 3000);"])!!}
 
         <div class="container">
-            <h3>Área Personal</h3>
+            <h5>Área Personal</h5>
             <div class="input-group input-group-lg">
                 {{ Form::label('nombre', 'Nombres:', ['class'=>'input-group-addon']) }}
                 {{ Form::text('nombreCandidato', null, ['class' => 'form-control', 'required' => '',
@@ -62,7 +62,7 @@
                 {{ Form::file('featured_foto', ['class'=>'form-control', 'required'=>'']) }}
             </div>
             <br><br>
-            <h3>Experiencia Laboral</h3>
+            <h5>Experiencia Laboral</h5>
             <div class="input-group input-group-lg">
                 {{ Form::label('nombre', 'Nombre de Empresa:', ['class'=>'input-group-addon']) }}
                 {{ Form::text('empresa1', null, ['class' => 'form-control', 'required' => '', 'maxlength' => '255']) }}
@@ -83,7 +83,7 @@
                 'Describe tu experiencia y periodo laboral.'])}}
             </div>
             <br><br>
-            <h3>Otros Datos</h3>
+            <h5>Otros Datos</h5>
             <div class="input-field col s6 m6 l6 xl6">
                 {{ Form::label('puestos', 'Puesto al que desea aplicar:', ['class'=>'input-group-addon']) }}
                 <br>
