@@ -138,6 +138,7 @@
                                                 <div id="info"></div>
                                                 <div class="card-content">
                                                     <h5 class="montserrat-extra-light">{{$sugerencia->nombre}}</h5>
+
                                                     <div class="row">
                                                         <div class="col s6 m6 l6 xl6">
                                                             <p><strong>{{$sugerencia->caracteristica1}}</strong></p>
@@ -146,6 +147,7 @@
                                                             <p><strong>{{$sugerencia->caracteristica4}}</strong></p>
                                                             <br>
                                                             <p>Disponible en:</p>
+                                                            <br>
                                                             <div class="row">
                                                                 <div class="col s6 m6 l6 xl6">
                                                                     <div class="chip yellow">
@@ -296,7 +298,7 @@
                     <div class="col s12 m3">
                         <div class="icon-block">
                             <br><br><br>
-                            <img class="apple responsive-img center-block" src="img/logos/apple-logo.png" alt="Apple">
+                            <img class="apple responsive-img center-block" src="img/logos/apple-logo.png" alt="Apple" height="10" width="10">
                         </div>
                     </div>
 
@@ -354,7 +356,7 @@
         <div class="container">
             <div class="row">
                 <div class="col s6 m6 l6 xl6">
-                    <h4>SUGERIDOS PARA TI</h4>
+                    <h5>SUGERIDOS PARA TI</h5>
                 </div>
                 <div class="col s12 m12 l6 xl6">
                     <a class="black-text" href="{{url('/productos')}}">
@@ -431,11 +433,11 @@
                                                             Antes: ${{$sugerencia->precioEs}}
                                                         </strong>
                                                     </h6>
-                                                    <h5 class="red-text">
+                                                    <h6 class="red-text">
                                                         <strong>
                                                             Precio: ${{$sugerencia->precioPromoEs}}
                                                         </strong>
-                                                    </h5>
+                                                    </h6>
                                                 </div>
                                             </div>
                                             <h6>Disponible en:</h6>
@@ -464,8 +466,8 @@
                 <div class="col s12 m12 l2 xl2">
                     <div class="icon-block card-fix3">
                         <a href="{{url('/smartphones')}}">
-                            <h2>Smart</h2>
-                            <h2>Phones</h2>
+                            <h3>Smart</h3>
+                            <h3>Phones</h3>
                         </a>
                     </div>
                 </div>

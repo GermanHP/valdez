@@ -17,7 +17,7 @@
                         <img src="img/banners/productoarrival4.png" alt="">
                     </div>
                     <br><br><br><br>
-                    <h3>NEW ARRIVALS</h3>
+                    <h3 class="evogria">NEW ARRIVALS</h3>
                 </div>
             </div>
         </div>

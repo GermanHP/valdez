@@ -44,6 +44,9 @@ Route::get('/marca/asus', 'SearchUserController@filterAsus');
 Route::get('/marca/toshiba', 'SearchUserController@filterToshiba');
 Route::get('/marca/lenovo', 'SearchUserController@filterLenovo');
 Route::get('/marca/otros', 'SearchUserController@filterOtros');
+Route::get('/categoria/basica', 'SearchUserController@filterBasica');
+Route::get('/categoria/superior', 'SearchUserController@filterSuperior');
+Route::get('/categoria/profesional', 'SearchUserController@filterProfesional');
 
 Route::get('/productos', 'ProductosController@mostrarProductos');
 

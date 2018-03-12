@@ -21,26 +21,26 @@
 <body>
 <header>
     <div class="navbar-fixed">
-        <nav class="white" role="navigation">
+        <nav class="nav-color" role="navigation">
             <div class="nav-wrapper container">
                 <a id="logo-container" href="{{url('/')}}" class="brand-logo">
-                    {{Form::image('/img/logos/logo_valdez.png','Valdez Store',
-                    ['id'=>'Valdez Store', 'height'=>'50', 'width'=>'250'])}}
+                    {{Form::image('/img/logos/vs2.png','Valdez Store',
+                    ['id'=>'Valdez Store', 'height'=>'100', 'width'=>'250'])}}
                 </a>
                 <a href="#" class="button-collapse" data-activates="mobile-menu"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li class="active current-link">
-                        <a href="#inicio" class="evogria" id="anchorInicio">
+                        <a href="#inicio" class="white-text evogria" id="anchorInicio">
                             LIQUIDACIONES DE HOY
                         </a>
                     </li>
                     <li>
-                        <a href="#sucursales" class="black-text evogria" rel="" id="anchorCentros">
+                        <a href="#sucursales" class="white-text evogria" rel="" id="anchorCentros">
                             VER CENTRO DE LIQUIDACIONES
                         </a>
                     </li>
                     <li>
-                        <a href="{{url('/quienes-somos')}}" class="black-text evogria" rel="" id="anchorCentros">
+                        <a href="{{url('/quienes-somos')}}" class="white-text evogria" rel="" id="anchorCentros">
                             QUIÉNES SOMOS
                         </a>
                     </li>

@@ -19,10 +19,11 @@
 @include('includes.facebookFeed')
 @include('includes.modals')
 <div class="navbar-fixed">
-    <nav class="black" role="navigation">
+    <nav class="nav-color" role="navigation">
         <div class="nav-wrapper container">
             <a id="logo-container2" href="{{url('/')}}" class="brand-logo">
-                <img class="responsive-img" src="img/logos/vs2.png" alt="Valdez Store" height="90" width="300">
+                {{Form::image('/img/logos/vs2.png','Valdez Store',
+                ['id'=>'Valdez Store', 'height'=>'100', 'width'=>'250'])}}
             </a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="{{url('/liquidaciones')}}" class="white-text evogria picker__list-item--selected">LIQUIDACIONES DE HOY</a></li>

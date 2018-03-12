@@ -97,4 +97,25 @@ class SearchUserController extends Controller
 
         return view('productos.marcas.otros', compact('otros'));
     }
+
+    public function filterBasica()
+    {
+        $basica = Producto::where('category_client_id', 1)->get();
+
+        return view('productos.category.basica', compact('basica'));
+    }
+
+    public function filterSuperior()
+    {
+        $superior = Producto::where('category_client_id', 2)->get();
+
+        return view('productos.category.superior', compact('superior'));
+    }
+
+    public function filterProfesional()
+    {
+        $profesional = Producto::where('category_client_id', 3)->get();
+
+        return view('productos.category.profesional', compact('profesional'));
+    }
 }

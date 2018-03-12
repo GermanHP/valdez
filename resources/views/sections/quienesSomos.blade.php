@@ -26,7 +26,7 @@
         <div class="row">
             <h5 class="montserrat-extra-light">NUESTRA ESENCIA</h5>
             <hr class="divider teal">
-            <div class="col s7 m7 l7 xl7">
+            <div class="col s12 m12 l7 xl7">
                 <br>
                 <p class="texto-justificado">Porque desde años atrás, GRUPO VALDEZ viene trabajando fuertemente para satisfacer las necesidades
                     de sus clientes, apostándole a la calidad y creando relaciones sólidas, duraderas y de confianza,
@@ -45,10 +45,10 @@
                 <p class="texto-justificado">Expandirnos a nivel internacional, ofreciendo tecnología de las mejores marcas, a bajos precios,
                     cuidando el bolsillo de nuestros clientes.</p>
             </div>
-            <div class="col s1 m1 l1 xl1"></div>
-            <div class="col s4 m4 l4 xl4">
+            <div class="hide-on-med-and-down col s1 m1 l1 xl1"></div>
+            <div class="hide-on-med-and-down col s4 m4 l4 xl4">
                 <br>
-                <img class="responsive-img" src="img/banners/quienes.png" alt="Quiénes Somos">
+                <img class="hide-on-med-and-down responsive-img" src="img/banners/quienes.png" alt="Quiénes Somos">
             </div>
         </div>
         <br><br><br>
@@ -60,7 +60,7 @@
             de la prestigiosa marca y reconocida, Laptop’s Valdez.
         </p>
     </div>
-    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br>
     <div class="parallax-container valign-wrapper responsive hide-on-med-and-down" id="consulta">
         <div class="section no-pad-bot">
             <div class="container">
@@ -116,7 +116,52 @@
 
     <!--   Target Section Med and Down   -->
     <div class="row subir hide-on-large-only">
-        <img src="img/hide/banner-low-target.png" alt="" class="responsive-img">
+        <br><br><br><br><br><br>
+        <!--<img src="img/hide/banner-low-target.png" alt="" class="responsive-img">-->
+
+        <div class="row">
+            <div class="col s12 m12 l4 xl4">
+                <div class="icon-block">
+                    <h1 class="center teal-text"><i class="material-icons">school</i></h1>
+                    <h5 class="center evogria">ESTUDIANTE</h5>
+
+                    <p class="light center-align">
+                        Estamos conscientes que los estudiantes, disponen de un presupuesto ajustable; es por ellos,
+                        que brindamos las mejores soluciones tecnológicas, cuidando que cada laptop que se ofrece,
+                        cumpla con la mejor calidad y se ajuste a la demanda en el mercado.
+                    </p>
+                </div>
+                <hr class="divider teal">
+            </div>
+
+            <div class="col s12 m12 l4 xl4">
+                <div class="icon-block">
+                    <h1 class="center teal-text"><i class="material-icons">domain</i></h1>
+                    <h5 class="center evogria">EMPRESARIO</h5>
+
+                    <p class="light center-align">
+                        Trabajamos con empresas que buscan el éxito, brindamos las mejoras en su infraestructura
+                        tecnológica, con calidad y servicio al cliente.
+                        <br><br><br><br>
+                    </p>
+                </div>
+                <hr class="divider teal">
+            </div>
+
+            <div class="col s12 m12 l4 xl4">
+                <div class="icon-block">
+                    <h1 class="center teal-text"><i class="material-icons">language</i></h1>
+                    <h5 class="center evogria">SOCIEDAD</h5>
+
+                    <p class="light center-align">
+                        Con Valdez Store, usted reduce su presupuesto. Estamos conscientes de que la economía puede
+                        alcanzarse con un socio estratégico que además de brindarle un buen producto, le ofrezca la
+                        mejor atención y asesoría.<br> <br>
+                    </p>
+                </div>
+                <hr class="divider teal">
+            </div>
+        </div>
     </div>
 
 
@@ -191,8 +236,11 @@
         <div class="row">
             <div class="col s12 m12 l12 xl12">
                 <div class="row">
-                    <div class="col s12 m12 l3 xl3">
-                        <img class="responsive-img" src="img/icons/auto.png" alt="AUTODIDACTAS" height="180" width="190">
+                    <div class="col s12 m12 l3 xl3 alineacion-derecha">
+                        <div class="dashed">
+                            <img class="responsive-img dashed-img" src="img/icons/auto.png" alt="AUTODIDACTAS" height="90" width="100">
+                            <div class="hide-on-med-and-down dashed-line"></div>
+                        </div>
                     </div>
                     <div class="col s12 m12 l9 xl9">
                         <br><br>
@@ -206,8 +254,11 @@
 
             <div class="col s12 m12 l12 xl12">
                 <div class="row">
-                    <div class="col s12 m12 l3 xl3">
-                        <img class="responsive-img" src="img/icons/apacionado.png" alt="APACIONADOS" height="180" width="190">
+                    <div class="col s12 m12 l3 xl3 alineacion-derecha">
+                        <div class="dashed">
+                            <img class="responsive-img dashed-img" src="img/icons/apasionado.png" alt="APASIONADOS" height="90" width="100">
+                            <div class="hide-on-med-and-down dashed-line"></div>
+                        </div>
                     </div>
                     <div class="col s12 m12 l9 xl9">
                         <br><br>
@@ -222,8 +273,11 @@
 
             <div class="col s12 m12 l12 xl12">
                 <div class="row">
-                    <div class="col s12 m12 l3 xl3">
-                        <img class="responsive-img" src="img/icons/versa.png" alt="VERSÁTILES" height="180" width="190">
+                    <div class="col s12 m12 l3 xl3 alineacion-derecha">
+                        <div class="dashed">
+                            <img class="responsive-img dashed-img" src="img/icons/versa.png" alt="VERSÁTILES" height="90" width="100">
+                            <div class="hide-on-med-and-down dashed-line"></div>
+                        </div>
                     </div>
                     <div class="col s12 m12 l9 xl9">
                         <br><br>
@@ -238,8 +292,11 @@
 
             <div class="col s12 m12 l12 xl12">
                 <div class="row">
-                    <div class="col s12 m12 l3 xl3">
-                        <img class="responsive-img" src="img/icons/minu.png" alt="MINUCIOSOS" height="180" width="190">
+                    <div class="col s12 m12 l3 xl3 alineacion-derecha">
+                        <div class="dashed">
+                            <img class="responsive-img dashed-img" src="img/icons/minu.png" alt="MINUCIOSOS" height="90" width="100">
+                            <div class="hide-on-med-and-down dashed-line"></div>
+                        </div>
                     </div>
                     <div class="col s12 m12 l9 xl9">
                         <br><br>
@@ -252,8 +309,11 @@
             </div>
             <div class="col s12 m12 l12 xl12">
                 <div class="row">
-                    <div class="col s12 m12 l3 xl3">
-                        <img class="responsive-img" src="img/icons/conpa.png" alt="CON PASIÓN" height="180" width="190">
+                    <div class="col s12 m12 l3 xl3 alineacion-derecha">
+                        <div class="dashed">
+                            <img class="responsive-img dashed-img" src="img/icons/conpa.png" alt="CON PASIÓN" height="90" width="100">
+                            <div class="hide-on-med-and-down dashed-line"></div>
+                        </div>
                     </div>
                     <div class="col s12 m12 l9 xl9">
                         <br><br>

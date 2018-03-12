@@ -21,21 +21,22 @@
 @include('includes.facebookFeed')
 @include('includes.modals')
 <div class="navbar-fixed">
-    <nav class="white" role="navigation">
+    <nav class="nav-color" role="navigation">
         <div class="nav-wrapper container">
-            <a id="logo-container" href="{{url('/')}}" class="brand-logo">
-                <img class="responsive-img" src="img/logos/logo_valdez.png" alt="Valdez Store" height="90" width="300">
+            <a id="logo-container2" href="{{url('/')}}" class="brand-logo">
+                {{Form::image('/img/logos/vs2.png','Valdez Store',
+                ['id'=>'Valdez Store', 'height'=>'100', 'width'=>'250'])}}
             </a>
 
             <ul class="right hide-on-med-and-down">
                 <li>
-                    <a href="{{url('/')}}" class="evogria">LIQUIDACIONES DE HOY</a>
+                    <a href="{{url('/')}}" class="white-text evogria">LIQUIDACIONES DE HOY</a>
                 </li>
                 <li>
-                    <a href="#sucursales" class="evogria" rel="" id="anchorCentros">VER CENTRO DE LIQUIDACIONES</a>
+                    <a href="#sucursales" class="white-text evogria" rel="" id="anchorCentros">VER CENTRO DE LIQUIDACIONES</a>
                 </li>
                 <li class="active current-link">
-                    <a href="{{url('/quienes-somos')}}" class="evogria" rel="" id="anchorCentros">QUIÉNES SOMOS</a>
+                    <a href="{{url('/quienes-somos')}}" class="white-text evogria" rel="" id="anchorCentros">QUIÉNES SOMOS</a>
                 </li>
                 <!-- <li><i class="material-icons">more_vert</i></li>
                 <li><a href="#" class="white-text">El Salvador</a></li>
