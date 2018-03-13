@@ -65,7 +65,7 @@
 
       //Popup para geolocalización
       $(window).scroll(function(){
-          if($(document).scrollTop()>=$(document).height()/5)
+          if($(document).scrollTop()>=$(document).height()/2)
               $("#spopup").show("slow");else $("#spopup").hide("slow");
       });
       function closeSPopup(){
@@ -85,3 +85,6 @@ var options = [ {
     }
 } ];
 Materialize.scrollFire(options);
+
+//Permiso para acceder a la ubicación del usuario
+

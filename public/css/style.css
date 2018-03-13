@@ -376,9 +376,7 @@ span#fixed{
 }
 
 #spopup{
-    background:-webkit-linear-gradient(#524d94,#f0f0f0);
-    background:-o-linear-gradient(#524d94,#f0f0f0);
-    background:linear-gradient(#524d94,#f0f0f0);;
+    background-color: white;
     border-radius:9px;
     -moz-border-radius:9px;
     -webkit-border-radius:9px;
@@ -386,9 +384,14 @@ span#fixed{
     -webkit-box-shadow:inset 0 0 3px #333;
     box-shadow:inner 0 0 3px #333;
     padding:12px 14px 12px 14px;
-    width:430px;
+    width:310px;
     position:fixed;
     bottom:13px;
     display:none;
     z-index:90;
+}
+
+#mapa{
+    height: 500px;
+    width: 280px;
 }

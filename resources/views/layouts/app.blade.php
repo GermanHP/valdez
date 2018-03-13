@@ -178,6 +178,8 @@
 {!! Html::script('https://code.jquery.com/jquery-2.2.4.min.js') !!}
 {!! Html::script('https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js') !!}
 {!! Html::script('https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js') !!}
+{!! Html::script('https://maps.googleapis.com/maps/api/js?key=AIzaSyAbVH7fTxHTtqjs5vrpqgelWbCAXmjs3uM') !!}
+{!! Html::script('js/map.js') !!}
 {!! Html::script('js/materialize.js') !!}
 {!! Html::script('js/init.js') !!}
 @yield('scripts')
