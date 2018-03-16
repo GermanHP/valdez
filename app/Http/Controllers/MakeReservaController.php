@@ -62,26 +62,34 @@ class MakeReservaController extends Controller
             'idDisco'=>$request['optimizaDisco'],
             'deleted_at'=>Carbon::now('America/El_Salvador')->addMinute(2)
         ]);
-        $reserva->save();
 
-        $bitacora = new Bitacora();
-        $bitacora->fill([
-            'idUusario'=>Reservas::all('nombreCliente'),
-            'accion'=>'Reserva',
-            'otraInformacion'=>'Reserva Correcta'
-        ]);
-        /*
-        foreach ($request['centroLiqui']as $centro){
-            $centroReserva = new ReservaCentro();
-            $centroReserva->fill([
-                "idCentro"=>$centro,
-                "idReserva"=>$reserva->id,
+
+        $token = $request->input('g-recaptcha-response');
+
+        if (strlen($token) > 0 ){
+            $reserva->save();
+
+            $bitacora = new Bitacora();
+            $bitacora->fill([
+                'idUusario'=>Reservas::all('nombreCliente'),
+                'accion'=>'Reserva',
+                'otraInformacion'=>'Reserva Correcta'
             ]);
-            $centroReserva->save();
+            /*
+            foreach ($request['centroLiqui']as $centro){
+                $centroReserva = new ReservaCentro();
+                $centroReserva->fill([
+                    "idCentro"=>$centro,
+                    "idReserva"=>$reserva->id,
+                ]);
+                $centroReserva->save();
+            }
+    */
+            Session::flash('Reserva Realizada con Éxito', 'success');
+            return view('productos.reservas.estadoReserva', compact('reserva'));
+        }else{
+            return view('errors.captcha');
         }
-*/
-        Session::flash('Reserva Realizada con Éxito', 'success');
-        return view('productos.reservas.estadoReserva', compact('reserva'));
     }
 
     /**

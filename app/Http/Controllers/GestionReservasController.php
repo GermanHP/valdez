@@ -29,9 +29,12 @@ class GestionReservasController extends Controller
     //se obtienen todas las reservas realizadas y se paginaa a 5 por vista
     public function index()
     {
-        $reservas = Reservas::orderBy('id', 'DESC')->simplePaginate(5);
+        $merliot = Reservas::where('idSucursal', 1)->get();
+        $escalon = Reservas::where('idSucursal', 2)->get();
+        $cascadas = Reservas::where('idSucursal', 3)->get();
+        $smiguel = Reservas::where('idSucursal', 4)->get();
 
-        return view('admin.reservas.inbox')->withReservas($reservas);
+        return view('admin.reservas.inbox', compact('merliot', 'escalon', 'cascadas', 'smiguel'));
     }
 
     /**
@@ -124,5 +127,29 @@ class GestionReservasController extends Controller
         Reservas::destroy($id);
 
         return redirect()->back();
+    }
+
+    public function reservaMerliot(){
+        $reservas = Reservas::where('idSucursal', 1)->orderBy('id', 'DESC')->get();
+
+        return view('admin.reservas.reservaCentros.merliot', compact('reservas'));
+    }
+
+    public function reservaEscalon(){
+        $reservas = Reservas::where('idSucursal', 2)->orderBy('id', 'DESC')->get();
+
+        return view('admin.reservas.reservaCentros.escalon', compact('reservas'));
+    }
+
+    public function reservaCascadas(){
+        $reservas = Reservas::where('idSucursal', 3)->orderBy('id', 'DESC')->get();
+
+        return view('admin.reservas.reservaCentros.cascadas', compact('reservas'));
+    }
+
+    public function reservaSMiguel(){
+        $reservas = Reservas::where('idSucursal', 4)->orderBy('id', 'DESC')->get();
+
+        return view('admin.reservas.reservaCentros.smiguel', compact('reservas'));
     }
 }

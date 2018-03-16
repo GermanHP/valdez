@@ -53,6 +53,12 @@
 </div>
 <br>
 <div class="input-group input-group-lg">
+    <label class="radio-inline">{!! Form::radio('estadoProducto','1', true) !!}Venta</label>
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label class="radio-inline">{!! Form::radio('estadoProducto','2') !!}Liquidación</label>
+</div>
+<br>
+<div class="input-group input-group-lg">
     {{ Form::label('featured_img', 'Adjuntar Imgagen de Referencia del Producto', ['class'=>'input-group-addon']) }}
     {{ Form::file('featured_img', ['class'=>'form-control', 'required'=>'']) }}
 </div>

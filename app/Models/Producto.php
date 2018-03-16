@@ -12,7 +12,7 @@ class Producto extends Model
     use Searchable;
 
     protected $fillable = ['nombre', 'fabricante', 'url', 'featured_img', 'category_id', 'category_client_id', 'precioEs', 'precioPromoEs',
-        'stock', 'caracteristica1', 'caracteristica2', 'caracteristica3', 'caracteristica4'];
+        'stock', 'estado', 'caracteristica1', 'caracteristica2', 'caracteristica3', 'caracteristica4'];
 
     public function category()
     {

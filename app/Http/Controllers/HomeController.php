@@ -21,7 +21,7 @@ class HomeController extends Controller
      */
     public function index(Request $request)
     {
-        $sugeridos = Producto::all();
+        $sugeridos = Producto::where('estado', 2)->orderBy('id', 'DESC')->get();
 
         $smartphones = Producto::where('category_id', 3)->orderBy('id', 'DESC')->get();
 
@@ -40,6 +40,10 @@ class HomeController extends Controller
 
     public function esencia(){
         return view('sections.quienesSomos');
+    }
+
+    public function dashboardCliente(){
+        return view('clientes.dashboard');
     }
 
     public function search(Request $request){

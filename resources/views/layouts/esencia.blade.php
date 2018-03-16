@@ -4,7 +4,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>  VALDEZ STORE – Liquidacion de Laptops, Computadoras y Smartphones</title>
-    <meta name="description" content="">
+    <meta name="description" content="Valdez Store, nace hace más de una década, como un negocio orientado a productos
+    tecnológicos. Es una empresa sólida a nivel nacional en El Salvador, a través de una cadena de centros de
+    liquidaciones; líderes en brindar portátiles a bajos precios, con la mejor tecnología del mercado nacional y
+    centroamericano.">
     <meta name="keywords" content="Valdez Mobile, Valdez Store, Liquidacion, Laptops en Liquidacion, Valdes,HP,Dell,
     Laptops en oferta, promociones en laptops, Venta de computadoras,ofertas notebook, laptops economicas">
 
@@ -20,6 +23,14 @@
 <body>
 @include('includes.facebookFeed')
 @include('includes.modals')
+
+<script>
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('/sw.js')
+            .then(function() { console.log("HOLA, BIENVENIDO A VALDEZ STORE"); });
+    }
+</script>
 <div class="navbar-fixed">
     <nav class="nav-color" role="navigation">
         <div class="nav-wrapper container">
@@ -154,6 +165,8 @@
 <!--  Scripts-->
 {!! Html::script('https://code.jquery.com/jquery-2.2.4.min.js') !!}
 {!! Html::script('https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js') !!}
+{!! Html::script('https://maps.googleapis.com/maps/api/js?key=AIzaSyAbVH7fTxHTtqjs5vrpqgelWbCAXmjs3uM') !!}
+{!! Html::script('js/map.js') !!}
 {!! Html::script('js/materialize.js') !!}
 {!! Html::script('js/init.js') !!}
 

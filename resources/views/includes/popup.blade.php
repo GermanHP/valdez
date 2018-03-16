@@ -8,7 +8,7 @@
 
     </div>
     <div class="black-text text-center">
-        <br><br>
-        <p id="message"></p>
+        <br>
+        <p class="text-center"></p>
     </div>
 </div>

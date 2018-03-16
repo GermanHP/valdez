@@ -3,7 +3,7 @@
 
     @include('alertas.errores')
     @include('alertas.flash')
-    {!! Html::style('css/parsley.css') !!}
+
     <br>
     <div class="container">
         <div class="card">
@@ -30,19 +30,19 @@
                 </div>
                 @endif
                 {!! Form::open(['route' => ['reservado.store'], 'method'=>'POST', 'data-parsley-validate' => '',
-                'files' => true]) !!}
+                'files' => true, 'id'=>'formReserva']) !!}
 
                 <div class="container">
                     <div class="input-field col s12 m12 l12 xl12">
                         {{Form::label('Nombres',null,['class'=>'validate'])}}
                         {{Form::text('nombres',null, ['class'=>'validate', 'placeholder'=>'Nombres',
-                        'required' => ''])}}
+                        'required' => '', 'autocomplete'=>'given-name'])}}
                     </div>
 
                     <div class="input-field col s12 m12 l12 xl12">
                         {{Form::label('Apellidos',null,['class'=>'validate'])}}
                         {{Form::text('apellidos',null, ['class'=>'validate', 'placeholder'=>'Apellidos',
-                        'required' => ''])}}
+                        'required' => '', 'autocomplete'=>'family-name'])}}
                     </div>
 
                     <div class="input-field col s12 m12 l12 xl12">
@@ -68,19 +68,19 @@
                         {{Form::label('Correo Electrónico',null,['class'=>'input-group-addon'])}}
                         <p></p><br>
                         {{Form::email('correoReserva',null, ['class'=>'validate', 'placeholder'=>'e-mail',
-                        'id'=>'correoReserva'])}}
+                        'id'=>'correoReserva', 'autocomplete'=>'email'])}}
                     </div>
 
                     <div class="input-field col s12 m12 l12 xl12">
                         {{Form::text('telefonoCliente',null,['class'=>'validate','placeholder'=>
-                        'Numero de teléfono sin guiones.', 'maxlength'=>'8'])}}
+                        'Numero de teléfono sin guiones.', 'maxlength'=>'8', 'autocomplete'=>'given-name'])}}
                         <label for="telefonoCliente">Teléfono</label>
                     </div>
 
                     <div class="input-field col s12 m12 l12 xl12">
                         {{Form::label('Describenos tu necesidad',null,['class'=>'validate'])}}
                         {{Form::textarea('mensaje',null, ['class'=>'validate materialize-textarea',
-                        'placeholder'=>'Descripción'])}}
+                        'placeholder'=>'Descripción', 'required' => ''])}}
                     </div>
 
                     <div class="input-field col s6 m6 l6 xl6">
@@ -150,7 +150,10 @@
                         </div>
                     </div>
 
-                    <div class="input-field col s12 m12 l12 xl12 center">
+                    <br><br><br>
+
+                    <div class="center">
+                        <div class="g-recaptcha" data-sitekey="6LcVrEwUAAAAAKIRqA7sOelFLCWUQCqgwEPiDXn2"></div>
                         {!!Form::submit('RESERVAR', ['class'=>'btn nav-color btn-large','name'=>'btnReservar'])!!}
                         {!! Form::close() !!}
                         <a href="{{url('/productos')}}" class="btn grey btn-large">CANCELAR</a>
@@ -160,6 +163,4 @@
             <br>
         </div>
     </div>
-
-    {!! Html::script('js/parsley.min.js') !!}
 @stop

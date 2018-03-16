@@ -68,7 +68,8 @@ class GestionProductosController extends Controller
             'caracteristica2'=>$request['especificacion2'],
             'caracteristica3'=>$request['especificacion3'],
             'caracteristica4'=>$request['especificacion4'],
-            'stock'=>$request['stockEntrante']
+            'stock'=>$request['stockEntrante'],
+            'estado'=>$request['estadoProducto']
         ]);
 
         $bitacora = new Bitacora(); //se registra la operación correspondiente en la bitacora
@@ -253,5 +254,47 @@ class GestionProductosController extends Controller
             $producto = Producto::paginate(6);
         }
         return view('productos.mostrarProductos',compact('producto'));
+    }
+
+    public function estadoLiquidacion(Request $request, $id){
+
+        $productos = Producto::find($id);
+
+        $productos->estado=value(2);
+
+        $productos->save();
+
+        $bitacora = new Bitacora();//se registra la acción correspondiente en la bitacora
+        $bitacora->fill([
+            'idUsuario'=>Auth::user()->getAuthIdentifier(),
+            'otraInformacion'=>'Producto cambiado a Liquidación',
+            'accion'=>'Cambio de Estado de Producto'
+        ]);
+        $bitacora->save();
+
+        Session::flash('succes', 'Éste producto fue actualizaco exitosamente');
+
+        return redirect()->back();
+    }
+
+    public function estadoVenta(Request $request, $id){
+
+        $productos = Producto::find($id);
+
+        $productos->estado=value(1);
+
+        $productos->save();
+
+        $bitacora = new Bitacora();//se registra la acción correspondiente en la bitacora
+        $bitacora->fill([
+            'idUsuario'=>Auth::user()->getAuthIdentifier(),
+            'otraInformacion'=>'Producto cambiado a Venta',
+            'accion'=>'Cambio de Estado de Producto'
+        ]);
+        $bitacora->save();
+
+        Session::flash('succes', 'Éste producto fue actualizaco exitosamente');
+
+        return redirect()->back();
     }
 }

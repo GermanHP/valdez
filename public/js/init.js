@@ -2,6 +2,16 @@
 (function($){
   $(function(){
 
+      //Validación del Captcha
+      $('formReserva').submit(function (event) {
+         let verified = grecaptcha.getResponse();
+
+         if (verified.length === 0){
+             event.preventDefault();
+         }
+
+      });
+
     $('.button-collapse').sideNav();
 
     $('.parallax').parallax();

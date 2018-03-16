@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
+    <?php
+    header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP/1.1
+    header("Expires: Sat, 25 Mar 2000 05:00:00 GMT"); // Fecha en el pasado
+    ?>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>  VALDEZ STORE – Liquidacion de Laptops, Computadoras y Smartphones</title>
     <meta name=”robots” content=”noindex,follow”>
-    <meta name="description" content="">
+    <meta name="description" content="Valdez Store, nace hace más de una década, como un negocio orientado a productos
+    tecnológicos. Es una empresa sólida a nivel nacional en El Salvador, a través de una cadena de centros de
+    liquidaciones; líderes en brindar portátiles a bajos precios, con la mejor tecnología del mercado nacional y
+    centroamericano.">
     <meta name="keywords" content="Valdez Mobile, Valdez Store, Liquidacion, Laptops en Liquidacion, Valdes,HP,Dell,
     Laptops en oferta, promociones en laptops, Venta de computadoras,ofertas notebook, laptops economicas">
 
@@ -15,10 +26,42 @@
     {!! Html::style('https://unpkg.com/flickity@2/dist/flickity.min.css') !!}
     {!! Html::style('css/materialize.css') !!}
     {!! Html::style('css/style.css') !!}
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
     @include('includes.zopim')
 </head>
 <body>
+
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '162388867906232',
+            cookie     : true,
+            xfbml      : true,
+            version    : 'v2.12'
+        });
+
+        FB.AppEvents.logPageView();
+
+    };
+
+    (function(d, s, id){
+        let js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script>
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('/sw.js')
+            .then(function() { console.log("Service Worker Registered"); });
+    }
+</script>
+
 <header>
     <div class="navbar-fixed">
         <nav class="nav-color" role="navigation">
@@ -79,7 +122,6 @@
 
 <main>
     @include('includes.modals')
-    @include('includes.popup')
     <div id="content1" class="hide-on-med-and-down">
         @yield('content')
     </div>

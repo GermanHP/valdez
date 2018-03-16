@@ -21,6 +21,7 @@ class CreateProductosTable extends Migration
             $table->string('precioEs');
             $table->string('precioPromoEs');
             $table->integer('stock');
+            $table->integer('estado');
             $table->string('caracteristica1');
             $table->string('caracteristica2');
             $table->string('caracteristica3');

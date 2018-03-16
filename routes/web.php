@@ -69,14 +69,30 @@ Route::get('/quienes-somos', 'HomeController@esencia');
 Route::get('/empleos', 'EmpleosController@index');
 Route::post('empleos/post', 'EmpleosController@store')->name('empleo.store');
 
+//rutas para inicio de sesión con facebook
+Route::get('auth/{provider}', 'Auth\SocialAuthController@redirectToProvider')->name('social.auth');
+Route::get('auth/{provider}/callback', 'Auth\SocialAuthController@handleProviderCallback');
+
+//Rutas para clientes
+Route::get('my-dashboard', 'HomeController@dashboardCliente');
 
 Route::group(['middleware' => ['auth']], function (){
     Route::get('/inbox', 'GestionReservasController@index');
+    //centros de reserva
+    Route::get('reserva/merliot', 'GestionReservasController@reservaMerliot');
+    Route::get('reserva/escalon', 'GestionReservasController@reservaEscalon');
+    Route::get('reserva/soho-cascadas', 'GestionReservasController@reservaCascadas');
+    Route::get('reserva/san-miguel', 'GestionReservasController@reservaSMiguel');
+    //fin centros de reserva
+
     Route::resource('reserva', 'GestionReservasController');
 
     Route::resource('producto', 'GestionProductosController');
     Route::post('producto/store', 'GestionProductosController@store')->name('producto.store');
     Route::get('/contactos', 'UsuariosController@contactos');
+    //Colocar un producto en estado de liquidación o de venta
+    Route::get('estado-liquidacion/{id}', 'GestionProductosController@estadoLiquidacion')->name('producto.liquidacion');
+    Route::get('estado-venta/{id}', 'GestionProductosController@estadoVenta')->name('producto.venta');
 
     Route::get('/usuarios-en-el-sistema', 'UsuariosController@usuariosSistema');
     Route::get('Usuarios/nuevo', 'UsuariosController@crearNuevoUsuario')->name('Usuarios.nuevo');
