@@ -24,7 +24,10 @@
     <br>
     <div class="container">
         <div class="row">
-            <h5 class="montserrat-extra-light">NUESTRA ESENCIA</h5>
+            <div id="nuestra-esencia"></div>
+            <br><br>
+                <h5 class="montserrat-extra-light">NUESTRA ESENCIA</h5>
+
             <hr class="divider teal">
             <div class="col s12 m12 l7 xl7">
                 <br>
@@ -37,11 +40,18 @@
                     liquidaciones; líderes en brindar portátiles a bajos precios, con la mejor tecnología del mercado
                     nacional y centroamericano.</p>
                 <br>
-                <h4><strong>Misión</strong></h4>
+                <div id="mision"></div>
+                <br><br>
+                    <h4><strong>Misión</strong></h4>
+
                 <p class="texto-justificado">Somos una empresa integrada en venta de tecnología, de todas las marcas reconocidas a nivel mundial,
                     satisfaciendo las necesidades de todos nuestros clientes; con precios accesibles, al alcance de
                     todos los sectores sociales de nuestro país.</p>
-                <h4><strong>Visión</strong></h4>
+                <div id="vision"></div>
+                <br><br>
+                    <h4><strong>Visión</strong></h4>
+
+
                 <p class="texto-justificado">Expandirnos a nivel internacional, ofreciendo tecnología de las mejores marcas, a bajos precios,
                     cuidando el bolsillo de nuestros clientes.</p>
             </div>

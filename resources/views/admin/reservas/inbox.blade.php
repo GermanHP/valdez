@@ -55,6 +55,7 @@
                 <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
                    <h3 class="text-center">RESERVAS</h3>
                     <br><br><br><br>
+
                     <div class="row center-block">
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                             <div class="demo-card-wide mdl-card mdl-shadow--2dp">
@@ -158,10 +159,11 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </main>
     </div>
-    <script src="$$hosted_libs_prefix$$/$$version$$/material.min.js"></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     {!! Html::style('js/app.js') !!}
 @stop

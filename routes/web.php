@@ -11,12 +11,21 @@
 |
 */
 
+use App\Mail\Welcome;
+use Illuminate\Support\Facades\Mail;
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+/*Route::get('welcome', function (){
+    Mail::to('gdhernandezp@gmail.com', 'German')
+        ->send(new Welcome());
+});*/
 
+Route::get('nicaragua', 'Nicaragua@nicaragua');
+
+Auth::routes();
 
 /*Ruta para variable de sesión*/
 Route::get('location/{lang}', function($lang){

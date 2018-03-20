@@ -23,6 +23,8 @@ class HomeController extends Controller
     {
         $sugeridos = Producto::where('estado', 2)->orderBy('id', 'DESC')->get();
 
+        $productoVenta = Producto::all();
+
         $smartphones = Producto::where('category_id', 3)->orderBy('id', 'DESC')->get();
 
         $appleSect = Producto::where('fabricante', 'apple')->orderBy('id', 'DESC')->get();
@@ -35,7 +37,7 @@ class HomeController extends Controller
         }
 
 
-        return view('home', compact('sugeridos', 'smartphones', 'appleSect', 'productos'));
+        return view('home', compact('sugeridos', 'smartphones', 'appleSect', 'productos', 'productoVenta'));
     }
 
     public function esencia(){
@@ -73,4 +75,5 @@ class HomeController extends Controller
             }
         }
     }
+
 }

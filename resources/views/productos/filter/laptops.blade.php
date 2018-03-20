@@ -126,8 +126,70 @@
                                             <h5 class="montserrat-extra-light">{{$laptop->nombre}}</h5>
                                             <div class="row">
                                                 <div class="col s6 m6 l6 xl6">
-                                                    <p><strong>{{$laptop->caracteristica1}}</strong></p>
-                                                    <p><strong>{{$laptop->caracteristica2}}</strong></p>
+                                                    <p>
+                                                        <strong>
+                                                            @if($laptop->caracteristica1 == 2)
+                                                                1GB RAM
+                                                            @elseif($laptop->caracteristica1 == 3)
+                                                                2GB RAM
+                                                            @elseif($laptop->caracteristica1 == 4)
+                                                                3GB RAM
+                                                            @elseif($laptop->caracteristica1 == 5)
+                                                                4GB RAM
+                                                            @elseif($laptop->caracteristica1 == 6)
+                                                                8GB RAM
+                                                            @endif
+                                                        </strong>
+                                                    </p>
+                                                    <p>
+                                                        <strong>
+                                                            @if($laptop->caracteristica2 == 2)
+                                                                8GB ROM
+                                                            @elseif($laptop->caracteristica2 == 3)
+                                                                16GB ROM
+                                                            @elseif($laptop->caracteristica2 == 4)
+                                                                32GB ROM
+                                                            @elseif($laptop->caracteristica2 == 5)
+                                                                40GB HDD
+                                                            @elseif($laptop->caracteristica2 == 6)
+                                                                60GB HDD
+                                                            @elseif($laptop->caracteristica2 == 7)
+                                                                64GB ROM
+                                                            @elseif($laptop->caracteristica2 == 8)
+                                                                80GB HDD
+                                                            @elseif($laptop->caracteristica2 == 9)
+                                                                90GB SSD
+                                                            @elseif($laptop->caracteristica2 == 10)
+                                                                96GB SSD
+                                                            @elseif($laptop->caracteristica2 == 11)
+                                                                100GB HDD
+                                                            @elseif($laptop->caracteristica2 == 12)
+                                                                120GB HDD/SSD
+                                                            @elseif($laptop->caracteristica2 == 13)
+                                                                128GB SSD
+                                                            @elseif($laptop->caracteristica2 == 14)
+                                                                160GB HDD
+                                                            @elseif($laptop->caracteristica2 == 15)
+                                                                180GB SSD
+                                                            @elseif($laptop->caracteristica2 == 16)
+                                                                250GB HDD
+                                                            @elseif($laptop->caracteristica2 == 17)
+                                                                256GB SSD
+                                                            @elseif($laptop->caracteristica2 == 18)
+                                                                300GB SSD
+                                                            @elseif($laptop->caracteristica2 == 19)
+                                                                320GB HDD
+                                                            @elseif($laptop->caracteristica2 == 20)
+                                                                500GB HDD
+                                                            @elseif($laptop->caracteristica2 == 21)
+                                                                512GB SSD
+                                                            @elseif($laptop->caracteristica2 == 22)
+                                                                750GB HDD
+                                                            @elseif($laptop->caracteristica2 == 23)
+                                                                1TB HDD
+                                                            @endif
+                                                        </strong>
+                                                    </p>
                                                     <p><strong>{{$laptop->caracteristica3}}</strong></p>
                                                     <p><strong>{{$laptop->caracteristica4}}</strong></p>
                                                     <br>

@@ -96,8 +96,15 @@
                             <br><br>
                             <p><strong>Precio del Final del Producto</strong></p>
                             <h3>
-                                @if($reserva->idRam!=1 || $reserva->idDisco!=1)
+                                @if($reserva->idRam!=1)
                                     ${{$reserva->precio + 50}}
+
+                                @elseif($reserva->idDisco == 22)
+                                    ${{$reserva->precio + 85}}
+                                @elseif($reserva->idDisco == 23)
+                                    ${{$reserva->precio + 95}}
+                                @elseif($reserva->idDisco == 17)
+                                    ${{$reserva->precio + 99}}
                                 @else
                                     ${{$reserva->precio}}
                                 @endif

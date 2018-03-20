@@ -123,8 +123,70 @@
                                             <h5 class="montserrat-extra-light">{{$tablet->nombre}}</h5>
                                             <div class="row">
                                                 <div class="col s6 m6 l6 xl6">
-                                                    <p><strong>{{$tablet->caracteristica1}}</strong></p>
-                                                    <p><strong>{{$tablet->caracteristica2}}</strong></p>
+                                                    <p>
+                                                        <strong>
+                                                            @if($tablet->caracteristica1 == 2)
+                                                                1GB RAM
+                                                            @elseif($tablet->caracteristica1 == 3)
+                                                                2GB RAM
+                                                            @elseif($tablet->caracteristica1 == 4)
+                                                                3GB RAM
+                                                            @elseif($tablet->caracteristica1 == 5)
+                                                                4GB RAM
+                                                            @elseif($tablet->caracteristica1 == 6)
+                                                                8GB RAM
+                                                            @endif
+                                                        </strong>
+                                                    </p>
+                                                    <p>
+                                                        <strong>
+                                                            @if($tablet->caracteristica2 == 2)
+                                                                8GB ROM
+                                                            @elseif($tablet->caracteristica2 == 3)
+                                                                16GB ROM
+                                                            @elseif($tablet->caracteristica2 == 4)
+                                                                32GB ROM
+                                                            @elseif($tablet->caracteristica2 == 5)
+                                                                40GB HDD
+                                                            @elseif($tablet->caracteristica2 == 6)
+                                                                60GB HDD
+                                                            @elseif($tablet->caracteristica2 == 7)
+                                                                64GB ROM
+                                                            @elseif($tablet->caracteristica2 == 8)
+                                                                80GB HDD
+                                                            @elseif($tablet->caracteristica2 == 9)
+                                                                90GB SSD
+                                                            @elseif($tablet->caracteristica2 == 10)
+                                                                96GB SSD
+                                                            @elseif($tablet->caracteristica2 == 11)
+                                                                100GB HDD
+                                                            @elseif($tablet->caracteristica2 == 12)
+                                                                120GB HDD/SSD
+                                                            @elseif($tablet->caracteristica2 == 13)
+                                                                128GB SSD
+                                                            @elseif($tablet->caracteristica2 == 14)
+                                                                160GB HDD
+                                                            @elseif($tablet->caracteristica2 == 15)
+                                                                180GB SSD
+                                                            @elseif($tablet->caracteristica2 == 16)
+                                                                250GB HDD
+                                                            @elseif($tablet->caracteristica2 == 17)
+                                                                256GB SSD
+                                                            @elseif($tablet->caracteristica2 == 18)
+                                                                300GB SSD
+                                                            @elseif($tablet->caracteristica2 == 19)
+                                                                320GB HDD
+                                                            @elseif($tablet->caracteristica2 == 20)
+                                                                500GB HDD
+                                                            @elseif($tablet->caracteristica2 == 21)
+                                                                512GB SSD
+                                                            @elseif($tablet->caracteristica2 == 22)
+                                                                750GB HDD
+                                                            @elseif($tablet->caracteristica2 == 23)
+                                                                1TB HDD
+                                                            @endif
+                                                        </strong>
+                                                    </p>
                                                     <p><strong>{{$tablet->caracteristica3}}</strong></p>
                                                     <p><strong>{{$tablet->caracteristica4}}</strong></p>
                                                     <br>

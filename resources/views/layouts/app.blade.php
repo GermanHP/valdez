@@ -54,13 +54,13 @@
     }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<script>
+<!--<script>
     if('serviceWorker' in navigator) {
         navigator.serviceWorker
             .register('/sw.js')
             .then(function() { console.log("Service Worker Registered"); });
     }
-</script>
+</script>-->
 
 <header>
     <div class="navbar-fixed">
@@ -131,54 +131,50 @@
 </main>
 <footer class="page-footer grey darken-4">
     <div class="container">
+        <h3 class="evogria">VALDEZ <span id="store-logo" class="black-text inclinado">&nbsp;STORE&nbsp;</span></h3>
+
         <div class="row">
-            <div class="col l6 s12">
-                {{Form::image('/img/logos/vs2.png','Footer Valdez',['id'=>'FooterValdez', 'class'=>'foo-img'])}}
-                <p class="grey-text text-lighten-4">Somos una empresa sólida a nivel nacional a través de una cadena de
-                    centros de servicios de liquidaciones, líderes en brindar portátiles a bajos precios, con la mejor
-                    tecnología del mercado nacional y centroamericano. Ofreciendo calidad, innovación y seguridad en
-                    cada producto.
-                </p><br>
-                <a href="#">
-                    <p class="teal-text">Jardines de Cuscatlán, Av. L-A Calle L4, Polígono D, Edificio VALDEZ, Merliot,
-                        Antiguo Cuscatlán, La Libertad, El Salvador, C.A.</p>
-                </a>
-                <a href="#">
-                    <p class="teal-text">Teléfono: +503 2201-3004</p>
-                </a>
-                <a href="#">
-                    <p class="teal-text">WhatsApp: +503 7601-2233</p>
-                </a>
-                <br>
-                <a class="white-text" href="#!">{{Form::image('/img/icons/facebook.png','Facebook',
-                ['id'=>'FooterValdez', 'class'=>'icon-img'])}}</a>
-                <a class="white-text" href="#!">{{Form::image('/img/icons/twitter.png','Twitter',
-                ['id'=>'FooterValdez', 'class'=>'icon-img'])}}</a>
-                <a class="white-text" href="#!">{{Form::image('/img/icons/instagram.png','Instagram',
-                ['id'=>'FooterValdez', 'class'=>'icon-img'])}}</a>
-                <a class="white-text" href="#!">{{Form::image('/img/icons/googleplus.png','GooglePlus',
-                ['id'=>'FooterValdez', 'class'=>'icon-img'])}}</a>
-            </div>
+
             <div class="col l3 s12">
-                <br>
-                <h5 class="white-text">Atajos</h5>
+                <a href="{{url('/quienes-somos')}}"><h5 class="grey-text text-lighten-4">¿QUIÉNES SOMOS?</h5></a>
                 <ul>
-                    <li><a class="white-text" href="{{url('/')}}">Inicio</a></li>
-                    <li><a class="white-text" href="#!">Promociones</a></li>
-                    <li><a class="white-text" href="{{url('/productos')}}">Productos</a></li>
-                    <li><a class="white-text" href="{{url('/login')}}">Iniciar Sesión</a></li>
+                    <li>
+                        <a href="{{url('/quienes-somos#nuestra-esencia')}}" class="grey-text text-lighten-4">
+                           NUESTRA ESENCIA
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{url('/quienes-somos#mision')}}" class="grey-text text-lighten-4">
+                            MISIÓN
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{url('/quienes-somos#vision')}}" class="grey-text text-lighten-4">
+                            VISIÓN
+                        </a>
+                    </li>
                 </ul>
                 <br>
-                <h5 class="white-text">Ubicaciones</h5>
+            </div>
+            <div class="col l3 s12">
                 <ul>
-                    <li><a class="white-text" href="#modalMerliot">Merliot</a></li>
-                    <li><a class="white-text" href="#!">Escalón</a></li>
-                    <li><a class="white-text" href="#!">SOHO Cascadas</a></li>
-                    <li><a class="white-text" href="#!">San Miguel</a></li>
+                    <li><a class="white-text" href="{{url('/')}}"><h5>INICIO</h5></a></li>
+                    <li><a class="white-text" href="{{url('/liquidaciones')}}">LIQUIDACIONES ESPECIALES</a></li>
+                    <li><a class="white-text" href="{{url('/productos')}}">PRODUCTOS</a></li>
+                    <li><a class="white-text" href="{{url('/login')}}">INICIAR SESIÓN</a></li>
                 </ul>
             </div>
             <div class="col l3 s12">
-                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Bd0vueDnQtM/"
+
+                <h5 class="grey-text text-lighten-4">CENTROS DE LIQUIDACIÓN</h5>
+                <ul>
+                    <li><a class="white-text" href="#sucursales" id="anchorCentros">MERLIOT</a></li>
+                    <li><a class="white-text" href="#sucursales" id="anchorCentros">ESCALÓN</a></li>
+                    <li><a class="white-text" href="#sucursales" id="anchorCentros">SOHO CASCADAS</a></li>
+                    <li><a class="white-text" href="#sucursales" id="anchorCentros">SAN MIGUEL</a></li>
+                </ul>
+
+                <!--<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Bd0vueDnQtM/"
                             data-instgrm-version="8"
                             style=" background:#FFF; border:0; border-radius:3px;
                             box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px;
@@ -205,13 +201,49 @@
                         </p>
                     </div>
                 </blockquote>
-                <script async defer src="//www.instagram.com/embed.js"></script>
+                <script async defer src="//www.instagram.com/embed.js"></script>-->
+            </div>
+            <div class="col l3 s12">
+                <ul>
+                    <li>
+                        <a class="white-text" href="https://www.waze.com/es/livemap?zoom=17&lat=13.67673&lon=-89.26278"
+                        target="_blank">
+                            <h5>CASA MATRIZ</h5>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white-text" href="https://www.waze.com/es/livemap?zoom=17&lat=13.67673&lon=-89.26278"
+                        target="_blank">
+                            Jardines de Cuscatlán, Av. L-A, Calle L-4, Polígono D, Edificio Valdez - Merliot Antiguo
+                            Cuscatlán, La Libertad, El Salvador, C.A.
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white-text" href="#">
+                            Teléfono: +503 2201-3004
+                        </a>
+                    </li>
+                    <li>
+                        <a class="white-text" href="#">
+                            WhatsApp: +503 7601-2233
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
     <div class="footer-copyright">
         <div class="container">
-            2018 &copy; GRUPO VALDEZ  <a class="brown-text text-lighten-3" href="#">Derechos Reservados</a>
+            <a class="white-text" href="https://www.facebook.com/valdezstoresv/" target="_blank">{{Form::image('/img/icons/facebook.png','Facebook',
+                ['id'=>'FooterValdez', 'class'=>'icon-img'])}}</a>
+            <a class="white-text" href="https://twitter.com/Valdez_Store" target="_blank">{{Form::image('/img/icons/twitter.png','Twitter',
+                ['id'=>'FooterValdez', 'class'=>'icon-img'])}}</a>
+            <a class="white-text" href="https://www.instagram.com/valdezstoresv/" target="_blank">{{Form::image('/img/icons/instagram.png','Instagram',
+                ['id'=>'FooterValdez', 'class'=>'icon-img'])}}</a>
+            <a class="white-text" href="https://plus.google.com/118226766840394400123" target="_blank">{{Form::image('/img/icons/googleplus.png','GooglePlus',
+                ['id'=>'FooterValdez', 'class'=>'icon-img'])}}</a>
+            <br><br><br>
+            Copyright 2018 &copy; GRUPO VALDEZ  <a class="brown-text text-lighten-3" href="#">Derechos Reservados</a>
         </div>
     </div>
 </footer>

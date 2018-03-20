@@ -395,3 +395,7 @@ span#fixed{
     height: 500px;
     width: 280px;
 }
+
+#store-logo{
+    background-color: rgba(237, 219, 4, 37);
+}

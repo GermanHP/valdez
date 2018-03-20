@@ -57,12 +57,14 @@
                 <br>
                 <div class="input-group input-group-lg">
                     {{Form::label('caracteristica', 'Característica 1:', ['class'=>'input-group-addon'])}}
-                    {{Form::text('caracteristica1', null, ['class'=>'form-control'])}}
+                    {!! Form::select('caracteristica1',$ram,null,['class'=>'form-control ',"describedby"=>"basic-addon1",
+                    'required', 'id'=>'department', 'style'=>'width: 100%']) !!}
                 </div>
                 <br>
                 <div class="input-group input-group-lg">
                     {{Form::label('caracteristica', 'Característica 2:', ['class'=>'input-group-addon'])}}
-                    {{Form::text('caracteristica2', null, ['class'=>'form-control'])}}
+                    {!! Form::select('caracteristica2',$disco,null,['class'=>'form-control ',"describedby"=>"basic-addon1",
+                    'required', 'id'=>'department', 'style'=>'width: 100%']) !!}
                 </div>
                 <br>
                 <div class="input-group input-group-lg">

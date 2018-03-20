@@ -383,3 +383,7 @@ p{
 .letter-spacing{
     letter-spacing: 1.5px;
 }
+
+#store-logo{
+    background-color: rgba(237, 219, 4, 37);
+}

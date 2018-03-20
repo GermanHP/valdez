@@ -63,7 +63,19 @@
                     <h2><strong>Característica 1:</strong></h2>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <h3>{{$productos->caracteristica1}}</h3>
+                    <h3>
+                        @if($productos->caracteristica1 == 2)
+                            1GB RAM
+                        @elseif($productos->caracteristica1 == 3)
+                            2GB RAM
+                        @elseif($productos->caracteristica1 == 4)
+                            3GB RAM
+                        @elseif($productos->caracteristica1 == 5)
+                            4GB RAM
+                        @elseif($productos->caracteristica1 == 6)
+                            8GB RAM
+                        @endif
+                    </h3>
                 </div>
             </div>
             <br>
@@ -72,7 +84,53 @@
                     <h2><strong>Característica 2:</strong></h2>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <h3>{{$productos->caracteristica2}}</h3>
+                    <h3>
+                        @if($productos->caracteristica2 == 2)
+                            8GB ROM
+                        @elseif($productos->caracteristica2 == 3)
+                            16GB ROM
+                        @elseif($productos->caracteristica2 == 4)
+                            32GB ROM
+                        @elseif($productos->caracteristica2 == 5)
+                            40GB HDD
+                        @elseif($productos->caracteristica2 == 6)
+                            60GB HDD
+                        @elseif($productos->caracteristica2 == 7)
+                            64GB ROM
+                        @elseif($productos->caracteristica2 == 8)
+                            80GB HDD
+                        @elseif($productos->caracteristica2 == 9)
+                            90GB SSD
+                        @elseif($productos->caracteristica2 == 10)
+                            96GB SSD
+                        @elseif($productos->caracteristica2 == 11)
+                            100GB HDD
+                        @elseif($productos->caracteristica2 == 12)
+                            120GB HDD/SSD
+                        @elseif($productos->caracteristica2 == 13)
+                            128GB SSD
+                        @elseif($productos->caracteristica2 == 14)
+                            160GB HDD
+                        @elseif($productos->caracteristica2 == 15)
+                            180GB SSD
+                        @elseif($productos->caracteristica2 == 16)
+                            250GB HDD
+                        @elseif($productos->caracteristica2 == 17)
+                            256GB SSD
+                        @elseif($productos->caracteristica2 == 18)
+                            300GB SSD
+                        @elseif($productos->caracteristica2 == 19)
+                            320GB HDD
+                        @elseif($productos->caracteristica2 == 20)
+                            500GB HDD
+                        @elseif($productos->caracteristica2 == 21)
+                            512GB SSD
+                        @elseif($productos->caracteristica2 == 22)
+                            750GB HDD
+                        @elseif($productos->caracteristica2 == 23)
+                            1TB HDD
+                        @endif
+                    </h3>
                 </div>
             </div>
             <br>

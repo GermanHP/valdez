@@ -101,7 +101,10 @@ class GestionReservasController extends Controller
             $centros2[$centro->id] = $centro->nombre;
         }
 
-        return view('admin.formulariosProducto.edit')->withProductos($productos)->withCategories($cats)->withCentros($centros2);
+        return view('admin.formulariosProducto.edit')
+            ->withProductos($productos)
+            ->withCategories($cats)
+            ->withCentros($centros2);
     }
 
     /**

@@ -38,37 +38,73 @@
                 <h5 class="blue-text">Stock: {{$productos->stock}}</h5>
                 <div class="row">
                     <div class="col s6 m6 l6 xl6">
-                        <p>{{$productos->caracteristica1}}</p>
-                        <p>{{$productos->caracteristica2}}</p>
+                        <p>
+                            @if($productos->caracteristica1 == 2)
+                                1GB RAM
+                            @elseif($productos->caracteristica1 == 3)
+                                2GB RAM
+                            @elseif($productos->caracteristica1 == 4)
+                                3GB RAM
+                            @elseif($productos->caracteristica1 == 5)
+                                4GB RAM
+                            @elseif($productos->caracteristica1 == 6)
+                                8GB RAM
+                            @endif
+                        </p>
+                        <p>
+                            @if($productos->caracteristica2 == 2)
+                                8GB ROM
+                            @elseif($productos->caracteristica2 == 3)
+                                16GB ROM
+                            @elseif($productos->caracteristica2 == 4)
+                                32GB ROM
+                            @elseif($productos->caracteristica2 == 5)
+                                40GB HDD
+                            @elseif($productos->caracteristica2 == 6)
+                                60GB HDD
+                            @elseif($productos->caracteristica2 == 7)
+                                64GB ROM
+                            @elseif($productos->caracteristica2 == 8)
+                                80GB HDD
+                            @elseif($productos->caracteristica2 == 9)
+                                90GB SSD
+                            @elseif($productos->caracteristica2 == 10)
+                                96GB SSD
+                            @elseif($productos->caracteristica2 == 11)
+                                100GB HDD
+                            @elseif($productos->caracteristica2 == 12)
+                                120GB HDD/SSD
+                            @elseif($productos->caracteristica2 == 13)
+                                128GB SSD
+                            @elseif($productos->caracteristica2 == 14)
+                                160GB HDD
+                            @elseif($productos->caracteristica2 == 15)
+                                180GB SSD
+                            @elseif($productos->caracteristica2 == 16)
+                                250GB HDD
+                            @elseif($productos->caracteristica2 == 17)
+                                256GB SSD
+                            @elseif($productos->caracteristica2 == 18)
+                                300GB SSD
+                            @elseif($productos->caracteristica2 == 19)
+                                320GB HDD
+                            @elseif($productos->caracteristica2 == 20)
+                                500GB HDD
+                            @elseif($productos->caracteristica2 == 21)
+                                512GB SSD
+                            @elseif($productos->caracteristica2 == 22)
+                                750GB HDD
+                            @elseif($productos->caracteristica2 == 23)
+                                1TB HDD
+                            @endif
+                        </p>
 
                         <p>{{$productos->caracteristica3}}</p>
                         <p>{{$productos->caracteristica4}}</p>
                     </div>
                 </div>
-                <h5>Optimizar</h5>
-                <div class="input-field col s12 m12 l4 xl4">
-                    <select>
-                        <option value="" disabled selected>Elige Capacidad</option>
-                        <option value="1">4GB</option>
-                        <option value="2">8GB</option>
-                        <option value="3">16GB</option>
-                    </select>
-                    <label>RAM</label>
-                </div>
-                <div class="input-field col s12 m12 l4 xl4">
-                    <select>
-                        <option value="" disabled selected>Elige Capacidad</option>
-                        <option value="1">250GB</option>
-                        <option value="2">500GB</option>
-                        <option value="3">1TB</option>
-                    </select>
-                    <label>DISCO DURO</label>
-                </div>
                 <div class="col s6 m6 l6 xl6">
                     <h6 class="red-text">Precio: ${{$productos->precioPromoEs}}</h6>
-                </div>
-                <div class="col s6 m6 l6 xl6">
-                    <h6 class="red-text">Precio Final: ${{$productos->precioPromoEs}}</h6>
                 </div>
                 <div class="col s12 m12 l12 xl12">
                     <h6>Disponible en:</h6>

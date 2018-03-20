@@ -34,20 +34,93 @@
             <div class="col s6 m6 l6 xl6 text-center">
                 <br><br>
                 <ul>
-                    <li><h5 class="text-center">{{$reserva->spec1}}</h5></li>
+                    <li>
+                        <h5 class="text-center">
+                            @if($reserva->spec1 == 2)
+                                1GB RAM
+                            @elseif($reserva->spec1 == 3)
+                                2GB RAM
+                            @elseif($reserva->spec1 == 4)
+                                3GB RAM
+                            @elseif($reserva->spec1 == 5)
+                                4GB RAM
+                            @elseif($reserva->spec1 == 6)
+                                8GB RAM
+                            @endif
+                        </h5>
+                    </li>
                     <br>
-                    <li><h5 class="text-center">{{$reserva->spec2}}</h5></li>
+                    <li>
+                        <h5 class="text-center">
+                            @if($reserva->spec2 == 2)
+                                8GB ROM
+                            @elseif($reserva->spec2 == 3)
+                                16GB ROM
+                            @elseif($reserva->spec2 == 4)
+                                32GB ROM
+                            @elseif($reserva->spec2 == 5)
+                                40GB HDD
+                            @elseif($reserva->spec2 == 6)
+                                60GB HDD
+                            @elseif($reserva->spec2 == 7)
+                                64GB ROM
+                            @elseif($reserva->spec2 == 8)
+                                80GB HDD
+                            @elseif($reserva->spec2 == 9)
+                                90GB SSD
+                            @elseif($reserva->spec2 == 10)
+                                96GB SSD
+                            @elseif($reserva->spec2 == 11)
+                                100GB HDD
+                            @elseif($reserva->spec2 == 12)
+                                120GB HDD/SSD
+                            @elseif($reserva->spec2 == 13)
+                                128GB SSD
+                            @elseif($reserva->spec2 == 14)
+                                160GB HDD
+                            @elseif($reserva->spec2 == 15)
+                                180GB SSD
+                            @elseif($reserva->spec2 == 16)
+                                250GB HDD
+                            @elseif($reserva->spec2 == 17)
+                                256GB SSD
+                            @elseif($reserva->spec2 == 18)
+                                300GB SSD
+                            @elseif($reserva->spec2 == 19)
+                                320GB HDD
+                            @elseif($reserva->spec2 == 20)
+                                500GB HDD
+                            @elseif($reserva->spec2 == 21)
+                                512GB SSD
+                            @elseif($reserva->spec2 == 22)
+                                750GB HDD
+                            @elseif($reserva->spec2 == 23)
+                                1TB HDD
+                            @endif
+                        </h5>
+                    </li>
                     <br>
-                    <li><h5 class="text-center">{{$reserva->spec3}}</h5></li>
+                    <li>
+                        <h5 class="text-center">{{$reserva->spec3}}</h5>
+                    </li>
                     <br>
-                    <li><h5 class="text-center">{{$reserva->spec4}}</h5></li>
+                    <li>
+                        <h5 class="text-center">{{$reserva->spec4}}</h5>
+                    </li>
                     <br>
-                    <li><h5 class="text-center">Precio Final:
-                            @if($reserva->idRam!=1 || $reserva->idDisco!=1)
-                                ${{$reserva->precio + 100}}
+                    <li>
+                        <h5 class="text-center">Precio Final:
+                            @if($reserva->idRam!=1)
+                                ${{$reserva->precio + 50}}
+                                @elseif($reserva->idDisco == 22)
+                                ${{$reserva->precio + 85}}
+                                @elseif($reserva->idDisco == 23)
+                                ${{$reserva->precio + 95}}
+                                @elseif($reserva->idDisco == 17)
+                                ${{$reserva->precio + 99}}
                                 @else
-                            ${{$reserva->precio}}
-                                @endif
+                                ${{$reserva->precio}}
+                            @endif
                         </h5>
                     </li>
                 </ul>

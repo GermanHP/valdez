@@ -1,4 +1,4 @@
-var CACHE_NAME = "valdez-v1";
+/*var CACHE_NAME = "valdez-v1";
 var cache_urls = ["/offline/view.html", "/offline/style.css", "/offline/sucursal-merliot.png",
                   "/offline/sucursal-escalon.png", "/offline/Ubicacion-cascadas.jpg", "/offline/sucur-sanmiguel.png"];
 
@@ -44,7 +44,7 @@ self.addEventListener('fetch', (event) => {
 */
 
 //Agregando `activate` event listener
-self.addEventListener('activate', (event) => {
+/*self.addEventListener('activate', (event) => {
     console.info('Event: Activate');
 
     //Removiendo al antiguo y no requerido cache

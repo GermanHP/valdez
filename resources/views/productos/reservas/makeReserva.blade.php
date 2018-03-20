@@ -100,21 +100,21 @@
                     </div>
 
                     <!-- Modal Structure -->
-                    <div id="modalOptimizar" class="modal">
+                    <div id="modalOptimizar" class="modal modal-fixed-footer modal-lg">
                         <div class="modal-content">
                             <h4 class="center-align">Optimizar Reserva</h4>
                             <div class="row">
                                 <br>
                                 <div class="container">
                                     <div class="input-field col s4 m4 l4 xl4">
-                                            <div class="input-field col s6 m6 l6 xl6">
-                                                {{ Form::label('optimizaRam', 'RAM', ['class'=>'input-group-addon']) }}
-                                                <br>
-                                                {!! Form::select('optimizaRam',$ram,null,['class'=>
-                                                'js-example-basic-single form-control ',"describedby"=>"basic-addon1",
-                                                'required', 'id'=>'department', 'onchange'=>'GetMunicipios(this)',
-                                                'style'=>'width: 100%']) !!}
-                                            </div>
+                                        <div class="input-field col s6 m6 l6 xl6">
+                                            {{ Form::label('optimizaRam', 'RAM', ['class'=>'input-group-addon']) }}
+                                            <br>
+                                            {!! Form::select('optimizaRam',$ram,null,['class'=>
+                                            'js-example-basic-single form-control ',"describedby"=>"basic-addon1",
+                                            'required', 'id'=>'department', 'style'=>
+                                            'width: 100%']) !!}
+                                        </div>
                                     </div>
                                     <div class="input-field col s4 m4 l4 xl4">
                                         <div class="input-field col s6 m6 l6 xl6">
@@ -123,7 +123,7 @@
                                             <br>
                                             {!! Form::select('optimizaDisco',$disco,null,['class'=>
                                             'js-example-basic-single form-control ',"describedby"=>"basic-addon1",
-                                            'required', 'id'=>'department', 'onchange'=>'GetMunicipios(this)', 'style'=>
+                                            'required', 'id'=>'department', 'style'=>
                                             'width: 100%']) !!}
                                         </div>
                                     </div>
@@ -153,10 +153,17 @@
                     <br><br><br>
 
                     <div class="center">
-                        <div class="g-recaptcha" data-sitekey="6LcVrEwUAAAAAKIRqA7sOelFLCWUQCqgwEPiDXn2"></div>
-                        {!!Form::submit('RESERVAR', ['class'=>'btn nav-color btn-large','name'=>'btnReservar'])!!}
-                        {!! Form::close() !!}
-                        <a href="{{url('/productos')}}" class="btn grey btn-large">CANCELAR</a>
+                        <br><br>
+                        <div class="row">
+                            <div class="col s12 m12">
+                                <div class="g-recaptcha" data-sitekey="6LcVrEwUAAAAAKIRqA7sOelFLCWUQCqgwEPiDXn2"></div>
+                            </div>
+                            <div class="co s12 m12">
+                                {!!Form::submit('RESERVAR', ['class'=>'btn nav-color btn-large','name'=>'btnReservar'])!!}
+                                {!! Form::close() !!}
+                                <a href="{{url('/productos')}}" class="btn grey btn-large">CANCELAR</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

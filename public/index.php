@@ -7,6 +7,16 @@
  * @author   Taylor Otwell <taylor@laravel.com>
  */
 
+//Ip del visitante
+if ($_SERVER['REMOTE_ADDR']=='::1') $ipuser= ''; else $ipuser= $_SERVER['REMOTE_ADDR'];
+
+$geoPlugin_array = unserialize( file_get_contents('http://www.geoplugin.net/php.gp?ip='.$ipuser) );
+
+//Si el pais es Nicaragua redireccionamos al directorio /es
+if ($geoPlugin_array['geoplugin_countryCode']=='NI'){
+    header('http://valdezstore.com/nicaragua');
+}
+
 define('LARAVEL_START', microtime(true));
 
 /*

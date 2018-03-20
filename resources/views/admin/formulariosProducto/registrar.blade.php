@@ -65,22 +65,24 @@
 <br>
 
 <div class="input-group input-group-lg">
-    {{Form::label('especificacion1', 'Característica 1:', ['class'=>'input-group-addon'])}}
-    {{Form::text('especificacion1', null, ['class'=>'form-control', 'required'=>''])}}
+    {{Form::label('especificacion1', 'RAM:', ['class'=>'input-group-addon'])}}
+    {!! Form::select('especificacion1',$ram,null,['class'=>'form-control ',"describedby"=>"basic-addon1",
+    'required', 'id'=>'department', 'style'=>'width: 100%']) !!}
 </div>
 <br>
 <div class="input-group input-group-lg">
-    {{Form::label('especificacion2', 'Característica 2:', ['class'=>'input-group-addon'])}}
-    {{Form::text('especificacion2', null, ['class'=>'form-control', 'required'=>''])}}
+    {{Form::label('especificacion2', 'Almacenamiento:', ['class'=>'input-group-addon'])}}
+    {!! Form::select('especificacion2',$disco,null,['class'=>'form-control ',"describedby"=>"basic-addon1",
+    'required', 'id'=>'department', 'style'=>'width: 100%']) !!}
 </div>
 <br>
 <div class="input-group input-group-lg">
-    {{Form::label('especificacion3', 'Característica 3:', ['class'=>'input-group-addon'])}}
+    {{Form::label('especificacion3', 'Procesador:', ['class'=>'input-group-addon'])}}
     {{Form::text('especificacion3', null, ['class'=>'form-control', 'required'=>''])}}
 </div>
 <br>
 <div class="input-group input-group-lg">
-    {{Form::label('especificacion4', 'Característica 4:', ['class'=>'input-group-addon'])}}
+    {{Form::label('especificacion4', 'Pantalla:', ['class'=>'input-group-addon'])}}
     {{Form::text('especificacion4', null, ['class'=>'form-control', 'required'=>''])}}
 </div>
 

@@ -46,10 +46,10 @@ class CronJobReserva extends Command
     {
         $reservas = Reservas::where('fechaDeVigencia','<', date('Y-m-d'))->whereNull('deleted_at')->get();//sl la fecha de vigencia es menor a la fecha actual y si es nulo
         foreach ($reservas as $reserva){
-            $reserva->delete();
+            $reserva->deleted_at(Carbon::now());
         }
 
-        Log::info('Numero de reservas encontradas: '.$reservas->count() . 'el día' . date('Y-m-d').'Reservas encontras a ser eliminadas'.$reserva->count());
+        Log::info('Numero de reservas encontradas: '.$reservas->count() . 'el día' . date('Y-m-d').'Reservas encontras a ser eliminadas'.$reservas->count());
         $this->comment(PHP_EOL.Inspiring::quote().PHP_EOL);
     }
 }

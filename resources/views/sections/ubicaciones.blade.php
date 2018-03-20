@@ -20,8 +20,10 @@
             </div>
 
             <div class="col s12 m12 l3 xl3">
+                <a href="#modalEscalon" class="modal-trigger">
                 {{Form::image('/img/ubicaciones/escalon.png',null,['id'=>'ESCALÓN',
                     'class'=>'ubicaciones responsive-img'])}}
+                </a>
                 <a  href="https://showtheway.io/to/13.702186,-89.231801?name=VALDEZ%20STORE%20-%20Sucursal%20Escal%26oacute%3Bn"
                     target="_blank"
                     title="Mostrar ruta hacia VALDEZ STORE - Sucursal Escalón con tu App favorita de navegación">
@@ -33,8 +35,10 @@
             </div>
 
             <div class="col s12 m12 l3 xl3">
+                <a href="#modalCascadas" class="modal-trigger">
                 {{Form::image('/img/ubicaciones/soho.png',null,['id'=>'CASCADAS',
                      'class'=>'ubicaciones responsive-img'])}}
+                </a>
                 <a href="https://showtheway.io/to/13.678033,-89.251246?name=VALDEZ%20STORE%20-%20Sucursal%20SOHO%20Cascadas"
                    target="_blank"
                    title="Mostrar ruta hacia VALDEZ STORE - Sucursal SOHO Cascadas con tu App favorita de navegación">
@@ -45,8 +49,10 @@
             </div>
 
             <div class="col s12 m12 l3 xl3">
+                <a href="#modalSMiguel" class="modal-trigger">
                 {{Form::image('/img/ubicaciones/san-miguel.png',null,['id'=>'SAN MIGUEL',
                     'class'=>'ubicaciones responsive-img'])}}
+                </a>
                 <a href="https://showtheway.io/to/13.476788,-88.184481?name=VALDEZ%20STORE%20-%20Sucursal%20San%20Miguel"
                    target="_blank"
                    title="Mostrar ruta hacia VALDEZ STORE - Sucursal San Miguel con tu App favorita de navegación">

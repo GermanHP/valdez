@@ -7,6 +7,8 @@ use App\Models\Bitacora;
 use App\Models\Category;
 use App\Models\CategoryClient;
 use App\Models\Centros;
+use App\Models\Disco;
+use App\Models\RAM;
 use App\Producto;
 use App\User;
 use Illuminate\Http\Request;
@@ -39,9 +41,11 @@ class GestionProductosController extends Controller
     {
         $categories = Category::pluck('nombre', 'id');
         $clienteCat = CategoryClient::pluck('nombre', 'id');
+        $ram = RAM::pluck('nombre', 'id');
+        $disco = Disco::pluck('nombre', 'id');
         $centros = Centros::all();
 
-        return view('admin.formulariosProducto.registrarProducto', compact('categories', 'centros', 'clienteCat'));
+        return view('admin.formulariosProducto.registrarProducto', compact('categories', 'centros', 'clienteCat', 'ram', 'disco'));
     }
 
     /**
@@ -127,6 +131,8 @@ class GestionProductosController extends Controller
     {
         $productos = Producto::find($id);
         $categories = Category::all();
+        $ram = RAM::pluck('nombre', 'id');
+        $disco = Disco::pluck('nombre', 'id');
         $cats = array();
 
         foreach ($categories as $category){
@@ -139,7 +145,7 @@ class GestionProductosController extends Controller
             $centros2[$centro->id] = $centro->nombre;
         }
 
-        return view('admin.formulariosProducto.edit')->withProductos($productos)->withCategories($cats)->withCentros($centros2);
+        return view('admin.formulariosProducto.edit')->withProductos($productos)->withCategories($cats)->withCentros($centros2)->withRam($ram)->withDisco($disco);
     }
 
     /**
