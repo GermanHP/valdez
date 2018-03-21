@@ -17,7 +17,7 @@
                 </div>
                 <div class="col s12 m12 l12 xl12">
                     @if(!empty($producto->image))
-                        <img src="{{asset('img/enStock/img' . $producto->image)}}" alt="Liquidaciones"
+                        <img src="{{asset('img/enStock/img' . $producto->image)}}" alt="RESERVAR"
                              class="responsive-img center-block" width="500">
                     @endif
                 </div>

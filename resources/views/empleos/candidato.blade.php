@@ -2,15 +2,18 @@
 
 
 @section('content')
-    <div class="parallax-container valign-wrapper" id="consulta">
-        <div class="section no-pad-bot">
+    <div class="parallax-container2 valign-wrapper" id="consulta">
+        <div class="section2 no-pad-bot">
             <div class="container">
                 <div class="row center">
                     <h4 class="evogria center-align white-text">Únete a Nuestra Familia</h4>
                 </div>
             </div>
         </div>
-        <div class="parallax"><img src="img/banners/productos.png" alt="Unsplashed background img 3"></div>
+        <div class="parallax">
+            <img src="img/banners/productos.png" alt="CREAR CURRICULO">
+        </div>
+
     </div>
     <br><br>
     <div class="container">

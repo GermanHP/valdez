@@ -108,7 +108,7 @@
                                     <div class="card-image">
                                         @if(!empty($smartphone->image))
                                             <img src="{{asset('img/enStock/img' . $smartphone->image)}}"
-                                                 alt="Liquidaciones" class="image-liquidacion">
+                                                 alt="SMARTPHONES" class="image-liquidacion">
                                         @endif
                                         <div class="overlay">
                                             <div class="text center-align">

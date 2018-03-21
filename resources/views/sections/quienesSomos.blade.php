@@ -15,11 +15,11 @@
                 </div>
             </div>
         </div>
-        <div class="parallax"><img class="responsive-img" src="img/banners/banner-quienes.png" alt="Unsplashed background img 3"></div>
+        <div class="parallax"><img class="responsive-img" src="img/banners/banner-quienes.png" alt="VIVE LA EXPERIENCIA"></div>
     </div>
 
     <div>
-        <img class="hide-on-large-only responsive-img" src="img/hide/banner-low.png" alt="">
+        <img class="hide-on-large-only responsive-img" src="img/hide/banner-low.png" alt="VIVE LA EXPERIENCIA">
     </div>
     <br>
     <div class="container">
@@ -121,7 +121,7 @@
 
             </div>
         </div>
-        <div class="parallax"><img class="responsive-img" src="img/banners/banner-icon.png" alt="Unsplashed background img 3"></div>
+        <div class="parallax"><img class="responsive-img" src="img/banners/banner-icon.png" alt="SECTORES"></div>
     </div>
 
     <!--   Target Section Med and Down   -->
@@ -238,7 +238,7 @@
         <div class="parallax"><img class="responsive-img" src="img/banners/asesores-05.png" alt="ASESORES"></div>
     </div>
 
-    <img src="img/hide/banner-low-asesores.png" alt="" class="responsive-img hide-on-large-only">
+    <img src="img/hide/banner-low-asesores.png" alt="ASESORES" class="responsive-img hide-on-large-only">
     <br><br>
     <div class="container">
         <h5 class="montserrat-extra-light">NUESTROS ASESORES DE SERVICIO DESTACAN POR SER:</h5>

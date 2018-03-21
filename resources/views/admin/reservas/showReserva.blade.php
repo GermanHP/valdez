@@ -52,7 +52,7 @@
                     <div class="row">
                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                             @if(!empty($reserva->image))
-                                <img src="{{asset('img/enStock/img' . $reserva->image)}}" alt="Apple"
+                                <img src="{{asset('img/enStock/img' . $reserva->image)}}" alt="MOSTRAR RESERVA"
                                      class="responsive-img image-liquidacion" width="450" height="450">
                             @endif
                         </div>

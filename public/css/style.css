@@ -116,8 +116,33 @@ p {
     color: #26a69a;
 }
 
+.parallax-container2 {
+    min-height: 650px;
+    line-height: 0;
+    height: auto;
+    color: rgba(255,255,255,.9);
+}
+.parallax-container2 .section2 {
+    width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+    .parallax-container2 .section2 {
+        top: 40%;
+    }
+    #index-banner .section2 {
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    #index-banner .section2 {
+        top: 0;
+    }
+}
+
 .parallax-container {
-    min-height: 350px;
+    min-height: 925px;
     line-height: 0;
     height: auto;
     color: rgba(255,255,255,.9);
@@ -171,7 +196,7 @@ div#sucursales{
     height: auto;
 }
 
-img#purple{
+#purple{
     margin-bottom: -130px;
 }
 
@@ -332,9 +357,9 @@ div#busqueda{
     border-radius: 8px;
 }
 
-div#filtrar{
+/*div#filtrar{
     margin-top: -70px;
-}
+}*/
 
 .current-link{
     border-bottom-style: solid;
@@ -398,4 +423,12 @@ span#fixed{
 
 #store-logo{
     background-color: rgba(237, 219, 4, 37);
+}
+
+.fullWidth{
+    width: 100%;
+}
+
+#ingresar{
+    margin-top: 575px;
 }

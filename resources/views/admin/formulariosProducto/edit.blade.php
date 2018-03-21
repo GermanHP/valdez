@@ -11,7 +11,7 @@
             {!! Form::model($productos, ['route' => ['producto.update', $productos->id], 'method' => 'PUT']) !!}
 
             <div class="col-xs-12 col-md-12 col-md-12 col-lg-12">
-                <img src="{{asset('img/enStock/img' . $productos->image)}}" alt="Apple"
+                <img src="{{asset('img/enStock/img' . $productos->image)}}" alt="PRODUCTO EDITAR"
                      class="responsive-img text-center" height="250" width="350">
                 <div class="input-group input-group-lg">
                     {{ Form::label('featured_img', 'Adjuntar Nueva Imgagen de Referencia del Producto', ['class'=>'input-group-addon']) }}

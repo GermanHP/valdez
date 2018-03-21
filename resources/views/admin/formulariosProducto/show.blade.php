@@ -9,7 +9,7 @@
     <div class="container">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6 lg-6">
-                <img src="{{asset('img/enStock/img' . $productos->image)}}" alt="Apple"
+                <img src="{{asset('img/enStock/img' . $productos->image)}}" alt="MOSTRAR PRODUCTO"
                      class="responsive-img" width="450" height="460">
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">

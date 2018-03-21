@@ -29,30 +29,11 @@
     <script src='https://www.google.com/recaptcha/api.js'></script>
 
     @include('includes.zopim')
+
+
 </head>
 <body>
 
-<script>
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId      : '162388867906232',
-            cookie     : true,
-            xfbml      : true,
-            version    : 'v2.12'
-        });
-
-        FB.AppEvents.logPageView();
-
-    };
-
-    (function(d, s, id){
-        let js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
 
 <!--<script>
     if('serviceWorker' in navigator) {
@@ -73,7 +54,7 @@
                 <a href="#" class="button-collapse" data-activates="mobile-menu"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li class="active current-link">
-                        <a href="#inicio" class="white-text evogria letter-spacing" id="anchorInicio">
+                        <a href="#filtrar" class="white-text evogria letter-spacing" id="anchorInicio">
                             LIQUIDACIONES DE HOY
                         </a>
                     </li>
@@ -173,35 +154,6 @@
                     <li><a class="white-text" href="#sucursales" id="anchorCentros">SOHO CASCADAS</a></li>
                     <li><a class="white-text" href="#sucursales" id="anchorCentros">SAN MIGUEL</a></li>
                 </ul>
-
-                <!--<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Bd0vueDnQtM/"
-                            data-instgrm-version="8"
-                            style=" background:#FFF; border:0; border-radius:3px;
-                            box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px;
-                            max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px);
-                            width:calc(100% - 2px);">
-                    <div style="padding:8px;">
-                        <div style=" background:#F8F8F8;
-                            line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;">
-                            <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC);
-                            display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;">
-                            </div>
-                        </div>
-                        <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px;
-                        margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center;
-                        text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/Bd0vueDnQtM/"
-                                                                        style=" color:#c9c8cd; font-family:Arial,sans-serif;
-                                                                        font-size:14px; font-style:normal;
-                                                                        font-weight:normal; line-height:17px;
-                                                                        text-decoration:none;" target="_blank">
-                                Una publicación compartida de VALDEZ STORE 🇸🇻 (@valdezstoresv)
-                            </a> el
-                            <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;"
-                                  datetime="2018-01-11T21:24:13+00:00">Ene 11, 2018 at 1:24 PST</time>
-                        </p>
-                    </div>
-                </blockquote>
-                <script async defer src="//www.instagram.com/embed.js"></script>-->
             </div>
             <div class="col l3 s12">
                 <ul>

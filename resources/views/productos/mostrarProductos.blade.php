@@ -124,7 +124,7 @@
                             <div class="card card-fix2">
                                 <div class="card-image">
                                     @if(!empty($producto->image))
-                                    <img src="{{asset('img/enStock/img' . $producto->image)}}" alt="Liquidaciones"
+                                    <img src="{{asset('img/enStock/img' . $producto->image)}}" alt="MOSTRAR PRODUCTO"
                                          class="image-liquidacion">
                                     @endif
                                     <div class="overlay">

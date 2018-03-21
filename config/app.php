@@ -167,6 +167,7 @@ return [
         Barryvdh\DomPDF\ServiceProvider::class,
         Laraveles\Spanish\SpanishServiceProvider::class,
         Laravel\Scout\ScoutServiceProvider::class,
+        App\Providers\FormServiceProvider::class,
     ],
 
     /*

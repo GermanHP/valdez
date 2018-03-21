@@ -21,7 +21,7 @@
                 <tr>
                     <td class="text-center">
                         @if(!empty($candidato->foto))
-                            <img src="{{asset('img/candidatos/foto' . $candidato->foto)}}" alt="Apple"
+                            <img src="{{asset('img/candidatos/foto' . $candidato->foto)}}" alt="CANDIDATO"
                                  class="responsive-img image-liquidacion" width="100" height="100">
                         @endif
                     </td>

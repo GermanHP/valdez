@@ -1,4 +1,5 @@
-<img class="responsive-img" src="img/ubicaciones/purple.png" alt="" id="purple">
+{!! Form::image('/img/ubicaciones/purple.png', null, ['class'=>'responsive-img', 'id'=>'purple', 'alt'=>'CENTROS DE LIQUIDACIÓN']) !!}
+
 <div class="container-fluid" id="sucursales" >
     <br>
     <h5 class="center-align white-text ">&mdash;&mdash;&mdash; ELIGE TU CENTRO DE LIQUIDACIÓN MÁS CERCANO &mdash;&mdash;&mdash;</h5>

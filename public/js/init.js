@@ -71,6 +71,13 @@
           }, 1300);
           return false;
       });
+
+      $('a#anchorProductos').click(function(){
+          $('html, body').animate({
+              scrollTop: $( $(this).attr('href') ).offset().top
+          }, 1300);
+          return false;
+      });
       //fin de la funcion para animar
 
       //Popup para geolocalización

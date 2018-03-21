@@ -118,7 +118,7 @@ div#sucursales{
     height: auto;
 }
 
-img#purple{
+#purple{
     margin-bottom: -130px;
 }
 
@@ -221,6 +221,11 @@ div .texto-slider{
 
 .card-fix{
     width: 400px;
+    height: auto;
+}
+
+.card-fix2{
+    width: 300px;
     height: auto;
 }
 

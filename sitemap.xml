@@ -3,19 +3,127 @@
     <!--Url Extract: 130-->
     <url>
         <loc>http://valdezstore.com/</loc>
-        <lastmod>2017-10-25</lastmod>
+        <lastmod>2018-03-21</lastmod>
         <changefreq>always</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>http://valdezstore.com/quienes-somos</loc>
-        <lastmod>2017-10-25</lastmod>
+        <lastmod>2018-03-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>http://valdezstore.com/location/2</loc>
-        <lastmod>2017-10-25</lastmod>
+        <loc>http://valdezstore.com/liquidaciones</loc>
+        <lastmod>2018-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>http://valdezstore.com/productos</loc>
+        <lastmod>2018-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>http://valdezsotre.com/categoria/basica</loc>
+        <lastmod>2018-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>http://valdezstore.com/categoria/superior</loc>
+        <lastmod>2018-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>http://valdezstore.com/categoria/profesional</loc>
+        <lastmod>2018-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>http://valdezstore.com/laptops</loc>
+        <lastmod>2018-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>http://valdezstore.com/tablets</loc>
+        <lastmod>2018-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>http://valdezstore.com/smartphones</loc>
+        <lastmod>2018-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>http://valdezstore.com/all-in-one</loc>
+        <lastmod>2018-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>http://valdezstore.com/marca/hp</loc>
+        <lastmod>2018-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>http://valdezstore.com/marca/dell</loc>
+        <lastmod>2018-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>http://valdezstore.com/marca/apple</loc>
+        <lastmod>2018-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>http://valdezstore.com/marca/acer</loc>
+        <lastmod>2018-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>http://valdezstore.com/marca/samsung</loc>
+        <lastmod>2018-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>http://valdezstore.com/marca/asus</loc>
+        <lastmod>2018-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>http://valdezstore.com/marca/toshiba</loc>
+        <lastmod>2018-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>http://valdezstore.com/marca/lenovo</loc>
+        <lastmod>2018-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>http://valdezstore.com/marca/otros</loc>
+        <lastmod>2018-03-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>http://valdezstore.com/empleos</loc>
+        <lastmod>2018-03-21</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.9</priority>
     </url>

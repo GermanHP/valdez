@@ -104,11 +104,11 @@
                                         <div class="card-image">
                                             @if(!empty($smartphone->image))
                                                 <img src="{{asset('img/enStock/img' . $smartphone->image)}}"
-                                                     alt="Liquidaciones" class="image-liquidacion">
+                                                     alt="SMARTPHONES" class="image-liquidacion">
                                             @endif
                                             <div class="overlay">
                                                 <div class="text center-align">
-                                                    <a href="{{url('/reserva')}}" class="yellow-text">RESERVAR</a>
+                                                    <a href="{{route('reservas.makeReserva', $smartphone->url)}}" class="yellow-text">RESERVAR</a>
                                                     <hr class="divider">
                                                     <a href="#sucursales" class="yellow-text">IR A TIENDA</a>
                                                     <hr class="divider">

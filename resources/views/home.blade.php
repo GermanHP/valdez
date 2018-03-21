@@ -1,25 +1,33 @@
 @extends('layouts.app')
 @section('content')
     @include('includes.modals')
-    <div class="parallax-container valign-wrapper" id="inicio">
+    <div class="parallax-container valign-wrapper hide-on-med-and-down" id="inicio">
         <div class="section no-pad-bot">
             <div class="container">
                 <div class="row center">
-                    <form>
-                        <div class="input-field container" id="busqueda">
-                            <input name="search" class="center" id="search" type="search"
-                                   required placeholder="BUSCA POR MARCA, PRODUCTO O CATEGORIA">
-                            <i class="material-icons">search</i>
-                        </div>
-                    </form>
+
+                    <div class="hide-on-med-and-down" id="ingresar">
+                        <!--<h1 class="evogria">VIVE LA EXPERIENCIA VALDEZ</h1>-->
+                        <a href="#home" id="anchorProductos" class="waves-effect waves-light btn">VER PRODUCTOS</a>
+                    </div>
+
                 </div>
             </div>
         </div>
-        <div class="parallax"><img src="img/ubicaciones/ba-ubicaciones.png" alt="Unsplashed background img 3"></div>
+        <div class="parallax">
+            <video class="responsive-video fullWidth" autoplay loop muted>
+                <source src="video/love-ios.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- <div class="parallax">
+            <img src="img/banners/productos.png" alt="CREAR CURRICULO">
+        </div>-->
     </div>
+
     <div id="home">
         <br>
-        <div class="container" id="filtrar">
+        <div class="container">
             <div class="row">
                 <div class="col l3 xl3 hide-on-med-and-down">
                     <ul class="collapsible" data-collapsible="expandable">
@@ -504,7 +512,7 @@
                                         <div class="card-image">
                                             @if(!empty($sugerencia->image))
                                                 <img src="{{asset('img/enStock/img' . $sugerencia->image)}}"
-                                                     alt="Liquidaciones"
+                                                     alt="SUGERIDOS"
                                                      class="responsive-img ajustar-sugeridos">
                                             @endif
                                             <div class="overlay">
@@ -658,7 +666,7 @@
                             <div class="card card-fix3">
                                 <div class="card-image">
                                     @if(!empty($telefonos->image))
-                                        <img src="{{asset('img/enStock/img' . $telefonos->image)}}" alt="Liquidaciones"
+                                        <img src="{{asset('img/enStock/img' . $telefonos->image)}}" alt="SMARTPHONES"
                                              class="responsive-img ajustar-sugeridos">
                                     @endif
                                     <div class="overlay">

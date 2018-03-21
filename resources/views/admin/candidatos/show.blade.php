@@ -56,7 +56,7 @@
                     <h1 class="text-center"><strong>{{$candidatos->nombreCandidato}} {{$candidatos->apellidoCandidato}}</strong></h1>
                     <div class="text-center">
                     @if(!empty($candidatos->foto))
-                        <img src="{{asset('img/candidatos/foto' . $candidatos->foto)}}" alt="Apple"
+                        <img src="{{asset('img/candidatos/foto' . $candidatos->foto)}}" alt="CANDIDATO"
                              class="responsive-img image-liquidacion" width="270" height="270">
                     @endif
                     </div>

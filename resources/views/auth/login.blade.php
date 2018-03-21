@@ -9,7 +9,7 @@
                 </div>
             </div>
         </div>
-        <div class="parallax"><img src="img/banners/productos.png" alt="Unsplashed background img 3"></div>
+        <div class="parallax"><img src="img/banners/productos.png" alt="INICIAR SESIÓN"></div>
     </div>
     <br><br><br><br>
 <div class="container">

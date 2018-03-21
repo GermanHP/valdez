@@ -15,15 +15,15 @@
 
         </div>
         <div class="carousel-item white-text" href="#one!">
-            <img href="#modalGallerySoho" src="img/slider-centros/cascadas.png" alt="" class="responsive-img modal-trigger">
+            <img href="#modalGallerySoho" src="img/slider-centros/cascadas.png" alt="CENTRO CASCADAS" class="responsive-img modal-trigger">
         </div>
         <div class="carousel-item white-text" href="#two!">
-            <img href="#modalGalleryEscalon" src="img/slider-centros/escalon.png" alt="" class="responsive-img modal-trigger">
+            <img href="#modalGalleryEscalon" src="img/slider-centros/escalon.png" alt="CENTRO ESCALON" class="responsive-img modal-trigger">
         </div>
         <div class="carousel-item white-text" href="#three!">
-            <img href="#modalGalleryMerliot" src="img/slider-centros/merliot.png" alt="" class="responsive-img modal-trigger">
+            <img href="#modalGalleryMerliot" src="img/slider-centros/merliot.png" alt="CENTRO MERLIOT" class="responsive-img modal-trigger">
         </div>
         <div class="carousel-item white-text" href="#four!">
-            <img href="#modalGallerySMiguel" src="img/slider-centros/san-miguel.png" alt="" class="responsive-img modal-trigger">
+            <img href="#modalGallerySMiguel" src="img/slider-centros/san-miguel.png" alt="CENTRO SAN MIGUEL" class="responsive-img modal-trigger">
         </div>
     </div>

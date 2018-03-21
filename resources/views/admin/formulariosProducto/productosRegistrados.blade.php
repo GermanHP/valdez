@@ -22,7 +22,7 @@
             <tr>
                 <td class="text-center">
                     @if(!empty($producto->image))
-                        <img src="{{asset('img/enStock/img' . $producto->image)}}" alt="Apple"
+                        <img src="{{asset('img/enStock/img' . $producto->image)}}" alt="PRODUCTOS REGISTRADOS"
                              class="responsive-img image-liquidacion" height="250" width="240">
                     @endif
                 </td>
