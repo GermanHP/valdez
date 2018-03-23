@@ -1,8 +1,6 @@
-@extends('layouts.app')
-
-
+@extends('layouts.registracion')
 @section('content')
-    <div class="parallax-container2 valign-wrapper" id="consulta">
+    <!--<div class="parallax-container2 valign-wrapper" id="consulta">
         <div class="section2 no-pad-bot">
             <div class="container">
                 <div class="row center">
@@ -13,11 +11,10 @@
         <div class="parallax">
             <img src="img/banners/productos.png" alt="CREAR CURRICULO">
         </div>
-
-    </div>
+    </div>-->
     <br><br>
     <div class="container">
-    <h4 class="center">Crear Currículo</h4>
+    <h4 class="center">CREA TU CURRICULO</h4>
     {!!Form::open(['route'=>['empleo.store'], 'method'=>'POST', 'files'=>true,
     'onsubmit'=>"waitingDialog.show('Cargando... ',{ progressType: 'info'});setTimeout(function ()
     {waitingDialog.hide();}, 3000);"])!!}

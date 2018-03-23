@@ -58,7 +58,9 @@
             <div class="hide-on-med-and-down col s1 m1 l1 xl1"></div>
             <div class="hide-on-med-and-down col s4 m4 l4 xl4">
                 <br>
-                <img class="hide-on-med-and-down responsive-img" src="img/banners/quienes.png" alt="Quiénes Somos">
+                <img class="hide-on-med-and-down" src="img/banners/lateral-1.png" alt="Quiénes Somos" width="300" height="200">
+                <img class="hide-on-med-and-down" src="img/banners/lateral-2.png" alt="Quiénes Somos" width="300" height="200">
+                <img class="hide-on-med-and-down" src="img/banners/lateral-3.png" alt="Quiénes Somos" width="300" height="200">
             </div>
         </div>
         <br><br><br>
@@ -87,7 +89,7 @@
                                 cumpla con la mejor calidad y se ajuste a la demanda en el mercado.
                             </p>
                         </div>
-                        <hr class="divider teal">
+
                     </div>
 
                     <div class="col s4 m4 l4 xl4">
@@ -101,7 +103,7 @@
                                 <br><br><br><br>
                             </p>
                         </div>
-                        <hr class="divider teal">
+
                     </div>
 
                     <div class="col s4 m4 l4 xl4">
@@ -115,6 +117,16 @@
                                 mejor atención y asesoría.<br>
                             </p>
                         </div>
+
+                    </div>
+
+                    <div class="col s4 m4 l4 xl4">
+                        <hr class="divider teal">
+                    </div>
+                    <div class="col s4 m4 l4 xl4">
+                        <hr class="divider teal">
+                    </div>
+                    <div class="col s4 m4 l4 xl4">
                         <hr class="divider teal">
                     </div>
                 </div>
@@ -247,9 +259,9 @@
             <div class="col s12 m12 l12 xl12">
                 <div class="row">
                     <div class="col s12 m12 l3 xl3 alineacion-derecha">
-                        <div class="dashed">
-                            <img class="responsive-img dashed-img" src="img/icons/auto.png" alt="AUTODIDACTAS" height="90" width="100">
-                            <div class="hide-on-med-and-down dashed-line"></div>
+                        <div>
+                            <img class="responsive-img" src="img/icons/icon1.png" alt="AUTODIDACTAS">
+
                         </div>
                     </div>
                     <div class="col s12 m12 l9 xl9">
@@ -265,9 +277,8 @@
             <div class="col s12 m12 l12 xl12">
                 <div class="row">
                     <div class="col s12 m12 l3 xl3 alineacion-derecha">
-                        <div class="dashed">
-                            <img class="responsive-img dashed-img" src="img/icons/apasionado.png" alt="APASIONADOS" height="90" width="100">
-                            <div class="hide-on-med-and-down dashed-line"></div>
+                        <div>
+                            <img class="responsive-img" src="img/icons/icon2.png" alt="APASIONADOS">
                         </div>
                     </div>
                     <div class="col s12 m12 l9 xl9">
@@ -284,9 +295,8 @@
             <div class="col s12 m12 l12 xl12">
                 <div class="row">
                     <div class="col s12 m12 l3 xl3 alineacion-derecha">
-                        <div class="dashed">
-                            <img class="responsive-img dashed-img" src="img/icons/versa.png" alt="VERSÁTILES" height="90" width="100">
-                            <div class="hide-on-med-and-down dashed-line"></div>
+                        <div>
+                            <img class="responsive-img" src="img/icons/icon3.png" alt="VERSÁTILES">
                         </div>
                     </div>
                     <div class="col s12 m12 l9 xl9">
@@ -303,9 +313,8 @@
             <div class="col s12 m12 l12 xl12">
                 <div class="row">
                     <div class="col s12 m12 l3 xl3 alineacion-derecha">
-                        <div class="dashed">
-                            <img class="responsive-img dashed-img" src="img/icons/minu.png" alt="MINUCIOSOS" height="90" width="100">
-                            <div class="hide-on-med-and-down dashed-line"></div>
+                        <div>
+                            <img class="responsive-img" src="img/icons/icon4.png" alt="MINUCIOSOS">
                         </div>
                     </div>
                     <div class="col s12 m12 l9 xl9">
@@ -320,9 +329,8 @@
             <div class="col s12 m12 l12 xl12">
                 <div class="row">
                     <div class="col s12 m12 l3 xl3 alineacion-derecha">
-                        <div class="dashed">
-                            <img class="responsive-img dashed-img" src="img/icons/conpa.png" alt="CON PASIÓN" height="90" width="100">
-                            <div class="hide-on-med-and-down dashed-line"></div>
+                        <div>
+                            <img class="responsive-img" src="img/icons/icon5.png" alt="CON PASIÓN">
                         </div>
                     </div>
                     <div class="col s12 m12 l9 xl9">

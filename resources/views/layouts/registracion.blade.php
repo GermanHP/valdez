@@ -54,7 +54,7 @@
                 <a href="#" class="button-collapse" data-activates="mobile-menu"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li class="active current-link">
-                        <a href="#home" class="white-text evogria letter-spacing" id="anchorInicio">
+                        <a href="#filtrar" class="white-text evogria letter-spacing" id="anchorInicio">
                             LIQUIDACIONES DE HOY
                         </a>
                     </li>
@@ -121,7 +121,7 @@
                 <ul>
                     <li>
                         <a href="{{url('/quienes-somos#nuestra-esencia')}}" class="grey-text text-lighten-4">
-                           NUESTRA ESENCIA
+                            NUESTRA ESENCIA
                         </a>
                     </li>
                     <li>
@@ -159,13 +159,13 @@
                 <ul>
                     <li>
                         <a class="white-text" href="https://www.waze.com/es/livemap?zoom=17&lat=13.67673&lon=-89.26278"
-                        target="_blank">
+                           target="_blank">
                             <h5>CASA MATRIZ</h5>
                         </a>
                     </li>
                     <li>
                         <a class="white-text" href="https://www.waze.com/es/livemap?zoom=17&lat=13.67673&lon=-89.26278"
-                        target="_blank">
+                           target="_blank">
                             Jardines de Cuscatlán, Av. L-A, Calle L-4, Polígono D, Edificio Valdez - Merliot Antiguo
                             Cuscatlán, La Libertad, El Salvador, C.A.
                         </a>

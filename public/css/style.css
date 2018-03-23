@@ -141,8 +141,12 @@ p {
     }
 }
 
+#bannerhome{
+    margin-top: -10px;
+}
+
 .parallax-container {
-    min-height: 925px;
+    min-height: 500px;
     line-height: 0;
     height: auto;
     color: rgba(255,255,255,.9);
@@ -357,9 +361,9 @@ div#busqueda{
     border-radius: 8px;
 }
 
-/*div#filtrar{
+div#home{
     margin-top: -70px;
-}*/
+}
 
 .current-link{
     border-bottom-style: solid;
@@ -431,4 +435,14 @@ span#fixed{
 
 #ingresar{
     margin-top: 575px;
+}
+
+input#search::placeholder{
+    display: none;
+    color: white;
+}
+
+#size-quienes{
+    width: 500px;
+    height: auto;
 }

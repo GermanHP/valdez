@@ -6,23 +6,33 @@
             <div class="container">
                 <div class="row center">
 
-                    <div class="hide-on-med-and-down" id="ingresar">
+                    <form>
+                        <div class="input-field container" id="busqueda">
+                            <input name="search" class="center" id="search" type="search"
+                                   required placeholder="BUSCA POR MARCA, PRODUCTO O CATEGORIA">
+                            <i class="material-icons">search</i>
+                        </div>
+                    </form>
+                    <!--<div class="hide-on-med-and-down" id="ingresar">
                         <!--<h1 class="evogria">VIVE LA EXPERIENCIA VALDEZ</h1>-->
-                        <a href="#home" id="anchorProductos" class="waves-effect waves-light btn">VER PRODUCTOS</a>
-                    </div>
+                        <!--<a href="#home" id="anchorProductos" class="waves-effect waves-light btn">VER PRODUCTOS</a>
+                    </div> -->
 
                 </div>
             </div>
         </div>
-        <div class="parallax">
+
+
+
+        <!--<div class="parallax">
             <video class="responsive-video fullWidth" autoplay loop muted>
                 <source src="video/love-ios.mp4" type="video/mp4">
             </video>
-        </div>
-
-        <!-- <div class="parallax">
-            <img src="img/banners/productos.png" alt="CREAR CURRICULO">
         </div>-->
+
+        <div class="parallax" id="bannerhome">
+            <img src="img/banners/bannerhome.png" alt="CREAR CURRICULO" width="1530">
+        </div>
     </div>
 
     <div id="home">

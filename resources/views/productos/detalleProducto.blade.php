@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.contenido')
 <?php $titleProducto = htmlspecialchars($productos->title); ?>
 @section('title', "| $titleProducto")
 @section('content')
@@ -126,4 +126,6 @@
         </div>
     </div>
     <br>
+
+    @include('sections.ubicaciones')
 @stop
