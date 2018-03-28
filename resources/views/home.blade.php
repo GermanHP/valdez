@@ -5,117 +5,123 @@
         <div class="section no-pad-bot">
             <div class="container">
                 <div class="row center">
-
                     <form>
                         <div class="input-field container" id="busqueda">
-                            <input name="search" class="center" id="search" type="search"
-                                   required placeholder="BUSCA POR MARCA, PRODUCTO O CATEGORIA">
+                            <input name="search" class="center" id="search2" type="search"
+                                   placeholder="BUSCAR" onfocus="this.placeholder = ''"
+                                   onblur="this.placeholder = 'BUSCAR'">
                             <i class="material-icons">search</i>
                         </div>
                     </form>
-                    <!--<div class="hide-on-med-and-down" id="ingresar">
-                        <!--<h1 class="evogria">VIVE LA EXPERIENCIA VALDEZ</h1>-->
-                        <!--<a href="#home" id="anchorProductos" class="waves-effect waves-light btn">VER PRODUCTOS</a>
-                    </div> -->
 
                 </div>
             </div>
         </div>
 
 
-
-        <!--<div class="parallax">
-            <video class="responsive-video fullWidth" autoplay loop muted>
-                <source src="video/love-ios.mp4" type="video/mp4">
-            </video>
-        </div>-->
-
         <div class="parallax" id="bannerhome">
-            <img src="img/banners/bannerhome.png" alt="CREAR CURRICULO" width="1530">
+            <img src="img/banners/bannerhome.png" alt="CREAR CURRICULO">
         </div>
+    </div>
+
+    <style>
+        div#quienes-img, img#quienes-img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+
+        }
+
+        div#quienes-img form#quienes-p {
+            display: block;
+            position: absolute;
+            text-align: right;
+            bottom: 25%;
+            margin-left: 10%;
+            padding: 5px;
+            width: 75%;
+            font-size: 10px;
+        }
+    </style>
+
+    <div class="hide-on-large-only" id="quienes-img">
+        <img class="" src="img/banners/bannerhome.png" alt="VIVE LA EXPERIENCIA" id="quienes-img">
+        <br>
+        <form id="quienes-p">
+            <div class="input-field container" id="busqueda">
+                <input name="search" class="center" id="search2" type="search"
+                       placeholder="BUSCAR" onfocus="this.placeholder = ''"
+                       onblur="this.placeholder = 'BUSCAR'">
+                <i class="material-icons">search</i>
+            </div>
+        </form>
     </div>
 
     <div id="home">
         <br>
         <div class="container">
             <div class="row">
-                <div class="col l3 xl3 hide-on-med-and-down">
-                    <ul class="collapsible" data-collapsible="expandable">
-                        <!--<li>
-                            <div class="collapsible-header"><i class="material-icons">school</i>CATEGORIA</div>
-                            <div class="collapsible-body">
-                                <p>
-                                    <input name="group1" type="radio" id="cat1" />
-                                    <label for="cat1">Educación Básica</label>
-                                </p>
-                                <p>
-                                    <input name="group1" type="radio" id="cat2" />
-                                    <label for="cat2">Educación Superior</label>
-                                </p>
-                                <p>
-                                    <input class="group1" name="group1" type="radio" id="cat3"  />
-                                    <label for="cat3">Profesionales</label>
-                                </p>
-                            </div>
-                        </li>-->
+                <div class="col l3 xl3 hide-on-med-and-down" id="opciones">
+                    <ul class="collapsible" data-collapsible="expandable" id="inicio-blanco">
+
                         <li>
-                            <div class="collapsible-header active"><i class="material-icons">devices_other</i>PRODUCTO</div>
+                            <div class="collapsible-header active">PRODUCTO</div>
                             <div class="collapsible-body">
                                 <p>
-                                    <input name="group2" type="radio" id="prod1" />
+
                                     <label for="prod1"><a class="black-text" href="{{url('laptops')}}">Laptops</a></label>
                                 </p>
                                 <p>
-                                    <input name="group2" type="radio" id="prod2" />
+
                                     <label for="prod2"><a class="black-text" href="{{url('tablets')}}">Tablets</a></label>
                                 </p>
                                 <p>
-                                    <input class="group1" name="group2" type="radio" id="prod3"  />
+
                                     <label for="prod3"><a class="black-text" href="{{url('smartphones')}}">Smartphones</a></label>
                                 </p>
                                 <p>
-                                    <input class="group1" name="group2" type="radio" id="prod4"  />
+
                                     <label for="prod4"><a class="black-text" href="{{url('all-in-one')}}">All in One</a></label>
                                 </p>
                             </div>
                         </li>
                         <li>
-                            <div class="collapsible-header active"><i class="material-icons">local_offer</i>MARCA</div>
+                            <div class="collapsible-header active">MARCA</div>
                             <div class="collapsible-body">
                                 <p>
-                                    <input name="group3" type="radio" id="brand1" />
                                     <label for="brand1"><a class="black-text" href="{{url('/marca/hp')}}">HP</a></label>
                                 </p>
                                 <p>
-                                    <input name="group3" type="radio" id="brand2" />
+
                                     <label for="brand2"><a class="black-text" href="{{url('/marca/dell')}}">DELL</a></label>
                                 </p>
                                 <p>
-                                    <input class="group1" name="group3" type="radio" id="brand3"  />
+
                                     <label for="brand3"><a class="black-text" href="{{url('/marca/apple')}}">APPLE</a></label>
                                 </p>
                                 <p>
-                                    <input class="group1" name="group3" type="radio" id="brand4"  />
+
                                     <label for="brand4"><a class="black-text" href="{{url('/marca/acer')}}">ACER</a></label>
                                 </p>
                                 <p>
-                                    <input class="group1" name="group3" type="radio" id="brand5"  />
+
                                     <label for="brand5"><a class="black-text" href="{{url('/marca/samsung')}}">SAMSUNG</a></label>
                                 </p>
                                 <p>
-                                    <input class="group1" name="group3" type="radio" id="brand6"  />
+
                                     <label for="brand6"><a class="black-text" href="{{url('/marca/asus')}}">ASUS</a></label>
                                 </p>
                                 <p>
-                                    <input class="group1" name="group3" type="radio" id="brand7"  />
+
                                     <label for="brand7"><a class="black-text" href="{{url('/marca/toshiba')}}">TOSHIBA</a></label>
                                 </p>
                                 <p>
-                                    <input class="group1" name="group3" type="radio" id="brand8"  />
+
                                     <label for="brand8"><a class="black-text" href="{{url('/marca/lenovo')}}">LENOVO</a></label>
                                 </p>
                                 <p>
-                                    <input class="group1" name="group3" type="radio" id="brand9"  />
+
                                     <label for="brand9"><a class="black-text" href="{{url('/marca/otros')}}">OTROS</a></label>
                                 </p>
                             </div>
@@ -123,18 +129,18 @@
                     </ul>
                 </div>
                 <div class="col s12 m12 l9 xl9 white hide-on-med-and-down">
-                    <h5>
-                        LIQUIDACIONES DE HOY
-                    </h5>
-                    <hr class="divider">
+
+                    <a href="{{url('/liquidaciones')}}" class="black-text letter-spacing"><h6 id="liquidaciones-home">LIQUIDACIONES</h6></a>
+                    <br>
+                    <div class="divider-teal" id="divider-home"></div>
                     <div class="row">
                         <?php $contador = 0 ?>
                         @foreach($sugeridos as $sugerido)
                             <?php $contador++?>
                             @if($contador <3)
-                                <div class="col l6 xl6">
+                                <div class="col m4 l6 xl6">
                                     <div class="row">
-                                        <div class="col s12 m7">
+                                        <div class="col s12 m6">
                                             <div class="card card-fix">
                                                 <div class="card-image">
                                                     @if(!empty($sugerido->image))
@@ -155,7 +161,7 @@
                                                 </div>
                                                 <div id="info"></div>
                                                 <div class="card-content">
-                                                    <h5 class="montserrat-extra-light">{{$sugerido->nombre}}</h5>
+                                                    <h6 class="montserrat-extra-light">{{$sugerido->nombre}}</h6>
 
                                                     <div class="row">
                                                         <div class="col s6 m6 l6 xl6">
@@ -232,7 +238,7 @@
                                                                 </div>
                                                                 <div class="col s6 m6 l6 xl6">
                                                                     <div class="chip yellow">
-                                                                        Escalón
+                                                                        Escal贸n
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -245,17 +251,22 @@
                                                                     </a>
                                                                 </strong>
                                                             </p>
-                                                            <h6 class="tachado">
+                                                        <!--<p>
+                                                                <strong class="light-blue-text">
+                                                                    {{$sugerido->stock}} en Stock
+                                                                </strong>
+                                                            </p>-->
+                                                        <!--<h6 class="tachado">
                                                                 <strong>
                                                                     ${{$sugerido->precioEs}}
                                                                 </strong>
-                                                            </h6>
-                                                            <h5 class="red-text">
+                                                            </h6>-->
+                                                        <!--<h5 class="red-text">
                                                                 <strong>
                                                                     ${{$sugerido->precioPromoEs}}
                                                                 </strong>
-                                                            </h5>
-                                                            <br><br><br>
+                                                            </h5>-->
+                                                            <br><br><br><br><br><br><br>
                                                             <a class="btn black"
                                                                href="{{route('reservas.makeReserva', $sugerido->url)}}">
                                                                 Reservar
@@ -272,7 +283,7 @@
                     </div>
                 </div>
 
-                <div class="col s12 m12 l9 xl9 white hide-on-large-only">
+                <div class="col s12 m12 l9 xl9 white hide-on-large-only" id="bajar-quienes">
                     <h5>
                         LIQUIDACIONES DE HOY
                     </h5>
@@ -306,7 +317,7 @@
                                                 </div>
                                                 <div id="info"></div>
                                                 <div class="card-content">
-                                                    <h5 class="montserrat-extra-light">{{$sugerido->nombre}}</h5>
+                                                    <h6 class="montserrat-extra-light">{{$sugerido->nombre}}</h6>
                                                     <div class="row">
                                                         <div class="col s6 m6 l6 xl6">
                                                             <p>
@@ -385,7 +396,7 @@
                                                                 </div>
                                                                 <div class="col s6 m6 l6 xl6">
                                                                     <div class="chip yellow">
-                                                                        Escalón
+                                                                        Escal贸n
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -398,16 +409,16 @@
                                                                     </a>
                                                                 </strong>
                                                             </p>
-                                                            <h6 class="tachado">
+                                                        <!--<h6 class="tachado">
                                                                 <strong>
                                                                     ${{$sugerido->precioEs}}
                                                                 </strong>
-                                                            </h6>
-                                                            <h5 class="red-text">
+                                                            </h6>-->
+                                                        <!--<h5 class="red-text">
                                                                 <strong>
                                                                     ${{$sugerido->precioPromoEs}}
                                                                 </strong>
-                                                            </h5>
+                                                            </h5>-->
                                                             <br><br><br>
                                                             <a class="btn modal-trigger black"
                                                                href="{{route('reservas.makeReserva', $sugerido->url)}}">
@@ -428,7 +439,7 @@
         </div>
         <br>
         <!-- start apple -->
-        <div class="container">
+        <div class="container" id="inicio-blanco">
             <div class="section">
                 <!--   Apple Section   -->
                 <div class="row">
@@ -453,33 +464,31 @@
                                             <img src="{{asset('img/enStock/img' . $apple->image)}}" alt="Apple"
                                                  class="responsive-img image-liquidacion">
                                         @endif
-                                        <div class="overlay">
+                                        <div class="overlay2">
                                             <div class="text center-align">
-                                                <a href="{{route('reservas.makeReserva', $apple->url)}}" class="yellow-text">
+                                                <a href="{{route('reservas.makeReserva', $apple->url)}}" class="black-text">
                                                     RESERVAR
                                                 </a>
                                                 <hr class="divider">
-                                                <a href="#sucursales" class="yellow-text" id="anchorCentros">
+                                                <a href="#sucursales" class="black-text" id="anchorCentros">
                                                     IR A TIENDA
                                                 </a>
                                                 <hr class="divider">
-                                                <a href="{{ route('productos.detalleProducto', $apple->url) }}" class="yellow-text">
+                                                <a href="{{ route('productos.detalleProducto', $apple->url) }}" class="black-text">
                                                     VER DETALLES
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col s6 m6 l6 xl6">
+                                <div class="row center-align">
+                                    <div class="col s12 m12 l12 xl12">
                                         <h6 class="montserrat-extra-light">
                                             {{$apple->nombre}}
                                         </h6>
-                                    </div>
-                                    <div class="col s6 m6 l6 xl6">
-                                        <p class="red-text">
-                                            ${{$apple->precioPromoEs}}
-                                        </p>
+                                    <!--<p class="red-text subir-precio right-align">
+                                            Precio ${{$apple->precioPromoEs}}
+                                            </p>-->
                                     </div>
                                 </div>
                             </div>
@@ -491,232 +500,311 @@
         </div>
         <!-- end apple -->
         <br><br>
+        @section('contenido')
+            <div id="inicio-blanco">
+                <div class="container">
+                    <div class="row">
+                        <br>
+                        <div class="col s6 m6 l6 xl6">
+                            <h6>SUGERIDOS PARA TI</h6>
+                        </div>
+                        <div class="col s6 m6 l6 xl6">
+                            <a class="black-text" href="{{url('/productos')}}">
+                                <h6 class="right-align">
+                                    <span>4 de {{$productoVenta->count()}} &nbsp;&nbsp;&nbsp;</span> <strong class="negrita">VER TODO</strong> &blacktriangleright;
+                                </h6>
+                            </a>
+                        </div>
+                    </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col s6 m6 l6 xl6">
-                    <h5>SUGERIDOS PARA TI</h5>
-                </div>
-                <div class="col s6 m6 l6 xl6">
-                    <a class="black-text" href="{{url('/productos')}}">
-                        <h5 class="right-align">
-                            VER TODO
-                            <i class="material-icons">
-                                chevron_right
-                            </i>
-                        </h5>
-                    </a>
-                </div>
-            </div>
-
-            <div class="row">
-                <?php $contador = 0 ?>
-                @foreach($productoVenta as $sugerencia)
-                    <?php $contador++?>
-                    @if($contador <5)
-                        @if($sugerencia->estado == 1 || $sugerencia->estado == 2)
-                        <div class="col s12 m12 l3 xl3">
-                            <div class="row">
-                                <div class="col s12 m12 l3 xl3">
-                                    <div class="card card-fix2">
-                                        <div class="card-image">
-                                            @if(!empty($sugerencia->image))
-                                                <img src="{{asset('img/enStock/img' . $sugerencia->image)}}"
-                                                     alt="SUGERIDOS"
-                                                     class="responsive-img ajustar-sugeridos">
-                                            @endif
-                                            <div class="overlay">
-                                                <div class="text center-align">
-                                                    <a href="{{route('reservas.makeReserva', $sugerencia->url)}}"
-                                                       class="yellow-text">RESERVAR</a>
-                                                    <hr class="divider">
-                                                    <a href="#sucursales" class="yellow-text" id="anchorCentros">IR A TIENDA</a>
-                                                    <hr class="divider">
-                                                    <a href="{{ route('productos.detalleProducto', $sugerencia->url) }}"
-                                                       class="yellow-text">VER DETALLES</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-content">
-                                            <h5 class="montserrat-extra-light">{{$sugerencia->nombre}}</h5>
-                                            <div class="row">
-                                                <div class="col s6 m6 l6 xl6">
-                                                    <p>
-                                                        <strong>
-                                                            @if($sugerencia->caracteristica1 == 2)
-                                                            1GB RAM
-                                                                @elseif($sugerencia->caracteristica1 == 3)
-                                                                2GB RAM
-                                                            @elseif($sugerencia->caracteristica1 == 4)
-                                                                3GB RAM
-                                                            @elseif($sugerencia->caracteristica1 == 5)
-                                                                4GB RAM
-                                                            @elseif($sugerencia->caracteristica1 == 6)
-                                                                8GB RAM
-                                                                @endif
+                    <div class="row">
+                        <?php $contador = 0 ?>
+                        @foreach($productoVenta as $sugerencia)
+                            <?php $contador++?>
+                            @if($contador <5)
+                                @if($sugerencia->estado == 1 || $sugerencia->estado == 2)
+                                    <div class="col s12 m12 l3 xl3">
+                                        <div class="row">
+                                            <div class="col s12 m12 l3 xl3">
+                                                <div class="card card-fix2">
+                                                    <div class="card-image">
+                                                        @if(!empty($sugerencia->image))
+                                                            <img src="{{asset('img/enStock/img' . $sugerencia->image)}}"
+                                                                 alt="SUGERIDOS"
+                                                                 class="responsive-img ajustar-sugeridos">
+                                                        @endif
+                                                        <div class="overlay">
+                                                            <div class="text center-align">
+                                                                <a href="{{route('reservas.makeReserva', $sugerencia->url)}}"
+                                                                   class="yellow-text">RESERVAR</a>
+                                                                <hr class="divider">
+                                                                <a href="#sucursales" class="yellow-text" id="anchorCentros">IR A TIENDA</a>
+                                                                <hr class="divider">
+                                                                <a href="{{ route('productos.detalleProducto', $sugerencia->url) }}"
+                                                                   class="yellow-text">VER DETALLES</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <h6 class="montserrat-extra-light">{{$sugerencia->nombre}}</h6>
+                                                        <div class="row">
+                                                            <div class="col s6 m6 l6 xl6">
+                                                                <p>
+                                                                    <strong>
+                                                                        @if($sugerencia->caracteristica1 == 2)
+                                                                            1GB RAM
+                                                                        @elseif($sugerencia->caracteristica1 == 3)
+                                                                            2GB RAM
+                                                                        @elseif($sugerencia->caracteristica1 == 4)
+                                                                            3GB RAM
+                                                                        @elseif($sugerencia->caracteristica1 == 5)
+                                                                            4GB RAM
+                                                                        @elseif($sugerencia->caracteristica1 == 6)
+                                                                            8GB RAM
+                                                                        @endif
+                                                                    </strong>
+                                                                </p>
+                                                                <p>
+                                                                    <strong>
+                                                                        @if($sugerencia->caracteristica2 == 2)
+                                                                            8GB ROM
+                                                                        @elseif($sugerencia->caracteristica2 == 3)
+                                                                            16GB ROM
+                                                                        @elseif($sugerencia->caracteristica2 == 4)
+                                                                            32GB ROM
+                                                                        @elseif($sugerencia->caracteristica2 == 5)
+                                                                            40GB HDD
+                                                                        @elseif($sugerencia->caracteristica2 == 6)
+                                                                            60GB HDD
+                                                                        @elseif($sugerencia->caracteristica2 == 7)
+                                                                            64GB ROM
+                                                                        @elseif($sugerencia->caracteristica2 == 8)
+                                                                            80GB HDD
+                                                                        @elseif($sugerencia->caracteristica2 == 9)
+                                                                            90GB SSD
+                                                                        @elseif($sugerencia->caracteristica2 == 10)
+                                                                            96GB SSD
+                                                                        @elseif($sugerencia->caracteristica2 == 11)
+                                                                            100GB HDD
+                                                                        @elseif($sugerencia->caracteristica2 == 12)
+                                                                            120GB HDD/SSD
+                                                                        @elseif($sugerencia->caracteristica2 == 13)
+                                                                            128GB SSD
+                                                                        @elseif($sugerencia->caracteristica2 == 14)
+                                                                            160GB HDD
+                                                                        @elseif($sugerencia->caracteristica2 == 15)
+                                                                            180GB SSD
+                                                                        @elseif($sugerencia->caracteristica2 == 16)
+                                                                            250GB HDD
+                                                                        @elseif($sugerencia->caracteristica2 == 17)
+                                                                            256GB SSD
+                                                                        @elseif($sugerencia->caracteristica2 == 18)
+                                                                            300GB SSD
+                                                                        @elseif($sugerencia->caracteristica2 == 19)
+                                                                            320GB HDD
+                                                                        @elseif($sugerencia->caracteristica2 == 20)
+                                                                            500GB HDD
+                                                                        @elseif($sugerencia->caracteristica2 == 21)
+                                                                            512GB SSD
+                                                                        @elseif($sugerencia->caracteristica2 == 22)
+                                                                            750GB HDD
+                                                                        @elseif($sugerencia->caracteristica2 == 23)
+                                                                            1TB HDD
+                                                                        @endif
+                                                                    </strong>
+                                                                </p>
+                                                                <p>
+                                                                    <strong>
+                                                                        {{$sugerencia->caracteristica3}}
+                                                                    </strong>
+                                                                </p>
+                                                                <p>
+                                                                    <strong>
+                                                                        {{$sugerencia->caracteristica4}}
+                                                                    </strong>
+                                                                </p>
+                                                            </div>
+                                                            <div class="col s6 m6 l6 xl6">
+                                                            <!--<p class="right-align">
+                                                        <strong class="light-blue-text">
+                                                            {{$sugerido->stock}} en Stock
                                                         </strong>
-                                                    </p>
-                                                    <p>
-                                                        <strong>
-                                                            @if($sugerencia->caracteristica2 == 2)
-                                                                8GB ROM
-                                                            @elseif($sugerencia->caracteristica2 == 3)
-                                                                16GB ROM
-                                                            @elseif($sugerencia->caracteristica2 == 4)
-                                                                32GB ROM
-                                                            @elseif($sugerencia->caracteristica2 == 5)
-                                                                40GB HDD
-                                                            @elseif($sugerencia->caracteristica2 == 6)
-                                                                60GB HDD
-                                                            @elseif($sugerencia->caracteristica2 == 7)
-                                                                64GB ROM
-                                                            @elseif($sugerencia->caracteristica2 == 8)
-                                                                80GB HDD
-                                                            @elseif($sugerencia->caracteristica2 == 9)
-                                                                90GB SSD
-                                                            @elseif($sugerencia->caracteristica2 == 10)
-                                                                96GB SSD
-                                                            @elseif($sugerencia->caracteristica2 == 11)
-                                                                100GB HDD
-                                                            @elseif($sugerencia->caracteristica2 == 12)
-                                                                120GB HDD/SSD
-                                                            @elseif($sugerencia->caracteristica2 == 13)
-                                                                128GB SSD
-                                                            @elseif($sugerencia->caracteristica2 == 14)
-                                                                160GB HDD
-                                                            @elseif($sugerencia->caracteristica2 == 15)
-                                                                180GB SSD
-                                                            @elseif($sugerencia->caracteristica2 == 16)
-                                                                250GB HDD
-                                                            @elseif($sugerencia->caracteristica2 == 17)
-                                                                256GB SSD
-                                                            @elseif($sugerencia->caracteristica2 == 18)
-                                                                300GB SSD
-                                                            @elseif($sugerencia->caracteristica2 == 19)
-                                                                320GB HDD
-                                                            @elseif($sugerencia->caracteristica2 == 20)
-                                                                500GB HDD
-                                                            @elseif($sugerencia->caracteristica2 == 21)
-                                                                512GB SSD
-                                                            @elseif($sugerencia->caracteristica2 == 22)
-                                                                750GB HDD
-                                                            @elseif($sugerencia->caracteristica2 == 23)
-                                                                1TB HDD
-                                                            @endif
-                                                        </strong>
-                                                    </p>
-                                                    <p>
-                                                        <strong>
-                                                            {{$sugerencia->caracteristica3}}
-                                                        </strong>
-                                                    </p>
-                                                    <p>
-                                                        <strong>
-                                                            {{$sugerencia->caracteristica4}}
-                                                        </strong>
-                                                    </p>
-                                                </div>
-                                                <div class="col s6 m6 l6 xl6">
-                                                    <p>
-                                                        <strong>
-                                                            <a href="{{ route('productos.detalleProducto', $sugerencia->url) }}">+info</a>
-                                                        </strong>
-                                                    </p>
-                                                    <h6 class="tachado">
+                                                    </p>-->
+                                                                <p class="right-align">
+                                                                    <strong>
+                                                                        <a href="{{ route('productos.detalleProducto', $sugerencia->url) }}">+info</a>
+                                                                    </strong>
+                                                                </p>
+                                                            <!--<h6 class="tachado">
                                                         <strong>
                                                             Antes: ${{$sugerencia->precioEs}}
-                                                        </strong>
-                                                    </h6>
-                                                    <h6 class="red-text">
+                                                                    </strong>
+                                                                </h6>-->
+                                                            <!--<h6 class="red-text">
                                                         <strong>
                                                             Precio: ${{$sugerencia->precioPromoEs}}
-                                                        </strong>
-                                                    </h6>
-                                                </div>
-                                            </div>
-                                            <h6>Disponible en:</h6>
-                                            <div class="row">
-                                                <div class="chip yellow">
-                                                    Merliot
-                                                </div>
-                                                <div class="chip yellow">
-                                                    Escalón
+                                                                    </strong>
+                                                                </h6>-->
+                                                            </div>
+                                                        </div>
+                                                        <h6>Disponible en:</h6>
+                                                        <div class="row">
+                                                            <div class="chip yellow">
+                                                                Merliot
+                                                            </div>
+                                                            <div class="chip yellow">
+                                                                Escal贸n
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr class="divider subir-divider">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
+                                @endif
                             @endif
-                    @endif
-                @endforeach
-            </div>
-        </div>
-
-        <!--   Smartphone Section   -->
-        <div class="container">
-            <div class="row">
-                <div class="col l1 xl1"></div>
-                <div class="col s12 m12 l2 xl2">
-                    <div class="icon-block card-fix3">
-                        <a href="{{url('/smartphones')}}">
-                            <h3>Smart</h3>
-                            <h3>Phones</h3>
-                        </a>
+                        @endforeach
                     </div>
                 </div>
 
-                <?php $contador = 0 ?>
-                @foreach($smartphones as $telefonos)
-                    <?php $contador++?>
-                    @if($contador <5)
-
+                <!--   Smartphone Section   -->
+                <div class="hide-on-med-and-down">
+                <div class="container" id="smart-sect">
+                    <br>
+                    <div class="row center-align">
+                        <div class="col l1 xl1"></div>
                         <div class="col s12 m12 l2 xl2">
-                            <div class="card card-fix3">
-                                <div class="card-image">
-                                    @if(!empty($telefonos->image))
-                                        <img src="{{asset('img/enStock/img' . $telefonos->image)}}" alt="SMARTPHONES"
-                                             class="responsive-img ajustar-sugeridos">
-                                    @endif
-                                    <div class="overlay">
-                                        <div class="text center-align">
-                                            <a href="{{route('reservas.makeReserva', $telefonos->url)}}" class="yellow-text">
-                                                RESERVAR
-                                            </a>
-                                            <hr class="divider">
-                                            <a href="#sucursales" class="yellow-text" id="anchorCentros">
-                                                IR A TIENDA
-                                            </a>
-                                            <hr class="divider">
-                                            <a href="{{ route('productos.detalleProducto', $telefonos->url) }}" class="yellow-text">
-                                                VER DETALLES
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col s6 m6 l6 xl6">
-                                    <h6 class="montserrat-extra-light">
-                                        {{$telefonos->nombre}}
-                                    </h6>
-                                </div>
-                                <div class="col s6 m6 l6 xl6">
-                                    <p class="red-text">
-                                        ${{$telefonos->precioPromoEs}}
-                                    </p>
-                                </div>
+                            <div class="icon-block card-fix3">
+                                <a class="center-align" href="{{url('/smartphones')}}">
+                                    <br><br><br>
+                                    <h5 class="purple-text-2"><strong>SMART</strong></h5>
+                                    <h5 class="espacio-letra purple-text-2"><strong>PHONES</strong></h5>
+                                </a>
                             </div>
                         </div>
 
-                    @endif
-                @endforeach
+                        <?php $contador = 0 ?>
+                        @foreach($smartphones as $telefonos)
+                            <?php $contador++?>
+                            @if($contador <5)
 
-                <div class="col l1 xl1"></div>
+                                <div class="col s12 m12 l2 xl2">
+                                    <div class="card card-fix3">
+                                        <div class="card-image">
+                                            @if(!empty($telefonos->image))
+                                                <img src="{{asset('img/enStock/img' . $telefonos->image)}}" alt="SMARTPHONES"
+                                                     class="responsive-img ajustar-sugeridos">
+                                            @endif
+                                            <div class="overlay2">
+                                                <div class="text center-align">
+                                                    <a href="{{route('reservas.makeReserva', $telefonos->url)}}" class="black-text">
+                                                        RESERVAR
+                                                    </a>
+                                                    <hr class="divider">
+                                                    <a href="#sucursales" class="black-text" id="anchorCentros">
+                                                        IR A TIENDA
+                                                    </a>
+                                                    <hr class="divider">
+                                                    <a href="{{ route('productos.detalleProducto', $telefonos->url) }}" class="black-text">
+                                                        VER DETALLES
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row center-align">
+                                        <div class="col s12 m12 l12 xl12">
+                                            <h6 class="montserrat-extra-light">
+                                                {{$telefonos->nombre}}
+                                            </h6>
+                                        <!--<p class="red-text subir-precio right-align">
+                                        ${{$telefonos->precioPromoEs}}
+                                                </p>-->
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            @endif
+                        @endforeach
+
+                        <div class="col l1 xl1"></div>
+                    </div>
+                </div>
+                </div>
+
+                <!-- hide on large -->
+                <!--   Smartphone Section   -->
+                <div class="hide-on-large-only">
+                <div class="container" id="smart-sect">
+                    <br>
+                    <div class="row center-align">
+                        <div class="col l1 xl1"></div>
+                        <div class="col s12 m12 l2 xl2">
+                            <div class="icon-block card-fix4">
+                                <a class="center-align" href="{{url('/smartphones')}}">
+                                    <br><br><br>
+                                    <h5 class="purple-text-2"><strong>SMART</strong></h5>
+                                    <h5 class="espacio-letra purple-text-2"><strong>PHONES</strong></h5>
+                                </a>
+                            </div>
+                        </div>
+
+                        <?php $contador = 0 ?>
+                        @foreach($smartphones as $telefonos)
+                            <?php $contador++?>
+                            @if($contador <5)
+
+                                <div class="col s12 m12 l2 xl2">
+                                    <div class="card card-fix3">
+                                        <div class="card-image">
+                                            @if(!empty($telefonos->image))
+                                                <img src="{{asset('img/enStock/img' . $telefonos->image)}}" alt="SMARTPHONES"
+                                                     class="responsive-img ajustar-sugeridos">
+                                            @endif
+                                            <div class="overlay2">
+                                                <div class="text center-align">
+                                                    <a href="{{route('reservas.makeReserva', $telefonos->url)}}" class="black-text">
+                                                        RESERVAR
+                                                    </a>
+                                                    <hr class="divider">
+                                                    <a href="#sucursales" class="black-text" id="anchorCentros">
+                                                        IR A TIENDA
+                                                    </a>
+                                                    <hr class="divider">
+                                                    <a href="{{ route('productos.detalleProducto', $telefonos->url) }}" class="black-text">
+                                                        VER DETALLES
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row center-align">
+                                        <div class="col s12 m12 l12 xl12">
+                                            <h6 class="montserrat-extra-light">
+                                                {{$telefonos->nombre}}
+                                            </h6>
+                                        <!--<p class="red-text subir-precio right-align">
+                                        ${{$telefonos->precioPromoEs}}
+                                                </p>-->
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            @endif
+                        @endforeach
+
+                        <div class="col l1 xl1"></div>
+                    </div>
+                </div>
+                </div>
+                <br>
             </div>
-        </div>
     </div>
 
+    @include('productos.sugeridos-home')
     @include('sections.ubicaciones')
+@stop
 @stop

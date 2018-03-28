@@ -75,7 +75,7 @@
                         <div>
                             <br>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{Form::image('/img/logos/logo_valdez.png','Valdez Store',
-                            ['id'=>'Valdez Store', 'height'=>'50', 'width'=>'250'])}}
+                            ['id'=>'Valdez Store', 'height'=>'45', 'width'=>'250'])}}
                             <br><br>
                             <hr class="divider">
                         </div>
@@ -105,19 +105,23 @@
     @include('includes.modals')
     <div id="content1" class="hide-on-med-and-down">
         @yield('content')
+        <div id="inicio-blanco">
+            @yield('contenido')
+        </div>
     </div>
     <div id="content2" class="hide-on-large-only">
         @yield('content')
     </div>
 </main>
-<footer class="page-footer grey darken-4">
+
+<footer class="page-footer grey darken-4" id="footer-fix">
     <div class="container">
         <h3 class="evogria">VALDEZ <span id="store-logo" class="black-text inclinado">&nbsp;STORE&nbsp;</span></h3>
 
         <div class="row">
 
             <div class="col l3 s12">
-                <a href="{{url('/quienes-somos')}}"><h5 class="grey-text text-lighten-4">¿QUIÉNES SOMOS?</h5></a>
+                <a href="{{url('/quienes-somos')}}"><h6 class="grey-text text-lighten-4">¿QUIÉNES SOMOS?</h6></a>
                 <ul>
                     <li>
                         <a href="{{url('/quienes-somos#nuestra-esencia')}}" class="grey-text text-lighten-4">
@@ -139,7 +143,7 @@
             </div>
             <div class="col l3 s12">
                 <ul>
-                    <li><a class="white-text" href="{{url('/')}}"><h5>INICIO</h5></a></li>
+                    <li><a class="white-text" href="{{url('/')}}"><h6>INICIO</h6></a></li>
                     <li><a class="white-text" href="{{url('/liquidaciones')}}">LIQUIDACIONES ESPECIALES</a></li>
                     <li><a class="white-text" href="{{url('/productos')}}">PRODUCTOS</a></li>
                     <li><a class="white-text" href="{{url('/login')}}">INICIAR SESIÓN</a></li>
@@ -147,12 +151,12 @@
             </div>
             <div class="col l3 s12">
 
-                <h5 class="grey-text text-lighten-4">CENTROS DE LIQUIDACIÓN</h5>
+                <h6 class="grey-text text-lighten-4">CENTROS DE LIQUIDACIÓN</h6>
                 <ul>
-                    <li><a class="white-text" href="#sucursales" id="anchorCentros">MERLIOT</a></li>
-                    <li><a class="white-text" href="#sucursales" id="anchorCentros">ESCALÓN</a></li>
-                    <li><a class="white-text" href="#sucursales" id="anchorCentros">SOHO CASCADAS</a></li>
-                    <li><a class="white-text" href="#sucursales" id="anchorCentros">SAN MIGUEL</a></li>
+                    <li><a class="white-text modal-trigger" href="#modalMerliot">MERLIOT</a></li>
+                    <li><a class="white-text modal-trigger" href="#modalEscalon">ESCALÓN</a></li>
+                    <li><a class="white-text modal-trigger" href="#modalCascadas">SOHO CASCADAS</a></li>
+                    <li><a class="white-text modal-trigger" href="#modalSMiguel">SAN MIGUEL</a></li>
                 </ul>
             </div>
             <div class="col l3 s12">
@@ -160,7 +164,7 @@
                     <li>
                         <a class="white-text" href="https://www.waze.com/es/livemap?zoom=17&lat=13.67673&lon=-89.26278"
                         target="_blank">
-                            <h5>CASA MATRIZ</h5>
+                            <h6>CASA MATRIZ</h6>
                         </a>
                     </li>
                     <li>
@@ -185,7 +189,7 @@
         </div>
     </div>
     <div class="footer-copyright">
-        <div class="container">
+        <div class="container"> &nbsp;
             <a class="white-text" href="https://www.facebook.com/valdezstoresv/" target="_blank">{{Form::image('/img/icons/facebook.png','Facebook',
                 ['id'=>'FooterValdez', 'class'=>'icon-img'])}}</a>
             <a class="white-text" href="https://twitter.com/Valdez_Store" target="_blank">{{Form::image('/img/icons/twitter.png','Twitter',

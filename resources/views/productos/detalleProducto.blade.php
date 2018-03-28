@@ -33,12 +33,13 @@
                      alt="{{$productos->nombre}}">
                 @endif
             </div>
-            <div class="col s6 m6 l6 xl6">
+            <div class="col s12 m6 l6 xl6">
                 <h5>{{$productos->nombre}}</h5>
                 <h5 class="blue-text">Stock: {{$productos->stock}}</h5>
                 <div class="row">
                     <div class="col s6 m6 l6 xl6">
-                        <p>
+                        <br><br>
+                        <p class="detalle-texto">
                             @if($productos->caracteristica1 == 2)
                                 1GB RAM
                             @elseif($productos->caracteristica1 == 3)
@@ -51,56 +52,56 @@
                                 8GB RAM
                             @endif
                         </p>
-                        <p>
+                        <p class="detalle-texto">
                             @if($productos->caracteristica2 == 2)
-                                8GB ROM
+                                Almacenamiento 8GB ROM
                             @elseif($productos->caracteristica2 == 3)
-                                16GB ROM
+                                Almacenamiento 16GB ROM
                             @elseif($productos->caracteristica2 == 4)
-                                32GB ROM
+                                Almacenamiento 32GB ROM
                             @elseif($productos->caracteristica2 == 5)
-                                40GB HDD
+                                Almacenamiento 40GB HDD
                             @elseif($productos->caracteristica2 == 6)
-                                60GB HDD
+                                Almacenamiento 60GB HDD
                             @elseif($productos->caracteristica2 == 7)
-                                64GB ROM
+                                Almacenamiento 64GB ROM
                             @elseif($productos->caracteristica2 == 8)
-                                80GB HDD
+                                Almacenamiento 80GB HDD
                             @elseif($productos->caracteristica2 == 9)
-                                90GB SSD
+                                Almacenamiento 90GB SSD
                             @elseif($productos->caracteristica2 == 10)
-                                96GB SSD
+                                Almacenamiento 96GB SSD
                             @elseif($productos->caracteristica2 == 11)
-                                100GB HDD
+                                Almacenamiento 100GB HDD
                             @elseif($productos->caracteristica2 == 12)
-                                120GB HDD/SSD
+                                Almacenamiento 120GB HDD/SSD
                             @elseif($productos->caracteristica2 == 13)
-                                128GB SSD
+                                Almacenamiento 128GB SSD
                             @elseif($productos->caracteristica2 == 14)
-                                160GB HDD
+                                Almacenamiento 160GB HDD
                             @elseif($productos->caracteristica2 == 15)
-                                180GB SSD
+                                Almacenamiento 180GB SSD
                             @elseif($productos->caracteristica2 == 16)
-                                250GB HDD
+                                Almacenamiento 250GB HDD
                             @elseif($productos->caracteristica2 == 17)
-                                256GB SSD
+                                Almacenamiento 256GB SSD
                             @elseif($productos->caracteristica2 == 18)
-                                300GB SSD
+                                Almacenamiento 300GB SSD
                             @elseif($productos->caracteristica2 == 19)
-                                320GB HDD
+                                Almacenamiento 320GB HDD
                             @elseif($productos->caracteristica2 == 20)
-                                500GB HDD
+                                Almacenamiento 500GB HDD
                             @elseif($productos->caracteristica2 == 21)
-                                512GB SSD
+                                Almacenamiento 512GB SSD
                             @elseif($productos->caracteristica2 == 22)
-                                750GB HDD
+                                Almacenamiento 750GB HDD
                             @elseif($productos->caracteristica2 == 23)
-                                1TB HDD
+                                Almacenamiento 1TB HDD
                             @endif
                         </p>
 
-                        <p>{{$productos->caracteristica3}}</p>
-                        <p>{{$productos->caracteristica4}}</p>
+                        <p class="detalle-texto">Procesador {{$productos->caracteristica3}}</p>
+                        <p class="detalle-texto">{{$productos->caracteristica4}}</p>
                     </div>
                 </div>
                 <div class="col s6 m6 l6 xl6">
@@ -121,11 +122,13 @@
                     <a class="btn btn-large nav-color" href="{{route('reservas.makeReserva', $productos->url)}}">
                         RESERVAR
                     </a>
+                    <a href="{{url('/productos')}}" class="btn black btn-large">REGRESAR</a>
                 </div>
             </div>
         </div>
     </div>
     <br>
+    @include('productos.sugeridos')
 
     @include('sections.ubicaciones')
 @stop

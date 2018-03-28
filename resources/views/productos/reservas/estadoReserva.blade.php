@@ -4,25 +4,27 @@
     <div class="container mdl-card">
         <div id="sucursales">
             <br><br>
-            <h4 class="text-center white-text"><strong>¡TU RESERVA FUE EXITOSA!</strong></h4>
+            <h5 class="text-center white-text"><strong>¡TU RESERVA FUE EXITOSA!</strong></h5>
             <br><br>
         </div>
         <br><br>
-        <h5 class="texto-justificado">Hola {{$reserva->nombreCliente}}!,</h5>
-        <h5>Has reservado con éxito un {{$reserva->nombreProducto}} a las {{\Carbon\Carbon::now('America/El_Salvador')}}
-            en el centro de liquidación
-            @if($reserva->idSucursal==1)
-                Merliot
-            @elseif($reserva->idSucursal==2)
-                Escalón
-            @elseif($reserva->idSucursal==3)
-                SOHO
-            @else
-                San Miguel
-            @endif
+        <div class="reserva-texto">
+            <h5 class="texto-justificado">Hola {{$reserva->nombreCliente}}!,</h5>
+            <h5 class="reserva-texto">Has reservado con éxito un {{$reserva->nombreProducto}} a las {{\Carbon\Carbon::now('America/El_Salvador')}}
+                en el centro de liquidación
+                @if($reserva->idSucursal==1)
+                    Merliot
+                @elseif($reserva->idSucursal==2)
+                    Escalón
+                @elseif($reserva->idSucursal==3)
+                    SOHO
+                @else
+                    San Miguel
+                @endif
                 con el nombre de {{$reserva->nombreCliente}} {{$reserva->apellidoCliente}} y DUI
-            {{$reserva->DUICliente}}.
-        </h5>
+                {{$reserva->DUICliente}}.
+            </h5>
+        </div>
         <br>
         <div class="row center-align">
             <div class="col xs6 sm6 m6 l6 xl6 text-center">
@@ -31,11 +33,12 @@
                          class="responsive-img image-liquidacion" width="460" height="450">
                 @endif
             </div>
-            <div class="col s6 m6 l6 xl6 text-center">
+            <br><br><br><br><br><br>
+            <div class="col s6 m6 l6 xl6">
                 <br><br>
-                <ul>
+                <ul class="left-align">
                     <li>
-                        <h5 class="text-center">
+                        <h5>
                             @if($reserva->spec1 == 2)
                                 1GB RAM
                             @elseif($reserva->spec1 == 3)
@@ -49,9 +52,9 @@
                             @endif
                         </h5>
                     </li>
-                    <br>
+
                     <li>
-                        <h5 class="text-center">
+                        <h5>
                             @if($reserva->spec2 == 2)
                                 8GB ROM
                             @elseif($reserva->spec2 == 3)
@@ -99,17 +102,17 @@
                             @endif
                         </h5>
                     </li>
-                    <br>
+
                     <li>
-                        <h5 class="text-center">{{$reserva->spec3}}</h5>
+                        <h5>{{$reserva->spec3}}</h5>
                     </li>
-                    <br>
+
                     <li>
-                        <h5 class="text-center">{{$reserva->spec4}}</h5>
+                        <h5>{{$reserva->spec4}}</h5>
                     </li>
-                    <br>
-                    <li>
-                        <h5 class="text-center">Precio Final:
+
+                    <!--<li>
+                        <h5>Precio Final:
                             @if($reserva->idRam!=1)
                                 ${{$reserva->precio + 50}}
                                 @elseif($reserva->idDisco == 22)
@@ -122,7 +125,7 @@
                                 ${{$reserva->precio}}
                             @endif
                         </h5>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
         </div>

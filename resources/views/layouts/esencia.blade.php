@@ -56,6 +56,15 @@
 
             <ul class="side-nav" id="mobile-menu">
                 <li>
+                    <div>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{Form::image('/img/logos/logo_valdez.png','Valdez Store',
+                            ['id'=>'Valdez Store', 'height'=>'50', 'width'=>'250'])}}
+                        <br><br>
+                        <hr class="divider">
+                    </div>
+                </li>
+                <li>
                     <a href="{{url('/')}}" class="evogria" id="anchorInicio">LIQUIDACIONES DE HOY</a>
                 </li>
                 <li>

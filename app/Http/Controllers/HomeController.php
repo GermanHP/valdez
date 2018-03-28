@@ -23,7 +23,9 @@ class HomeController extends Controller
     {
         $sugeridos = Producto::where('estado', 2)->orderBy('id', 'DESC')->get();
 
-        $productoVenta = Producto::all();
+        $sugeridosP = Producto::where('category_id', 1)->orderBy('id', 'DESC')->get();
+
+        $productoVenta = Producto::where('id', 15);
 
         $smartphones = Producto::where('category_id', 3)->orderBy('id', 'DESC')->get();
 
@@ -37,7 +39,7 @@ class HomeController extends Controller
         }
 
 
-        return view('home', compact('sugeridos', 'smartphones', 'appleSect', 'productos', 'productoVenta'));
+        return view('home', compact('sugeridos', 'smartphones', 'appleSect', 'productos', 'productoVenta', 'sugeridosP'));
     }
 
     public function esencia(){
@@ -47,6 +49,7 @@ class HomeController extends Controller
     public function dashboardCliente(){
         return view('clientes.dashboard');
     }
+
 
     public function search(Request $request){
         if ($request -> ajax()){
@@ -74,6 +77,10 @@ class HomeController extends Controller
                 }
             }
         }
+    }
+
+    public function ubicacionUno(){
+        return view('ubicaciones.merliot');
     }
 
 }

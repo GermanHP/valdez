@@ -13,7 +13,7 @@
                     <h5 class="right-align">{{$producto->nombre}}</h5>
                 </div>
                 <div class="col s6 m6 l6 xl6 red-text">
-                    <h5>${{$producto->precioPromoEs}}</h5>
+                    <!--<h5>${{$producto->precioPromoEs}}</h5>-->
                 </div>
                 <div class="col s12 m12 l12 xl12">
                     @if(!empty($producto->image))

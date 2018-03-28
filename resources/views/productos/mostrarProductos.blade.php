@@ -227,7 +227,7 @@
                                         </div>
                                         <div class="col s6 m6 l6 xl6">
                                             <p><strong><a href="#">+info</a></strong></p>
-                                            <h6 class="tachado">
+                                            <!--<h6 class="tachado">
                                                 <strong>
                                                     Antes: ${{$producto->precioEs}}
                                                 </strong>
@@ -236,7 +236,7 @@
                                                 <strong>
                                                     Precio: ${{$producto->precioPromoEs}}
                                                 </strong>
-                                            </h5>
+                                            </h5>-->
                                         </div>
                                     </div>
                                 </div>

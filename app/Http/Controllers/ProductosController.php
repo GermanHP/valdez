@@ -19,8 +19,9 @@ class ProductosController extends Controller
     public function detalleProducto($url){
 
         $productos = Producto::where('url', '=', $url)->first();
+        $productoVenta = Producto::all();
 
-        return view('productos.detalleProducto')->withProductos($productos);
+        return view('productos.detalleProducto', compact('productoVenta', 'productos'));
     }
 
     //se muestra la vista correspondiente a los productos unicamente con el id de smartphone
@@ -29,6 +30,5 @@ class ProductosController extends Controller
 
         return view('productos.smartPhones.showSmartPhones', compact('smartPhones'));
     }
-
 
 }

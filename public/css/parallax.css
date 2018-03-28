@@ -40,6 +40,7 @@ h1, h2, h3, h4, h5, h6, p, a{
 }
 
 body {
+    background-color: #f7f7f7;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -294,7 +295,7 @@ h5#centro-liquidacion::after{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #1d2124;
+    background-color: #6855de;
     opacity: 1;
     overflow: hidden;
     width: 100%;
@@ -385,10 +386,48 @@ p{
     align-items: right;
 }
 
+.alineacion-centrada{
+    align-items: center;
+}
+
 .letter-spacing{
     letter-spacing: 1.5px;
 }
 
 #store-logo{
     background-color: rgba(237, 219, 4, 37);
+}
+
+.texto-gris{
+    color: #545454;
+}
+
+.espaciado{
+    letter-spacing: 5px;
+}
+
+.espaciado2{
+    letter-spacing: 8px;
+}
+
+.letter-spacing2{
+    letter-spacing: 2px;
+}
+
+.divider-teal {
+    height: 3px;
+    overflow: hidden;
+    background-color: #26a69a;
+}
+
+.ancho-cien{
+    width: 100%;
+}
+
+#quienes-somos-1{
+    background-color: white;
+}
+
+#subir-quienes{
+    margin-top: -50px;
 }

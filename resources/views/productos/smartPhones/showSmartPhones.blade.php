@@ -196,16 +196,16 @@
                                             </div>
                                             <div class="col s6 m6 l6 xl6">
                                                 <p><strong><a href="#">+info</a></strong></p>
-                                                <h6 class="tachado">
+                                                <!--<h6 class="tachado">
                                                     <strong>
                                                         Antes: ${{$smartphone->precioEs}}
                                                     </strong>
-                                                </h6>
-                                                <h5 class="red-text">
+                                                </h6>-->
+                                                <!--<h5 class="red-text">
                                                     <strong>
                                                         Ahora: ${{$smartphone->precioPromoEs}}
                                                     </strong>
-                                                </h5>
+                                                </h5>-->
                                                 <br>
                                             </div>
                                             <div class="col s12 m12 l12 xl12">

@@ -2,7 +2,7 @@
     <div class="carousel carousel-slider center " data-indicators="true">
         <div class="container-indicators">
             <div class="right">
-                <a href="Siguiente" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator">
+                <a href="Siguiente" class="moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator">
                     <i class="material-icons right middle-indicator-text black-text">chevron_right</i>
                 </a>
             </div>

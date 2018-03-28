@@ -15,7 +15,10 @@ $geoPlugin_array = unserialize( file_get_contents('http://www.geoplugin.net/php.
 //Si el pais es Nicaragua redireccionamos al directorio /es
 if ($geoPlugin_array['geoplugin_countryCode']=='NI'){
     header('http://valdezstore.com/nicaragua');
+}elseif ($geoPlugin_array['geoplugin_countryCode']=='HN'){
+    header('htto://valdezstore.com/honduras');
 }
+
 
 define('LARAVEL_START', microtime(true));
 

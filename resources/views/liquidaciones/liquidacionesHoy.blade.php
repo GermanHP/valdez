@@ -17,13 +17,14 @@
                         <img src="img/banners/productoarrival4.png" alt="NEW ARRIVALS">
                     </div>
                     <br><br><br><br>
-                    <h3 class="evogria">NEW ARRIVALS</h3>
                 </div>
+                <br><br><br><br>
+                <h4 class="evogria espaciado2 center">NEW ARRIVALS</h4>
             </div>
         </div>
         <div class="parallax"><img src="img/banners/landingbanner.png" alt="LIQUIDACIONES"></div>
     </div>
-    <h3 class="evogria center-align">Liquidaciones de hoy</h3>
+    <h4 class="evogria center-align espaciado2">Liquidaciones de hoy</h4>
     <div class="container-fluid">
         <div class="row">
             @foreach($liquidaciones as $liquidacion)

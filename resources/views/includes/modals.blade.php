@@ -43,7 +43,7 @@
         {!! Form::image('/img/logos/logo_valdez.png', null, ['class'=>'responsive-img', 'alt'=>'CENTRO DE LIQUIDACIÓN']) !!}
         <div class="row container-fluid">
             <div class="col s12 m12 l12 xl12">
-                {!! Form::image('/img/ubicaciones/centrocascadas.png',null,['class'=>'responsive-img', 'alt'=>'CENTRO CASCADAS']) !!}
+                {!! Form::image('/img/ubicaciones/centrocascadas.jpg',null,['class'=>'responsive-img', 'alt'=>'CENTRO CASCADAS']) !!}
             </div>
             <div class="col s12 m12 l12 xl12">
                 <video class="responsive-video" controls>

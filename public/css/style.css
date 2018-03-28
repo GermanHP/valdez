@@ -94,6 +94,7 @@ h1, h2, h3, h4, h5, h6, p, a{
 }
 
 body {
+    background-color: #f7f7f7;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -188,11 +189,12 @@ div#liquidacionButton{
 
 /*clases para efecto hover en las ubicaciones*/
 div#sucursales{
-    background-color: #524d94    ;
+    background: #524d94; /* For browsers that do not support gradients */
+    background: linear-gradient(to right,#594fe1 , #594fe1, #684fe1); /* Standard syntax (must be last) */
 }
 
 .nav-color{
-    background-color: #524d94;
+    background-color: #594fe1;
 }
 
 .detalle-producto{
@@ -202,6 +204,13 @@ div#sucursales{
 
 #purple{
     margin-bottom: -130px;
+}
+
+#asesor{
+    position: absolute;
+    alignment: right;
+    margin-left: 41.2%;
+    margin-top: -240px;
 }
 
 div#consulta{
@@ -261,12 +270,16 @@ div#consulta{
     height: auto;
 }
 
+.card-fix4{
+    margin-left: 75px;
+}
+
 .tachado{
     text-decoration: line-through;
 }
 
 .icon-img{
-    width: 70px;
+    width: 50px;
     height: auto;
 }
 
@@ -331,8 +344,8 @@ h5#centro-liquidacion::after{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #1d2124;
-    opacity: 1;
+    background-color: #6855de;
+    opacity: 0.8;
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -340,6 +353,24 @@ h5#centro-liquidacion::after{
 }
 
 .card-image:hover .overlay {
+    height: 100%;
+    opacity: 0.8;
+}
+
+.overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f8f8f8;
+    opacity: 0.8;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.card-image:hover .overlay2 {
     height: 100%;
     opacity: 0.8;
 }
@@ -354,6 +385,10 @@ h5#centro-liquidacion::after{
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+
+.reserva-texto{
+    line-height: 35px;
 }
 
 div#busqueda{
@@ -442,7 +477,83 @@ input#search::placeholder{
     color: white;
 }
 
+input#search2::placeholder{
+    display: none;
+}
+
 #size-quienes{
     width: 500px;
     height: auto;
+}
+
+#ESCALÓN:hover, #MERLIOT:hover, #CASCADAS:hover, #SAN-MIGUEL:hover{
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+    border-style: solid;
+    border-spacing: 50px;
+    color: #00acc1;
+}
+
+.subir-divider{
+    margin-top: -25px;
+}
+
+.subir-precio{
+    margin-top: -2px;
+}
+
+.espacio-letra{
+    margin-top: -10px;
+}
+
+.detalle-texto{
+    line-height: 20px;
+}
+
+.divider-teal {
+    height: 1px;
+    overflow: hidden;
+    background-color: #00acc1;
+}
+
+#opciones{
+    margin-top: -9px;
+}
+
+#smart-sect{
+    background-color: #F0F4F1;
+}
+
+.purple-text-2{
+    color: #6855de;
+}
+
+#liquidaciones-home{
+   margin-top: 15px;
+}
+
+#divider-home{
+    margin-top: -6px;
+}
+
+#divider-home2{
+    margin-top: -10px;
+}
+
+#inicio-blanco{
+    background-color: white;
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+#bajar-quienes{
+    margin-top: 25px;
+}
+
+.responsive-img-home{
+    width: 100%;
+    height: 110%;
 }
