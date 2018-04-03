@@ -14,9 +14,13 @@ $geoPlugin_array = unserialize( file_get_contents('http://www.geoplugin.net/php.
 
 //Si el pais es Nicaragua redireccionamos al directorio /es
 if ($geoPlugin_array['geoplugin_countryCode']=='NI'){
-    header('http://valdezstore.com/nicaragua');
+    header('https://valdezstore.com/nicaragua');
 }elseif ($geoPlugin_array['geoplugin_countryCode']=='HN'){
-    header('htto://valdezstore.com/honduras');
+    header('https://valdezstore.com/honduras');
+}elseif ($geoPlugin_array['geoplugin_countryCode']=='CR'){
+    header('https://valdezstore.com/costa-rica');
+}elseif ($geoPlugin_array['geoplugin_countryCode']=='GT'){
+    header('https://valdezstore.com/guatemala');
 }
 
 

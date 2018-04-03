@@ -19,7 +19,7 @@ class ProductosController extends Controller
     public function detalleProducto($url){
 
         $productos = Producto::where('url', '=', $url)->first();
-        $productoVenta = Producto::all();
+        $productoVenta = Producto::where('category_id', 1)->orderBy('id', 'DESC')->get();
 
         return view('productos.detalleProducto', compact('productoVenta', 'productos'));
     }

@@ -21,7 +21,7 @@ class HomeController extends Controller
      */
     public function index(Request $request)
     {
-        $sugeridos = Producto::where('estado', 2)->orderBy('id', 'DESC')->get();
+        $sugeridos = Producto::where('estado', 2)->orderBy('id', 'ASC')->get();
 
         $sugeridosP = Producto::where('category_id', 1)->orderBy('id', 'DESC')->get();
 

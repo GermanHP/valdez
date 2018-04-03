@@ -5,7 +5,7 @@
         <div class="section no-pad-bot">
             <div class="container">
                 <div class="row center">
-                    <form>
+                    <form method="GET" action="{{ route('user-lists') }}">
                         <div class="input-field container" id="busqueda">
                             <input name="search" class="center" id="search2" type="search"
                                    placeholder="BUSCAR" onfocus="this.placeholder = ''"
@@ -48,7 +48,7 @@
     <div class="hide-on-large-only" id="quienes-img">
         <img class="" src="img/banners/bannerhome.png" alt="VIVE LA EXPERIENCIA" id="quienes-img">
         <br>
-        <form id="quienes-p">
+        <form method="GET" action="{{ route('user-lists') }}" id="quienes-p">
             <div class="input-field container" id="busqueda">
                 <input name="search" class="center" id="search2" type="search"
                        placeholder="BUSCAR" onfocus="this.placeholder = ''"
@@ -238,7 +238,7 @@
                                                                 </div>
                                                                 <div class="col s6 m6 l6 xl6">
                                                                     <div class="chip yellow">
-                                                                        Escal贸n
+                                                                        Escal&oacute;n
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -256,17 +256,17 @@
                                                                     {{$sugerido->stock}} en Stock
                                                                 </strong>
                                                             </p>-->
-                                                        <!--<h6 class="tachado">
+                                                            <h6 class="tachado">
                                                                 <strong>
                                                                     ${{$sugerido->precioEs}}
                                                                 </strong>
-                                                            </h6>-->
-                                                        <!--<h5 class="red-text">
+                                                            </h6>
+                                                            <h5 class="red-text">
                                                                 <strong>
                                                                     ${{$sugerido->precioPromoEs}}
                                                                 </strong>
-                                                            </h5>-->
-                                                            <br><br><br><br><br><br><br>
+                                                            </h5>
+                                                            <br><br><br><br>
                                                             <a class="btn black"
                                                                href="{{route('reservas.makeReserva', $sugerido->url)}}">
                                                                 Reservar
@@ -282,10 +282,10 @@
                         @endforeach
                     </div>
                 </div>
-
-                <div class="col s12 m12 l9 xl9 white hide-on-large-only" id="bajar-quienes">
+                <br><br>
+                <div class="col s12 m12 l9 xl9 white hide-on-large-only">
                     <h5>
-                        LIQUIDACIONES DE HOY
+                        LIQUIDACIONES
                     </h5>
                     <hr class="divider">
                     <div class="row">
@@ -396,7 +396,7 @@
                                                                 </div>
                                                                 <div class="col s6 m6 l6 xl6">
                                                                     <div class="chip yellow">
-                                                                        Escal贸n
+                                                                        Escal&oacute;n
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -409,16 +409,16 @@
                                                                     </a>
                                                                 </strong>
                                                             </p>
-                                                        <!--<h6 class="tachado">
+                                                            <h6 class="tachado">
                                                                 <strong>
                                                                     ${{$sugerido->precioEs}}
                                                                 </strong>
-                                                            </h6>-->
-                                                        <!--<h5 class="red-text">
+                                                            </h6>
+                                                            <h5 class="red-text">
                                                                 <strong>
                                                                     ${{$sugerido->precioPromoEs}}
                                                                 </strong>
-                                                            </h5>-->
+                                                            </h5>
                                                             <br><br><br>
                                                             <a class="btn modal-trigger black"
                                                                href="{{route('reservas.makeReserva', $sugerido->url)}}">
@@ -485,10 +485,10 @@
                                     <div class="col s12 m12 l12 xl12">
                                         <h6 class="montserrat-extra-light">
                                             {{$apple->nombre}}
-                                        </h6>
-                                    <!--<p class="red-text subir-precio right-align">
+                                        </h6> &nbsp;&nbsp;
+                                        <p class="red-text subir-precio">
                                             Precio ${{$apple->precioPromoEs}}
-                                            </p>-->
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -511,7 +511,7 @@
                         <div class="col s6 m6 l6 xl6">
                             <a class="black-text" href="{{url('/productos')}}">
                                 <h6 class="right-align">
-                                    <span>4 de {{$productoVenta->count()}} &nbsp;&nbsp;&nbsp;</span> <strong class="negrita">VER TODO</strong> &blacktriangleright;
+                                    <span>4 de {{$sugeridos->count()}} &nbsp;&nbsp;&nbsp;</span> <strong class="negrita">VER TODO</strong> &blacktriangleright;
                                 </h6>
                             </a>
                         </div>
@@ -519,7 +519,7 @@
 
                     <div class="row">
                         <?php $contador = 0 ?>
-                        @foreach($productoVenta as $sugerencia)
+                        @foreach($sugeridos as $sugerencia)
                             <?php $contador++?>
                             @if($contador <5)
                                 @if($sugerencia->estado == 1 || $sugerencia->estado == 2)
@@ -640,11 +640,11 @@
                                                             Antes: ${{$sugerencia->precioEs}}
                                                                     </strong>
                                                                 </h6>-->
-                                                            <!--<h6 class="red-text">
-                                                        <strong>
-                                                            Precio: ${{$sugerencia->precioPromoEs}}
+                                                                <h6 class="red-text right-align">
+                                                                    <strong>
+                                                                        Desde: ${{$sugerencia->precioPromoEs}}
                                                                     </strong>
-                                                                </h6>-->
+                                                                </h6>
                                                             </div>
                                                         </div>
                                                         <h6>Disponible en:</h6>
@@ -653,7 +653,7 @@
                                                                 Merliot
                                                             </div>
                                                             <div class="chip yellow">
-                                                                Escal贸n
+                                                                Escal&oacute;n
                                                             </div>
                                                         </div>
                                                     </div>
@@ -670,135 +670,143 @@
 
                 <!--   Smartphone Section   -->
                 <div class="hide-on-med-and-down">
-                <div class="container" id="smart-sect">
-                    <br>
-                    <div class="row center-align">
-                        <div class="col l1 xl1"></div>
-                        <div class="col s12 m12 l2 xl2">
-                            <div class="icon-block card-fix3">
-                                <a class="center-align" href="{{url('/smartphones')}}">
-                                    <br><br><br>
-                                    <h5 class="purple-text-2"><strong>SMART</strong></h5>
-                                    <h5 class="espacio-letra purple-text-2"><strong>PHONES</strong></h5>
-                                </a>
+                    <div class="container" id="smart-sect">
+                        <br>
+                        <div class="row center-align">
+                            <div class="col l1 xl1"></div>
+                            <div class="col s12 m12 l2 xl2">
+                                <div class="icon-block card-fix3">
+                                    <a class="center-align" href="{{url('/smartphones')}}">
+                                        <br><br><br>
+                                        <h5 class="purple-text-2"><strong>SMART</strong></h5>
+                                        <h5 class="espacio-letra purple-text-2"><strong>PHONES</strong></h5>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
 
-                        <?php $contador = 0 ?>
-                        @foreach($smartphones as $telefonos)
-                            <?php $contador++?>
-                            @if($contador <5)
+                            <?php $contador = 0 ?>
+                            @foreach($smartphones as $telefonos)
+                                <?php $contador++?>
+                                @if($contador <5)
 
-                                <div class="col s12 m12 l2 xl2">
-                                    <div class="card card-fix3">
-                                        <div class="card-image">
-                                            @if(!empty($telefonos->image))
-                                                <img src="{{asset('img/enStock/img' . $telefonos->image)}}" alt="SMARTPHONES"
-                                                     class="responsive-img ajustar-sugeridos">
-                                            @endif
-                                            <div class="overlay2">
-                                                <div class="text center-align">
-                                                    <a href="{{route('reservas.makeReserva', $telefonos->url)}}" class="black-text">
-                                                        RESERVAR
-                                                    </a>
-                                                    <hr class="divider">
-                                                    <a href="#sucursales" class="black-text" id="anchorCentros">
-                                                        IR A TIENDA
-                                                    </a>
-                                                    <hr class="divider">
-                                                    <a href="{{ route('productos.detalleProducto', $telefonos->url) }}" class="black-text">
-                                                        VER DETALLES
-                                                    </a>
+                                    <div class="col s12 m12 l2 xl2">
+                                        <div class="card card-fix3">
+                                            <div class="card-image">
+                                                @if(!empty($telefonos->image))
+                                                    <img src="{{asset('img/enStock/img' . $telefonos->image)}}" alt="SMARTPHONES"
+                                                         class="responsive-img ajustar-sugeridos">
+                                                @endif
+                                                <div class="overlay2">
+                                                    <div class="text center-align">
+                                                        <a href="{{route('reservas.makeReserva', $telefonos->url)}}" class="black-text">
+                                                            RESERVAR
+                                                        </a>
+                                                        <hr class="divider">
+                                                        <a href="#sucursales" class="black-text" id="anchorCentros">
+                                                            IR A TIENDA
+                                                        </a>
+                                                        <hr class="divider">
+                                                        <a href="{{ route('productos.detalleProducto', $telefonos->url) }}" class="black-text">
+                                                            VER DETALLES
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row center-align">
-                                        <div class="col s12 m12 l12 xl12">
-                                            <h6 class="montserrat-extra-light">
-                                                {{$telefonos->nombre}}
-                                            </h6>
-                                        <!--<p class="red-text subir-precio right-align">
-                                        ${{$telefonos->precioPromoEs}}
-                                                </p>-->
+                                        <div class="row center-align">
+                                            <div class="col s12 m12 l12 xl12">
+                                                <h6 class="montserrat-extra-light">
+                                                    {{$telefonos->nombre}}
+                                                </h6>
+
+                                            </div>
+                                            <div class="col s12 m12 l12 xl12">
+
+                                                <p class="red-text subir-precio">
+                                                    ${{$telefonos->precioPromoEs}}
+                                                </p>
+                                            </div>
+
                                         </div>
-
                                     </div>
-                                </div>
 
-                            @endif
-                        @endforeach
+                                @endif
+                            @endforeach
 
-                        <div class="col l1 xl1"></div>
+                            <div class="col l1 xl1"></div>
+                        </div>
                     </div>
-                </div>
                 </div>
 
                 <!-- hide on large -->
                 <!--   Smartphone Section   -->
                 <div class="hide-on-large-only">
-                <div class="container" id="smart-sect">
-                    <br>
-                    <div class="row center-align">
-                        <div class="col l1 xl1"></div>
-                        <div class="col s12 m12 l2 xl2">
-                            <div class="icon-block card-fix4">
-                                <a class="center-align" href="{{url('/smartphones')}}">
-                                    <br><br><br>
-                                    <h5 class="purple-text-2"><strong>SMART</strong></h5>
-                                    <h5 class="espacio-letra purple-text-2"><strong>PHONES</strong></h5>
-                                </a>
+                    <div class="container" id="smart-sect">
+                        <br>
+                        <div class="row">
+                            <div class="col l1 xl1"></div>
+                            <div class="col s12 m12 l2 xl2">
+                                <div class="icon-block card-fix3 card-fix4">
+                                    <a class="center-align" href="{{url('/smartphones')}}">
+                                        <br><br><br>
+                                        <h5 class="purple-text-2"><strong>SMART</strong></h5>
+                                        <h5 class="espacio-letra purple-text-2"><strong>PHONES</strong></h5>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
 
-                        <?php $contador = 0 ?>
-                        @foreach($smartphones as $telefonos)
-                            <?php $contador++?>
-                            @if($contador <5)
+                            <?php $contador = 0 ?>
+                            @foreach($smartphones as $telefonos)
+                                <?php $contador++?>
+                                @if($contador <5)
 
-                                <div class="col s12 m12 l2 xl2">
-                                    <div class="card card-fix3">
-                                        <div class="card-image">
-                                            @if(!empty($telefonos->image))
-                                                <img src="{{asset('img/enStock/img' . $telefonos->image)}}" alt="SMARTPHONES"
-                                                     class="responsive-img ajustar-sugeridos">
-                                            @endif
-                                            <div class="overlay2">
-                                                <div class="text center-align">
-                                                    <a href="{{route('reservas.makeReserva', $telefonos->url)}}" class="black-text">
-                                                        RESERVAR
-                                                    </a>
-                                                    <hr class="divider">
-                                                    <a href="#sucursales" class="black-text" id="anchorCentros">
-                                                        IR A TIENDA
-                                                    </a>
-                                                    <hr class="divider">
-                                                    <a href="{{ route('productos.detalleProducto', $telefonos->url) }}" class="black-text">
-                                                        VER DETALLES
-                                                    </a>
+                                    <div class="col s12 m12 l2 xl2">
+                                        <div class="card card-fix3">
+                                            <div class="card-image2">
+                                                @if(!empty($telefonos->image))
+                                                    <img src="{{asset('img/enStock/img' . $telefonos->image)}}" alt="SMARTPHONES"
+                                                         class="responsive-img ajustar-sugeridos">
+                                                @endif
+                                                <div class="overlay2">
+                                                    <div class="text center-align">
+                                                        <a href="{{route('reservas.makeReserva', $telefonos->url)}}" class="black-text">
+                                                            RESERVAR
+                                                        </a>
+                                                        <hr class="divider">
+                                                        <a href="#sucursales" class="black-text" id="anchorCentros">
+                                                            IR A TIENDA
+                                                        </a>
+                                                        <hr class="divider">
+                                                        <a href="{{ route('productos.detalleProducto', $telefonos->url) }}" class="black-text">
+                                                            VER DETALLES
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="row center-align">
-                                        <div class="col s12 m12 l12 xl12">
-                                            <h6 class="montserrat-extra-light">
-                                                {{$telefonos->nombre}}
-                                            </h6>
-                                        <!--<p class="red-text subir-precio right-align">
-                                        ${{$telefonos->precioPromoEs}}
-                                                </p>-->
+                                        <div class="row center-align">
+                                            <div class="col s12 m12 l12 xl12">
+                                                <h6 class="montserrat-extra-light">
+                                                    {{$telefonos->nombre}}
+                                                </h6>
+
+                                            </div>
+                                            <div class="col s12 m12 l12 xl12">
+
+                                                <p class="red-text subir-precio">
+                                                    ${{$telefonos->precioPromoEs}}
+                                                </p>
+                                            </div>
+
                                         </div>
-
                                     </div>
-                                </div>
 
-                            @endif
-                        @endforeach
+                                @endif
+                            @endforeach
 
-                        <div class="col l1 xl1"></div>
+                            <div class="col l1 xl1"></div>
+                        </div>
                     </div>
-                </div>
                 </div>
                 <br>
             </div>

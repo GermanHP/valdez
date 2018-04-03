@@ -3373,7 +3373,7 @@ nav ul a span.badge {
 
 @media only screen and (min-width: 601px) {
   .container {
-    width: 85%;
+    width: 70%;
   }
 }
 
@@ -4846,6 +4846,31 @@ small {
 }
 
 .card .card-image .card-title {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  padding: 24px;
+}
+
+.card .card-image2 {
+  position: relative;
+  margin-right: -150px;
+}
+
+.card .card-image2 img {
+  display: block;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.card .card-image2 .card-title {
   color: #fff;
   position: absolute;
   bottom: 0;

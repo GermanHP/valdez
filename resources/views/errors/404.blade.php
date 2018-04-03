@@ -42,6 +42,10 @@
     <div class="content">
         <div class="title">Lo sentimos, no hemos encontrado la URL solicitada.</div>
     </div>
+    <br><br>
+    <div class="content">
+        <div class="title"><a href="{{url('/productos')}}">Volver a Productos</a></div>
+    </div>
 </div>
 </body>
 </html>

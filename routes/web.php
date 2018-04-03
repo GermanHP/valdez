@@ -39,10 +39,6 @@ Route::group(['middleware'=>['SSL']],function (){
     Route::get('/', 'HomeController@index');
 
     Route::get('/location/1', 'HomeController@ubicacionUno');
-    /*
-    Route::get('/search', 'GestionProductosController@productsList')->name('products.list');
-    */
-
 
     /*rutas para los filtros */
     Route::get('/laptops', 'SearchUserController@searchLaptops');
@@ -64,7 +60,7 @@ Route::group(['middleware'=>['SSL']],function (){
 
     Route::get('/productos', 'ProductosController@mostrarProductos');
 
-    Route::get('user-lists', 'SearchUserController@userList')->name('user-lists');
+    Route::get('busqueda', 'SearchUserController@userList')->name('user-lists');
 
     Route::get('/smartphones', 'ProductosController@showSmartphones');
     Route::get('/detalles', 'ProductosController@detalleProducto');

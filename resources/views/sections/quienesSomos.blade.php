@@ -237,7 +237,7 @@
     </div>
     <br><br>
         </div>
-    <div id="slider-indicators">
+    <div id="slider-indicators" class="responsive">
         @include('includes.slider')
     </div>
 

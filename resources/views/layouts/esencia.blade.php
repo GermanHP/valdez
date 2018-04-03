@@ -36,7 +36,7 @@
         <div class="nav-wrapper container">
             <a id="logo-container2" href="{{url('/')}}" class="brand-logo">
                 {{Form::image('/img/logos/vs2.png','Valdez Store',
-                ['id'=>'Valdez Store', 'height'=>'100', 'width'=>'250'])}}
+                    ['id'=>'Valdez Store', 'height'=>'30', 'width'=>'230'])}}
             </a>
 
             <ul class="right hide-on-med-and-down">

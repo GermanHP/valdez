@@ -49,7 +49,7 @@
             <div class="nav-wrapper container">
                 <a id="logo-container" href="{{url('/')}}" class="brand-logo">
                     {{Form::image('/img/logos/vs2.png','Valdez Store',
-                    ['id'=>'Valdez Store', 'height'=>'100', 'width'=>'250'])}}
+                    ['id'=>'Valdez Store', 'height'=>'30', 'width'=>'230'])}}
                 </a>
                 <a href="#" class="button-collapse" data-activates="mobile-menu"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">

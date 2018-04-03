@@ -1,8 +1,6 @@
-{!! Form::image('/img/ubicaciones/purple.png', null, ['class'=>'responsive-img', 'id'=>'purple', 'alt'=>'CENTROS DE LIQUIDACIÓN']) !!}
-
 <div class="container-fluid" id="sucursales" >
     <br>
-    <h5 class="center-align white-text ">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;  ELIGE TU CENTRO DE LIQUIDACIÓN MÁS CERCANO  &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</h5>
+    <h6 class="center-align white-text ">&mdash;&mdash;&mdash; ELIGE TU CENTRO DE LIQUIDACIÓN MÁS CERCANO &mdash;&mdash;&mdash;</h6>
     <div class="container">
         <div class="row">
 
@@ -22,8 +20,8 @@
 
             <div class="col s12 m12 l3 xl3">
                 <a href="#modalEscalon" class="modal-trigger" id="ubicaionesM">
-                {{Form::image('/img/ubicaciones/escalon.png',null,['id'=>'ESCALÓN',
-                    'class'=>'ubicaciones responsive-img'])}}
+                    {{Form::image('/img/ubicaciones/escalon.png',null,['id'=>'ESCALÓN',
+                        'class'=>'ubicaciones responsive-img'])}}
                 </a>
                 <a  href="https://showtheway.io/to/13.702186,-89.231801?name=VALDEZ%20STORE%20-%20Sucursal%20Escal%26oacute%3Bn"
                     target="_blank"
@@ -37,8 +35,8 @@
 
             <div class="col s12 m12 l3 xl3">
                 <a href="#modalCascadas" class="modal-trigger">
-                {{Form::image('/img/ubicaciones/soho.png',null,['id'=>'CASCADAS',
-                     'class'=>'ubicaciones responsive-img'])}}
+                    {{Form::image('/img/ubicaciones/soho.png',null,['id'=>'CASCADAS',
+                         'class'=>'ubicaciones responsive-img'])}}
                 </a>
                 <a href="https://showtheway.io/to/13.678033,-89.251246?name=VALDEZ%20STORE%20-%20Sucursal%20SOHO%20Cascadas"
                    target="_blank"
@@ -51,8 +49,8 @@
 
             <div class="col s12 m12 l3 xl3">
                 <a href="#modalSMiguel" class="modal-trigger">
-                {{Form::image('/img/ubicaciones/san-miguel.png',null,['id'=>'SAN-MIGUEL',
-                    'class'=>'ubicaciones responsive-img'])}}
+                    {{Form::image('/img/ubicaciones/san-miguel.png',null,['id'=>'SAN-MIGUEL',
+                        'class'=>'ubicaciones responsive-img'])}}
                 </a>
                 <a href="https://showtheway.io/to/13.476788,-88.184481?name=VALDEZ%20STORE%20-%20Sucursal%20San%20Miguel"
                    target="_blank"
@@ -67,6 +65,7 @@
         <br>
     </div>
 </div>
+{!! Form::image('/img/ubicaciones/asesor.png', null, ['class'=>'responsive-img right hide-on-med-and-down', 'id'=>'asesor', 'alt'=>'CENTROS DE LIQUIDACIÓN']) !!}
 
 
 <script src="https://showtheway.io/w.js" async="async" type="text/javascript"></script>

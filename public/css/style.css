@@ -1,60 +1,6 @@
 .navbar-fixed {
     z-index: 9999;
 }
-/*
-.navigation-v{
-   border-bottom: 1px solid #EAEAEB;
-   margin-top: 8px;
-   height: 60px;
-   line-height: 70px;
-}
-
-
-.menu{
-   margin: 0 30px 0 0;
-}
-
-.menu a{
-   clear: right;
-   text-decoration: none;
-   margin: 0 10px;
-   line-height: 70px;
-   background-color: white;
-}
-
-label{
-   margin: 0 40px 0 0;
-   font-size: 26px;
-   line-height: 70px;
-   display: none;
-   width: 26px;
-   float: right;
-}
-#toggle{
-   display: none;
-}
-
-@media only screen and (max-width: 867px) {
-   label{
-       display: block;
-       cursor: pointer;
-   }
-   .menu{
-       text-align: center;
-       width: 100%;
-       display: none;
-   }
-   .menu a{
-       display: block;
-       border-bottom: 1px solid #EAEAEB;
-       margin: 0;
-   }
-
-   #toggle:checked + .menu{
-       display: block;
-   }
-}
-*/
 /* Custom Stylesheet */
 @font-face {
     font-family: Montserrat;
@@ -82,7 +28,7 @@ label{
 }
 
 a#logo-container2{
-    margin-top: -25px;
+    margin-top: 5px;
 }
 
 .montserrat-extra-light{
@@ -207,10 +153,8 @@ div#sucursales{
 }
 
 #asesor{
-    position: absolute;
     alignment: right;
-    margin-left: 41.2%;
-    margin-top: -240px;
+    margin-top: -290px;
 }
 
 div#consulta{
@@ -357,6 +301,11 @@ h5#centro-liquidacion::after{
     opacity: 0.8;
 }
 
+.card-image2:hover .overlay {
+    height: 100%;
+    opacity: 0.8;
+}
+
 .overlay2 {
     position: absolute;
     bottom: 0;
@@ -371,6 +320,11 @@ h5#centro-liquidacion::after{
 }
 
 .card-image:hover .overlay2 {
+    height: 100%;
+    opacity: 0.8;
+}
+
+.card-image2:hover .overlay2 {
     height: 100%;
     opacity: 0.8;
 }
@@ -407,12 +361,16 @@ div#home{
 }
 
 a#logo-container{
-    margin-top: -18px;
+    margin-top: 5px;
 }
 
 .ajustar-sugeridos{
     width: 100px;
     height: auto;
+}
+
+.ajustar-sugeridos-low{
+    margin-left: 35%;
 }
 
 .ubicar-fix{

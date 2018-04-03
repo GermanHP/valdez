@@ -16,6 +16,8 @@
 
     $('.parallax').parallax();
 
+      $('.materialboxed').materialbox();
+
     $('.modal').modal();
 
       // start carrousel
@@ -23,8 +25,6 @@
           fullWidth: true,
           indicators: false
       });
-
-
 
       // move next carousel
       $('.moveNextCarousel').click(function(e){

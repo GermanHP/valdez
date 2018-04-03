@@ -1,11 +1,17 @@
+<style>
+    .responsive-img-modal{
+       width: 100%;
+        height: auto;
+    }
+</style>
 <!-- Ubicaciones -->
 <div id="modalMerliot" class="modal modal-fixed-footer modal-lg">
     <div class="modal-content center">
-        {!! Form::image('/img/logos/logo_valdez.png', null, ['class'=>'responsive-img', 'alt'=>'CENTRO DE LIQUIDACIÓN']) !!}
+        {!! Form::image('/img/logos/logo_valdez.png', null, ['class'=>'responsive-img-modal', 'alt'=>'CENTRO DE LIQUIDACIÓN']) !!}
 
         <div class="row container-fluid">
             <div class="col s12 m12 l12 xl12">
-                {!! Form::image('/img/ubicaciones/sucursal-merliot.png',null,['class'=>'responsive-img', 'alt'=>'CENTRO MERLIOT']) !!}
+                {!! Form::image('/img/ubicaciones/sucursal-merliot.png',null,['class'=>'responsive-img-modal', 'alt'=>'CENTRO MERLIOT']) !!}
             </div>
             <div class="col s12 m12 l12 xl12">
                 <video class="responsive-video" controls>
@@ -21,10 +27,10 @@
 
 <div id="modalEscalon" class="modal modal-fixed-footer modal-lg">
     <div class="modal-content center">
-        {!! Form::image('/img/logos/logo_valdez.png', null, ['class'=>'responsive-img', 'alt'=>'CENTRO DE LIQUIDACIÓN']) !!}
+        {!! Form::image('/img/logos/logo_valdez.png', null, ['class'=>'responsive-img-modal', 'alt'=>'CENTRO DE LIQUIDACIÓN']) !!}
         <div class="row container-fluid">
             <div class="col s12 m12 l12 xl12">
-                {!! Form::image('/img/ubicaciones/centroescalon.png',null,['class'=>'responsive-img', 'alt'=>'CENTRO ESCALON']) !!}
+                {!! Form::image('/img/ubicaciones/centroescalon.png',null,['class'=>'responsive-img-modal', 'alt'=>'CENTRO ESCALON']) !!}
             </div>
             <div class="col s12 m12 l12 xl12">
                 <video class="responsive-video" controls>
@@ -40,10 +46,10 @@
 
 <div id="modalCascadas" class="modal modal-fixed-footer modal-lg">
     <div class="modal-content center">
-        {!! Form::image('/img/logos/logo_valdez.png', null, ['class'=>'responsive-img', 'alt'=>'CENTRO DE LIQUIDACIÓN']) !!}
+        {!! Form::image('/img/logos/logo_valdez.png', null, ['class'=>'responsive-img-modal', 'alt'=>'CENTRO DE LIQUIDACIÓN']) !!}
         <div class="row container-fluid">
             <div class="col s12 m12 l12 xl12">
-                {!! Form::image('/img/ubicaciones/centrocascadas.jpg',null,['class'=>'responsive-img', 'alt'=>'CENTRO CASCADAS']) !!}
+                {!! Form::image('/img/ubicaciones/centrocascadas.jpg',null,['class'=>'responsive-img-modal', 'alt'=>'CENTRO CASCADAS']) !!}
             </div>
             <div class="col s12 m12 l12 xl12">
                 <video class="responsive-video" controls>
@@ -59,10 +65,10 @@
 
 <div id="modalSMiguel" class="modal modal-fixed-footer modal-lg">
     <div class="modal-content center">
-        {!! Form::image('/img/logos/logo_valdez.png', null, ['class'=>'responsive-img', 'alt'=>'CENTRO DE LIQUIDACIÓN']) !!}
+        {!! Form::image('/img/logos/logo_valdez.png', null, ['class'=>'responsive-img-modal', 'alt'=>'CENTRO DE LIQUIDACIÓN']) !!}
         <div class="row container-fluid">
             <div class="col s12 m12 l12 xl12">
-                {!! Form::image('/img/ubicaciones/centrosanmiguel.png',null,['class'=>'responsive-img', 'alt'=>'CENTRO SAN MIGUEL']) !!}
+                {!! Form::image('/img/ubicaciones/centrosanmiguel.png',null,['class'=>'responsive-img-modal', 'alt'=>'CENTRO SAN MIGUEL']) !!}
             </div>
             <div class="col s12 m12 l12 xl12">
                 <video class="responsive-video" controls>

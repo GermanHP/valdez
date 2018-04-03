@@ -18,7 +18,7 @@
     tecnológicos. Es una empresa sólida a nivel nacional en El Salvador, a través de una cadena de centros de
     liquidaciones; líderes en brindar portátiles a bajos precios, con la mejor tecnología del mercado nacional y
     centroamericano.">
-    <meta name="keywords" content="Valdez Mobile, Valdez Store, Liquidacion, Laptops en Liquidacion, Valdes,HP,Dell,
+    <meta name="keywords" content="Valdez Store, Liquidacion, Laptops en Liquidacion, Valdes, HP, Dell,
     Laptops en oferta, promociones en laptops, Venta de computadoras,ofertas notebook, laptops economicas">
 
     <!-- CSS  -->
@@ -30,18 +30,8 @@
 
     @include('includes.zopim')
 
-
 </head>
 <body>
-
-
-<!--<script>
-    if('serviceWorker' in navigator) {
-        navigator.serviceWorker
-            .register('/sw.js')
-            .then(function() { console.log("Service Worker Registered"); });
-    }
-</script>-->
 
 <header>
     <div class="navbar-fixed">
@@ -49,7 +39,7 @@
             <div class="nav-wrapper container">
                 <a id="logo-container" href="{{url('/')}}" class="brand-logo">
                     {{Form::image('/img/logos/vs2.png','Valdez Store',
-                    ['id'=>'Valdez Store', 'height'=>'100', 'width'=>'250'])}}
+                    ['id'=>'Valdez Store', 'height'=>'30', 'width'=>'230'])}}
                 </a>
                 <a href="#" class="button-collapse" data-activates="mobile-menu"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
@@ -111,6 +101,9 @@
     </div>
     <div id="content2" class="hide-on-large-only">
         @yield('content')
+        <div id="inicio-blanco">
+            @yield('contenido')
+        </div>
     </div>
 </main>
 

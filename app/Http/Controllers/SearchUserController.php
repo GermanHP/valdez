@@ -118,4 +118,15 @@ class SearchUserController extends Controller
 
         return view('productos.category.profesional', compact('profesional'));
     }
+
+    public function userList(Request $request){
+        if ($request->has('search')){
+            $productos = Producto::search($request->search)
+                ->paginate(6);
+        }else{
+            $productos = Producto::paginate(6);
+        }
+
+        return view('productos-search', compact('productos'));
+    }
 }

@@ -4,17 +4,17 @@
         <div class="section no-pad-bot">
             <div class="container-fluid">
                 <div class="row center">
-                   <div class="col s12 m12 l3 xl3">
-                       <img src="img/banners/productoarrival1.png" alt="NEW ARRIVALS">
+                   <div class="col s3 m3 l3 xl3">
+                       <img class="responsive-img" src="img/banners/productoarrival1.png" alt="NEW ARRIVALS">
                    </div>
-                    <div class="col s12 m12 l3 xl3">
-                        <img src="img/banners/productoarrival2.png" alt="NEW ARRIVALS">
+                    <div class="col s3 m3 l3 xl3">
+                        <img class="responsive-img" src="img/banners/productoarrival2.png" alt="NEW ARRIVALS">
                     </div>
-                    <div class="col s12 m12 l3 xl3">
-                        <img src="img/banners/productoarrival3.png" alt="NEW ARRIVALS">
+                    <div class="col s3 m3 l3 xl3">
+                        <img class="responsive-img" src="img/banners/productoarrival3.png" alt="NEW ARRIVALS">
                     </div>
-                    <div class="col s12 m12 l3 xl3">
-                        <img src="img/banners/productoarrival4.png" alt="NEW ARRIVALS">
+                    <div class="col s3 m3 l3 xl3">
+                        <img class="responsive-img" src="img/banners/productoarrival4.png" alt="NEW ARRIVALS">
                     </div>
                     <br><br><br><br>
                 </div>
@@ -24,14 +24,17 @@
         </div>
         <div class="parallax"><img src="img/banners/landingbanner.png" alt="LIQUIDACIONES"></div>
     </div>
-    <h4 class="evogria center-align espaciado2">Liquidaciones de hoy</h4>
-    <div class="container-fluid">
-        <div class="row">
+
+    <div class="container">
+        <div class="row white">
+            <br>
+            <h4 class="evogria center-align espaciado2">Liquidaciones de hoy</h4>
+            <br>
             @foreach($liquidaciones as $liquidacion)
             <div class="col s12 m12 l3 xl3">
                 <div class="row">
                     <div class="col s12 m12 l3 xl3">
-                        <div class="card card-fix">
+                        <div class="card card-fix2">
                             <div class="card-image">
                                 @if(!empty($liquidacion->image))
                                     <img src="{{asset('img/enStock/img' . $liquidacion->image)}}"
